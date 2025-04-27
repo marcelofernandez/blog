@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Personal on El Blog de Marcelo!</title>
+    <link>http://localhost:1313/category/personal/</link>
+    <description>Recent content in Personal on El Blog de Marcelo!</description>
+    <generator>Hugo -- 0.147.0</generator>
+    <language>es</language>
+    <lastBuildDate>Wed, 04 Jan 2023 13:33:16 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/category/personal/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Volviendo a Escribir - QUIC y HTTP/3</title>
+      <link>http://localhost:1313/2023/01/volviendo-a-escribir-quic-y-http-3/</link>
+      <pubDate>Wed, 04 Jan 2023 13:33:16 +0000</pubDate>
+      <guid>http://localhost:1313/2023/01/volviendo-a-escribir-quic-y-http-3/</guid>
+      <description>&lt;p&gt;De a poquito y con el reset del año, vuelven las ganas de leer y aprender sobre temas nuevos para escribir algo de texto y código como output de lo aprendido. En este caso, y para complementar &lt;a href=&#34;http://www.labredes.unlu.edu.ar/sites/www.labredes.unlu.edu.ar/files/site/data/tyr/http2_Fernandez_Tolosa.pdf&#34;&gt;aquello que escribí sobre HTTP/2&lt;/a&gt;, estoy preparando algo similar pero sobre QUIC como protocolo de transporte y HTTP/3 como protocolo de aplicación sobre él.&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/HTTP-1.1_vs._HTTP-2_vs._HTTP-3_Protocol_Stack.svg/640px-HTTP-1.1_vs._HTTP-2_vs._HTTP-3_Protocol_Stack.svg.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Ambos son Internet Standard desde hace muy poco tiempo ( &lt;a href=&#34;https://www.rfc-editor.org/rfc/rfc9000.html&#34;&gt;quic&lt;/a&gt;, &lt;a href=&#34;https://www.rfc-editor.org/rfc/rfc9114.html&#34;&gt;http/3&lt;/a&gt;) y vienen y/o dependen de un paquete de otros protocolos y especificaciones que &lt;a href=&#34;https://quicwg.org/&#34;&gt;no son poca cosa&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Pwning hardware</title>
+      <link>http://localhost:1313/2014/11/pwning-hardware/</link>
+      <pubDate>Sat, 01 Nov 2014 16:00:51 +0000</pubDate>
+      <guid>http://localhost:1313/2014/11/pwning-hardware/</guid>
+      <description>&lt;p&gt;El video dura media hora, pero a mí me gustó muchísimo, aprendí mucho. &lt;a href=&#34;http://scanlime.org/&#34; title=&#34;Scanlime - One girl&#39;s diary of improvisational engineering&#34;&gt;Mikah Scott&lt;/a&gt; es &lt;a href=&#34;http://scanlime.org/resume/&#34; title=&#34;Mikah Scott - Resume&#34;&gt;una&lt;/a&gt; &lt;a href=&#34;http://www.misc.name/&#34; title=&#34;Micah Scott Art Portfolio&#34;&gt;genia&lt;/a&gt;, y se propone investigar cómo customizar el firmware de una lectora/grabadora de CD/DVD/Blu-Ray, para dominarlo por completo, empezando por el microcontrolador ARM que posee. Por ejemplo, moviendo el láser en la posición que uno quiera y dispararlo. Habla un excelente y puntilloso inglés, así que se le entiende palabra por palabra, sugiero que lo vean incluso para practicar su inglés técnico.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>PyConAr 2012: Charla sobre el protocolo SPDY - Slides</title>
+      <link>http://localhost:1313/2012/11/pyconar-2012-charla-sobre-el-protocolo-spdy-slides/</link>
+      <pubDate>Mon, 19 Nov 2012 16:08:12 +0000</pubDate>
+      <guid>http://localhost:1313/2012/11/pyconar-2012-charla-sobre-el-protocolo-spdy-slides/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://ar.pycon.org/2012/&#34; title=&#34;PyCon Argentina 2012&#34;&gt;&lt;img alt=&#34;PyCon Argentina 2012&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/wp-content/uploads/2012/11/header_pyconar2012.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://localhost:1313/wp-content/uploads/2012/11/spdy.png&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/wp-content/uploads/2012/11/spdy-150x150.png&#34;&gt;&lt;/a&gt; Terminó la &lt;a href=&#34;http://ar.pycon.org/2012/&#34; title=&#34;PyCon Argentina 2012&#34;&gt;PyCon Argentina 2012&lt;/a&gt;, y con ella vienen semanas menos movidas (espero). Este post es para agradecer a la organización, Mariano, Juan BC, y a todos aquellos que concurrieron y compartieron conmigo este evento que tanto nos gusta a los fanáticos de este lenguaje de programación.&lt;/p&gt;
+&lt;p&gt;Además, tuve el placer de dar una charla introductoria del protocolo SPDY, que pretende reemplazar a HTTP 1.1, y que muy probablemente ya estés usando sin darte cuenta. :-)&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>PyDay Rafaela 2010 - Introducción a wxPython</title>
+      <link>http://localhost:1313/2010/05/pyday-rafaela-2010-introduccion-a-wxpython/</link>
+      <pubDate>Mon, 10 May 2010 17:32:48 +0000</pubDate>
+      <guid>http://localhost:1313/2010/05/pyday-rafaela-2010-introduccion-a-wxpython/</guid>
+      <description>&lt;p&gt;Para no ser menos que &lt;a href=&#34;http://www.juanjoconti.com.ar/2010/05/09/charla-entendiendo-decoradores-en-python/&#34;&gt;Juanjo&lt;/a&gt; y &lt;a href=&#34;http://fisadev.blogspot.com/2010/05/pyday-rafaela-2010_09.html&#34;&gt;Fisa&lt;/a&gt;, ¡qué bueno estuvo el &lt;a href=&#34;www.pyday.com.ar/rafaela2010/&#34;&gt;PyDay Rafaela 2010&lt;/a&gt;!&lt;/p&gt;
+&lt;p&gt;Muchos (muchos) asistentes, muy buena onda, y una chorizeada + fernet a la noche inolvidables&amp;hellip; En la sección de &lt;a href=&#34;http://localhost:1313/charlas/&#34;&gt;Charlas&lt;/a&gt; del blog están los &lt;a href=&#34;http://marcelofernandez.info/charlas/Introduccion%20a%20wxPython.pdf&#34;&gt;slides&lt;/a&gt; de mi &amp;ldquo;Introducción a wxPython&amp;rdquo;, más los &lt;a href=&#34;http://marcelofernandez.info/charlas/Introduccion%20a%20wxPython.zip&#34;&gt;ejemplos&lt;/a&gt; de rigor. También [hice propaganda](&lt;a href=&#34;http://marcelofernandez.info/charlas/Ubuntu&#34;&gt;http://marcelofernandez.info/charlas/Ubuntu&lt;/a&gt; Lightning Talk.pdf) de Ubuntu en las Lightning Talks. :-P&lt;/p&gt;
+&lt;p&gt;Acá hay un par de fotos&amp;hellip; con los días van a ir apareciendo más cosas en el sito del evento&amp;hellip; incluso los videos de las charlas. :-)&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Lo lindo del FLOSS</title>
+      <link>http://localhost:1313/2008/06/lo-lindo-del-floss/</link>
+      <pubDate>Sun, 15 Jun 2008 16:46:00 +0000</pubDate>
+      <guid>http://localhost:1313/2008/06/lo-lindo-del-floss/</guid>
+      <description>&lt;p&gt;Sólo para comentar que reporté hace un tiempo &lt;a href=&#34;http://www.freebsd.org/cgi/query-pr.cgi?pr=121321&#34;&gt;un bug&lt;/a&gt; sobre el &lt;a href=&#34;http://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/&#34;&gt;Handbook de FreeBSD&lt;/a&gt; y me aceptaron la sugerencia, corrigiendo el documento original.&lt;/p&gt;
+&lt;p&gt;Si bien no es la primera vez que me pasa, quiero transmitir esa linda sensación de poder colaborar con un granito de arena cuando uno obtiene tanto de otros en forma desinteresada.&lt;/p&gt;
+&lt;p&gt;Ah, por cierto, felíz día, viejo!&lt;/p&gt;
+&lt;p&gt;Marcelo&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Dígame Licenciado...</title>
+      <link>http://localhost:1313/2008/05/digame-licenciado/</link>
+      <pubDate>Thu, 15 May 2008 14:24:00 +0000</pubDate>
+      <guid>http://localhost:1313/2008/05/digame-licenciado/</guid>
+      <description>&lt;p&gt;(Este post es un fragmento de un mail que escribí hace unos días)
+Bueno, sólo para comentar que este lunes a las 17 hs., después de más de 10 años de estudiar, remar, sufrir y (robar un poco, por qué no, je)&amp;hellip;&lt;/p&gt;
+&lt;p&gt;ME RECIBIIIIIIIII!!!!!!!!!!!!!!!!!!!!&lt;/p&gt;
+&lt;p&gt;De qué? Sí, de Licenciado en Sistemas!!! (la p&amp;hellip;. que vale la pena estar vivo!!!)&amp;hellip; presenté la maldita y caprichosa TESIS en la que estuve un año y medio laburando&amp;hellip;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Un &amp;quot;Yo&amp;quot; dibujado por Matt Groening</title>
+      <link>http://localhost:1313/2007/07/un-yo-dibujado-por-matt-groening/</link>
+      <pubDate>Sun, 29 Jul 2007 18:56:00 +0000</pubDate>
+      <guid>http://localhost:1313/2007/07/un-yo-dibujado-por-matt-groening/</guid>
+      <description>&lt;p&gt;Después de haber disfrutado anoche de la película de &lt;a href=&#34;http://www.simpsonsmovie.com/&#34;&gt;Los Simpsons&lt;/a&gt; (si te gustan, no te la pierdas, es buenísima!), me tomé un ratito (un domingo aburrido&amp;hellip;) en entrar a la página de los simpsons&amp;hellip; está muy buena (aunque el uso de flash es obligatorio), y aunque no la recorrí toda, pude crear un &lt;a href=&#34;http://es.wikipedia.org/wiki/Avatar_%28sociedad_virtual%29&#34;&gt;avatar&lt;/a&gt; con la paleta de colores, barbas, cabello, ojos, nariz, etc. de los Simpsons. Y tratando de hacerme a mí mismo, me salió esto:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Tengo las Entradas!!!!</title>
+      <link>http://localhost:1313/2007/06/tengo-las-entradas/</link>
+      <pubDate>Tue, 12 Jun 2007 23:41:00 +0000</pubDate>
+      <guid>http://localhost:1313/2007/06/tengo-las-entradas/</guid>
+      <description>&lt;p&gt;Soy uno de los afortunados que va a disfrutar de &lt;a href=&#34;http://www.clarin.com/diario/2007/06/10/espectaculos/c-00801.htm&#34;&gt;la Vuelta&lt;/a&gt; de &lt;a href=&#34;http://es.wikipedia.org/wiki/Soda_stereo&#34;&gt;Soda Stereo&lt;/a&gt;!!!!!!!&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://1.bp.blogspot.com/_nDZ247g0qSM/Rm9aWqc5XAI/AAAAAAAAAG4/MDVaUZmLxvU/s1600-h/IMG_1882.JPG&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://1.bp.blogspot.com/_nDZ247g0qSM/Rm9aWqc5XAI/AAAAAAAAAG4/MDVaUZmLxvU/s400/IMG_1882.JPG&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Volveremos, volveremos&amp;hellip; faltan unos 130 días aproximadamente!!!!!&lt;/p&gt;
+&lt;p&gt;(Ya estoy ansioso)&lt;br&gt;
+Marcelo&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Un &amp;quot;Docente&amp;quot; Lamentable...</title>
+      <link>http://localhost:1313/2007/06/un-docente-lamentable/</link>
+      <pubDate>Thu, 07 Jun 2007 02:09:00 +0000</pubDate>
+      <guid>http://localhost:1313/2007/06/un-docente-lamentable/</guid>
+      <description>&lt;p&gt;Este post es sólo para hacerme eco de este excelente post del &lt;a href=&#34;http://blog.smaldone.com.ar&#34;&gt;blog de Javier Smaldone&lt;/a&gt;:&lt;/p&gt;
+&lt;p&gt;Vean este video, cuyo audio fue grabado en una clase de una carrera informática en una universidad pública. Se trata de un &amp;ldquo;Docente&amp;rdquo; (según el blog, es el Lic. Rubén Fernandez Iriart), que está queriendo explicar a sus alumnos qué es un &lt;a href=&#34;http://es.wikipedia.org/wiki/EJB&#34;&gt;EJB&lt;/a&gt; (no hace falta saber en realidad qué es, sólo escuchen a esta persona &amp;ldquo;dictar clases&amp;rdquo;):&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Ubuntu GNU/Linux &#43; Python en Rio Negro</title>
+      <link>http://localhost:1313/2007/05/ubuntu-gnulinux-python-en-rio-negro/</link>
+      <pubDate>Wed, 30 May 2007 01:31:00 +0000</pubDate>
+      <guid>http://localhost:1313/2007/05/ubuntu-gnulinux-python-en-rio-negro/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://2.bp.blogspot.com/_nDZ247g0qSM/RlzaW6BURVI/AAAAAAAAAGI/zNc6p1s28C4/s1600-h/Escudo_COA_Rio_Negro_province_argentina.gif&#34;&gt;&lt;img alt=&#34;Escudo de Río Negro&#34; loading=&#34;lazy&#34; src=&#34;http://2.bp.blogspot.com/_nDZ247g0qSM/RlzaW6BURVI/AAAAAAAAAGI/zNc6p1s28C4/s400/Escudo_COA_Rio_Negro_province_argentina.gif&#34;&gt;&lt;/a&gt; Holas&amp;hellip;&lt;/p&gt;
+&lt;p&gt;Bueh, por fin puedo bloguear algo al respecto (tengo un ratito como para comentar algo), y además mi compañero de laburo &lt;a href=&#34;https://launchpad.net/%7Egepatino&#34;&gt;Gabriel Patiño&lt;/a&gt; pudo escribir algo el fin de semana al respecto y &lt;a href=&#34;http://www.solar.org.ar/spip.php?article447&#34;&gt;yo puedo linkearlo&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Fue un mes estresante, cansador&amp;hellip; pero contentos por el deber cumplido de tener que realizar el software para el escrutinio provisorio de una provincia argentina, &lt;a href=&#34;http://es.wikipedia.org/wiki/Provincia_de_R%C3%ADo_Negro&#34;&gt;Río Negro&lt;/a&gt;. Fueron varios componentes desarrollados, en distintos entornos ( &lt;a href=&#34;http://www.apache.org/&#34;&gt;Apache&lt;/a&gt;/ &lt;a href=&#34;http://es.wikipedia.org/wiki/Common_Gateway_Interface&#34;&gt;CGI&lt;/a&gt;, &lt;a href=&#34;http://www.python.org/&#34;&gt;Python&lt;/a&gt; + &lt;a href=&#34;http://www.blogger.com/www.pygtk.org&#34;&gt;PyGTK&lt;/a&gt; + &lt;a href=&#34;http://www.gtk.org/&#34;&gt;GTK&lt;/a&gt;, &lt;a href=&#34;http://www.postgresql.org/&#34;&gt;PostgreSQL&lt;/a&gt;, etc.), pero siempre sobre &lt;a href=&#34;http://www.ubuntu.com/&#34;&gt;Ubuntu&lt;/a&gt; GNU/Linux.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Cafeconf 2006</title>
+      <link>http://localhost:1313/2006/11/cafeconf-2006/</link>
+      <pubDate>Wed, 15 Nov 2006 03:47:00 +0000</pubDate>
+      <guid>http://localhost:1313/2006/11/cafeconf-2006/</guid>
+      <description>&lt;p&gt;Al fin llegó la &lt;a href=&#34;http://www.cafeconf.org/modules/edito/content.php?id=1&#34;&gt;Cafeconf 2006&lt;/a&gt;! :-D&lt;/p&gt;
+&lt;p&gt;Estuvo buena, lástima que este año pude ir sólo un día.&lt;/p&gt;
+&lt;p&gt;Lo destacable fue encontrarse con toda esa &amp;ldquo;gente como uno&amp;rdquo; que me hace sentir que no estoy &amp;ldquo;solo&amp;rdquo; en el mundo. :-D&lt;/p&gt;
+&lt;p&gt;Sobre las charlas a las que asistí, les puedo comentar lo siguiente:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&amp;quot; &lt;a href=&#34;http://www.gabriel-arellano.com.ar/charlas/&#34;&gt;Collition Course with Ruby&lt;/a&gt;&amp;quot;: Excelente charla, muuuy entretenida e interesante; el disertante ( &lt;a href=&#34;http://www.gabriel-arellano.com.ar/&#34;&gt;Gabriel Arellano&lt;/a&gt;), un capo, muy didáctico y llevadero, no aburrió para nada. Aprendí muchas cosas de Ruby. Lástima que el tiempo (como en la TV) es tirano.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Mi Nuevo Sillón</title>
+      <link>http://localhost:1313/2006/10/mi-nuevo-sillon/</link>
+      <pubDate>Wed, 25 Oct 2006 04:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/2006/10/mi-nuevo-sillon/</guid>
+      <description>&lt;p&gt;Estoy taaan feliiiz por mi nueva adquisición!!!&lt;br&gt;
+Costó, costó y al fin llegó. :-D&lt;br&gt;
+Mi espalda y mis nervios me lo agradecerán.&lt;/p&gt;
+&lt;p&gt;Aquí está la captura de la gloria de la tecnología ergonómica.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://photos1.blogger.com/blogger2/448/981953459584652/1600/IMG_0659.jpg&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://photos1.blogger.com/blogger2/448/981953459584652/320/IMG_0659.jpg&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Saludos!&lt;br&gt;
+Marcelo&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>En Rieles</title>
+      <link>http://localhost:1313/2006/09/en-rieles/</link>
+      <pubDate>Mon, 04 Sep 2006 04:38:00 +0000</pubDate>
+      <guid>http://localhost:1313/2006/09/en-rieles/</guid>
+      <description>&lt;p&gt;Ayer nos reunimos por fin para empezar a laburar en el proyecto web. Después fuimos a reunirnos con el tipo (bastaaante chamuyero por cierto, no lo conocía), y bueh, nos queda laburo por hacer. A mí me sirvió para dejarme la idea un poco más clara de lo que quiere. Me puse a leer el &lt;a href=&#34;http://www.pragmaticprogrammer.com/titles/rails/index.html&#34;&gt;libro&lt;/a&gt; de RoR y la verdad que es fantástico, se lee solo. Me entusiasmé con lo sencillo que es desarrollar en esto.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Un Poco de Cada Cosa</title>
+      <link>http://localhost:1313/2006/08/un-poco-de-cada-cosa/</link>
+      <pubDate>Fri, 01 Sep 2006 00:37:00 +0000</pubDate>
+      <guid>http://localhost:1313/2006/08/un-poco-de-cada-cosa/</guid>
+      <description>&lt;p&gt;Empezamos el día haciendo un pequeño relevamiento de los sitios &lt;a href=&#34;http://joomla.org/&#34;&gt;Joomla&lt;/a&gt; que administro. Primero, actualizando a la nueva &lt;a href=&#34;http://www.joomla.org/content/view/1843/74/&#34;&gt;versión 1.0.11&lt;/a&gt;, ya que corrige algunas vulnerabilidades críticas (y algunas que no lo son tanto). Y segundo, más hincha (pero hay que hacerlo), es revisar de los 6 sitios que tengo, qué componentes hay que actualizar, reemplazar o verificar si hay alguna vulnerabilidad grave.&lt;/p&gt;
+&lt;p&gt;El resumen fue:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Componente SEF404 desactualizado (reemplazar por &lt;a href=&#34;http://www.open-sef.org/&#34;&gt;OpenSEF&lt;/a&gt;).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Revisar &lt;a href=&#34;http://coders.mlshomequest.com/&#34;&gt;samSiteMap&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Actualizar &lt;a href=&#34;http://www.zoomfactory.org/&#34;&gt;zOOm Media Gallery&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Leyendo....</title>
+      <link>http://localhost:1313/2006/08/leyendo/</link>
+      <pubDate>Thu, 31 Aug 2006 01:35:00 +0000</pubDate>
+      <guid>http://localhost:1313/2006/08/leyendo/</guid>
+      <description>&lt;p&gt;Bueh, acá estoy, leyendo algo de lo que saqué de la Biblioteca&amp;hellip; Sistemas Operativos, Redes, etc. Todos fundamentos para rescatar algo para mi Tesis: &amp;ldquo;Edición Colaborativa&amp;rdquo;. Es lo que hace software como &lt;a href=&#34;http://gobby.0x539.de/index.html&#34;&gt;Gobby&lt;/a&gt; y &lt;a href=&#34;http://www.codingmonkeys.de/subethaedit/&#34;&gt;SubEthaEdit&lt;/a&gt;. Otra cosa piola que vi es el &lt;a href=&#34;http://uwog.net/blog/?p=29&#34;&gt;plugin para Abiword&lt;/a&gt;, impresionante!&lt;/p&gt;
+&lt;p&gt;Otra cosa que vi en un &lt;a href=&#34;http://www.imbrandon.com/2006/08/28/kde4-on-osx-no-x11/&#34;&gt;Blog&lt;/a&gt; es el &lt;a href=&#34;http://www.racoonfink.com/archives/000700.html&#34;&gt;port&lt;/a&gt; (muy prematuro) de &lt;a href=&#34;http://www.kde.org/&#34;&gt;KDE&lt;/a&gt; 4 a &lt;a href=&#34;http://www.apple.com/&#34;&gt;Mac&lt;/a&gt; OSX!!&lt;/p&gt;
+&lt;p&gt;Acá hay una captura:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://photos1.blogger.com/blogger2/448/981953459584652/1600/kde4-osx.png&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://photos1.blogger.com/blogger2/448/981953459584652/320/kde4-osx.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Creo que con &lt;a href=&#34;http://www.trolltech.com/products/qt&#34;&gt;QT4.x&lt;/a&gt; GPL para Win/Lin/Mac KDE y sus aplicaciones como &lt;a href=&#34;http://koffice.kde.org/&#34;&gt;KOffice&lt;/a&gt; se van a volver mainstream, evidentemente es una arquitectura muy buena&amp;hellip;. lástima la licencia de las QT ( &lt;a href=&#34;http://www.gnu.org/copyleft/gpl.es.html&#34;&gt;GPL&lt;/a&gt;)&amp;hellip; por eso cada vez que leo algo sobre QT me embalo, pero nunca hago ni aprendo nada, no porque piense en hacer algo cerrado (&amp;ldquo;privativo&amp;rdquo;) de forma inmediata, sino porque me quita la posibilidad de hacer algo comercial en el futuro. Entonces lo veo como una pérdida de tiempo&amp;hellip;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Presentación</title>
+      <link>http://localhost:1313/2006/08/presentacion/</link>
+      <pubDate>Fri, 25 Aug 2006 20:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/2006/08/presentacion/</guid>
+      <description>&lt;p&gt;Hola gente!!!&lt;/p&gt;
+&lt;p&gt;Siempre tuve ganas de hacer un blog y nunca me animé&amp;hellip;. ahora me estoy sacando las ganas, así que ahora sólo me queda:&lt;/p&gt;
+&lt;p&gt;- Tener un hijo
+- Plantar un árbol
+- etc.&lt;/p&gt;
+&lt;p&gt;Me hace acordar a la de &lt;a href=&#34;http://www.simpsoncrazy.com/information/lists/wishlist.shtml&#34;&gt;Homero:&lt;/a&gt;
+1. Make list
+2. Eat a hearty breakfast
+3. Make videotape for Maggie
+4. Have man-to-man with Bart
+5. Listen to Lisa play her sax
+6. Make funeral arrangement
+7. Make peace with Dad
+8. Beer with the boys at the bar
+9. Tell off boss
+10. Go hang gliding
+11. Plant a tree
+12. A final dinner with my beloved family
+13. Be intimate with Marge
+14. Watch the sunrise&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Linux | El Blog de Marcelo!</title>
+<meta name="keywords" content="">
+<meta name="description" content="Blog Informático sobre Programación, Software Libre y/o Open Source, Linux, Python y alguna que otra cosa más...">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/category/linux/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.6330bae568fb8548cd5ae396c8d8ff700d4fc0f161c35971ab47e9c5bf9a2e17.css" integrity="sha256-YzC65Wj7hUjNWuOWyNj/cA1PwPFhw1lxq0fpxb&#43;aLhc=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/category/linux/feed.xml">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/category/linux/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="list" id="top">
+<script>
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="El Blog de Marcelo! (Alt + H)">El Blog de Marcelo!</a>
+            <div class="logo-switches">
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/" title="">
+                    <span></span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/" title="Inicio">
+                    <span>Inicio</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/charlas/" title="Charlas">
+                    <span>Charlas</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/proyectos/" title="Proyectos">
+                    <span>Proyectos</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/publicaciones/" title="Publicaciones">
+                    <span>Publicaciones</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/sobre-mi/" title="Sobre Mí">
+                    <span>Sobre Mí</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/about-me/" title="About Me">
+                    <span>About Me</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/search/" title="🔍">
+                    <span>🔍</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
+<header class="page-header"><div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/category/">Category</a></div>
+  <h1>
+    Linux
+  </h1>
+</header>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Ubuntu Live-USB Personalizada (Distro USB booteable)
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Hola!
+Hace algún tiempo escribí esto y ahora lo voy a plasmar acá. Se trata de una guía para armar una distribución Linux (“customizada” o “personalizada”, si se quiere) booteable desde un dispositivo USB como por ejemplo un Pen Drive, lo que también se llama Live-USB (por su cercana relación con los Live-CDs).
+Mi necesidad era crear un Live-CD bien genérico, con Linux, entorno gráfico (Gnome preferentemente) más una aplicación mía (que arrancara automáticamente) a una PC que no tenía lectora (ni podía tenerla) pero sí tenía USB; con lo que no me importaba si el acceso al dispositivo era de lectura/escritura o de lectura solamente, una vez arrancado Linux. Al final resultó que el acceso era de sólo lectura, pero calculo que googleando un poco o tocando el archivo de configuración del initramfs se puede hacer de lectura/escritura. También puede servir este link, donde no se modifican las opciones “montaje” del dispositivo raíz, pero es una manera alternativa para salir del paso.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2007-12-09 19:13:00 +0000 +0000'>December 9, 2007</span>&nbsp;·&nbsp;10 min&nbsp;·&nbsp;mfernandez</footer>
+  <a class="entry-link" aria-label="post link to Ubuntu Live-USB Personalizada (Distro USB booteable)" href="http://localhost:1313/2007/12/ubuntu-live-usb-personalizada-distro-usb-booteable/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Gio en Nautilus
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Hola gente!
+Bueno, como la mayoría de las cosas en el Mundo Libre, siempre se renuevan y reescriben, los escritorios también. En este caso, Alexander Larsson, desarrollador de Gnome, está trabajando desde hace tiempo en Gio, el nuevo componente de manejo de i/o (“input/output”, entrada/salida) para Gnome. Qué características nuevas puede traer? Vean este video, donde se ve la versión de Nautilus utilizando Gio:
+El post original es éste, y me encanta ver que por fin las operaciones de copiado, eliminación, etc. de archivos se ven reflejadas en el entorno de trabajo (aka el “desktop”) en sí. Usualmente los usuarios se pierden o se confunden haciendo cosas con archivos, y éste IMHO es un muy buen primer paso.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2007-11-23 17:35:00 +0000 +0000'>November 23, 2007</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;mfernandez</footer>
+  <a class="entry-link" aria-label="post link to Gio en Nautilus" href="http://localhost:1313/2007/11/gio-en-nautilus/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Adobe Reader 8.1 para Linux
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p> Si, si, ya sé que para leer simplemente un archivo pdf Evince y/o Kpdf funcionan bien… pero… y si me llega algún pdf “raro”, que aprovecha las características nuevas del formato? (uso de formularios, anotaciones, encriptación, etc.)[1]
+En fin… me enteré hace poquito que Adobe (muy silenciosamente) lanzó su versión 8.1 del “acroread”, es decir, del Adobe Reader para Solaris/Sparc y GNU/Linux/i386. Con este programa tenemos máxima compatibilidad al leer y trabajar con estos archivos.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2007-11-08 03:10:00 +0000 +0000'>November 8, 2007</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;mfernandez</footer>
+  <a class="entry-link" aria-label="post link to Adobe Reader 8.1 para Linux" href="http://localhost:1313/2007/11/adobe-reader-81-para-linux/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Un buen ejemplo de código PyGTK: Decibel
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Decibel Audio Player es un programa liviano, sencillo, no orientado a tener miles de funciones ( Amarok, les suena? :-D ), sino sólo a reproducir música de una lista. La verdad que las capturas de pantalla (“everybody loves screenshots!”) pintaban prometedoras, y cuando leí que estaba hecho en Python &#43; GTK, bajé el fuente a ver qué onda[1]…
+Y la verdad que me está gustando lo que estoy leyendo. La parte de módulos me parece bárbara, da gusto leerla: para hacer un módulo propio (aka ‘plugin’), uno hereda de una clase “Modulo” (también hay un ThreadedModule) y se registra a los eventos que quiere recibir, puede emitir eventos a los demás, etc. Las pantallas están hechas con Glade, el código está bien comentado (y bien identado, es Python! :-D ), el tamaño del proyecto y del fuente es manejable (al usar Glade, casi no se ve código de manejo de ventanas), usa semáforos, locks, está bien modularizado y orientado a objetos, etc.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2007-10-14 15:05:00 +0000 +0000'>October 14, 2007</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;mfernandez</footer>
+  <a class="entry-link" aria-label="post link to Un buen ejemplo de código PyGTK: Decibel" href="http://localhost:1313/2007/10/un-buen-ejemplo-de-codigo-pygtk-decibel/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Jornadas en el LugFi 2007
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Hola!
+Este viernes tuve la oportunidad de ir a las Jornadas 2007 del LugFI, donde me encontré con amigos del UnluX, gente de “la comunidad”, y pasé un muy buen rato escuchando y aprendiendo cosas interesantísimas.
+Resumen de las charlas a las que fui (espero no hacer sentir mal a nadie, los comentarios van con onda y tienden a mejorar, eh):
+14 - 15 hs.: Llegamos tarde a la charla de XUL!!! (ufa). Me gustaría que alguien me pasara las diapositivas al menos (vi que Damián Viano estuvo grabando el audio de las charlas…)
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2007-09-15 13:54:00 +0000 +0000'>September 15, 2007</span>&nbsp;·&nbsp;5 min&nbsp;·&nbsp;mfernandez</footer>
+  <a class="entry-link" aria-label="post link to Jornadas en el LugFi 2007" href="http://localhost:1313/2007/09/jornadas-en-el-lugfi-2007/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Youtube usa Python
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>
+En esta página hay un poquito de detalle sobre la arquitectura que utiliza YouTube, que sirve alrededor de 100.000.000 (sí, cien millones) de videos por día.
+Adivinen qué? Usa Linux &#43; un Application Server escrito en Python. :-D
+Psyco es un “acelerador” de python, digamos que compila “al vuelo” el código que interpreta python y lo convierte a código nativo de la plataforma (como si se hubiera escrito en C, digamos). Si a ellos les da resultados, se podría probar para casos donde se necesite performance.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2007-08-14 13:23:00 +0000 +0000'>August 14, 2007</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;mfernandez</footer>
+  <a class="entry-link" aria-label="post link to Youtube usa Python" href="http://localhost:1313/2007/08/youtube-usa-python/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Krita: Mezcla de Colores
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Krita es una aplicación para edición fotográfica/bitmaps al estilo Photoshop/Gimp/etc.
+El video muestra la implementación de la “mezcla de colores” (yo no entendía qué era hasta que lo ví). Muy bueno, Krita pinta como alternativa a Gimp desde hace rato y ojalá sigan poniéndole pilas los desarrolladores.
+Además de eso, calculo que a fines de año (gracias a QT 4.x GPL para todas las plataformas) va a estar disponible para Windows y Mac.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2007-08-14 13:10:00 +0000 +0000'>August 14, 2007</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;mfernandez</footer>
+  <a class="entry-link" aria-label="post link to Krita: Mezcla de Colores" href="http://localhost:1313/2007/08/krita-mezcla-de-colores/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Muerte al top. Usá htop!
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>A éste post, sólo le agrego la captura obligada:
+Y cómo instalarlo:
+sudo apt-get install htop Htop es un reemplazo más amigable del viejo y querido top de consola, permitiéndote matar y hacer scroll entre los procesos (era hora!).
+Saludos Marcelo
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2007-07-15 23:44:00 +0000 +0000'>July 15, 2007</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;mfernandez</footer>
+  <a class="entry-link" aria-label="post link to Muerte al top. Usá htop!" href="http://localhost:1313/2007/07/muerte-al-top-usa-htop/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">MPX: Multi-Point X Server
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p> Buenas…
+Hace unos meses había salido la noticia de la presentación de Microsoft Surface, que aunque no va a estar disponible hasta fines de 2007, sus videos permiten apreciar una nueva manera de interactuar con una computadora, ya que el Touch Screen horizontal posee un sensor Multi-touch. Una combinación de hardware y software donde una o varias personas interactuaban en una “mesa digital”, al mismo tiempo… realmente es muy interesante! (más alla de que Microsoft lo sepa vender bien).
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2007-07-15 18:07:00 +0000 +0000'>July 15, 2007</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;mfernandez</footer>
+  <a class="entry-link" aria-label="post link to MPX: Multi-Point X Server" href="http://localhost:1313/2007/07/mpx-multi-point-x-server/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Samsung Syncmaster 206/226 NW en Ubuntu
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Tengo chiche nuevo!
+Después de algún tiempo de sacrificado laburo, me dí uno de los mayores gustos “informáticos” hasta ahora: comprarme un monitor LCD de 22&#34; wide… más precisamente el Samsung Syncmaster 226 NW. :-D
+De más está decir que es fantabuloso cómo se ve cualquier cosa que uno quiera ver. No hay “efecto arrastre” al hacer scroll, excelente contraste, excelente resolución y nitidez… Lo único “malo” técnicamente es que no viene con conexión DVI.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2007-07-14 20:58:00 +0000 +0000'>July 14, 2007</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;mfernandez</footer>
+  <a class="entry-link" aria-label="post link to Samsung Syncmaster 206/226 NW en Ubuntu" href="http://localhost:1313/2007/07/samsung-syncmaster-206226-nw-en-ubuntu/"></a>
+</article>
+<footer class="page-footer">
+  <nav class="pagination">
+    <a class="prev" href="http://localhost:1313/category/linux/page/5/">
+      «&nbsp;Prev&nbsp;
+    </a>
+    <a class="next" href="http://localhost:1313/category/linux/page/7/">Next&nbsp;&nbsp;»
+    </a>
+  </nav>
+</footer>
+    </main>
+    
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+</body>
+
+</html>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Pages on El Blog de Marcelo!</title>
+    <link>http://localhost:1313/pages/</link>
+    <description>Recent content in Pages on El Blog de Marcelo!</description>
+    <generator>Hugo -- 0.147.0</generator>
+    <language>es</language>
+    <lastBuildDate>Tue, 06 Apr 2010 15:37:17 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/pages/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About Me</title>
+      <link>http://localhost:1313/about-me/</link>
+      <pubDate>Tue, 06 Apr 2010 15:37:17 +0000</pubDate>
+      <guid>http://localhost:1313/about-me/</guid>
+      <description>&lt;h2 id=&#34;marcelo-fidel-fernández&#34;&gt;Marcelo Fidel Fernández&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Age:&lt;/strong&gt; 43 years old.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Profession:&lt;/strong&gt; Bachelor in Information Systems. Software and Systems Developer. DevOps. Nerd.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Location:&lt;/strong&gt; &lt;a href=&#34;https://en.wikipedia.org/wiki/Moreno_Partido&#34;&gt;La Reja : Buenos Aires : Argentina&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Professional Profile:&lt;/strong&gt; &lt;a href=&#34;http://www.linkedin.com/in/marcelofidelfernandez&#34; title=&#34;Ver mi perfil profesional en LinkedIn&#34;&gt;View in LinkedIn&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;E-Mail:&lt;/strong&gt; &lt;a href=&#34;mailto:marcelo.fidel.fernandez@gmail.com&#34;&gt;marcelo.fidel.fernandez@gmail.com&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Twitter&lt;/strong&gt;: &lt;a href=&#34;http://twitter.com/fidelfernandez&#34;&gt;@fidelfernandez&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Github&lt;/strong&gt;: &lt;a href=&#34;https://github.com/marcelofernandez&#34;&gt;github.com/marcelofernandez&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;biography&#34;&gt;Biography&lt;/h2&gt;
+&lt;p&gt;I work as technical leader, analyst and developer of applications and services, database-oriented, network-oriented or multi-purpose software. I&amp;rsquo;m also a Systems Administrator and a fan of &lt;a href=&#34;http://www.python.org&#34; title=&#34;Python Programming Language&#34;&gt;Python&lt;/a&gt; as a programming language and Linux as Operating System.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Proyectos</title>
+      <link>http://localhost:1313/proyectos/</link>
+      <pubDate>Sun, 19 Jul 2009 17:53:36 +0000</pubDate>
+      <guid>http://localhost:1313/proyectos/</guid>
+      <description>&lt;p&gt;Si bien siempre colaboré con varios proyectos de Software Libre enviando correcciones, comentarios, sólo probándolos o incluso escribiendo en este blog sobre ellos, mi idea es ir publicando las cositas que haga, quizás a alguien más le interese&amp;hellip;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://smsar.sourceforge.net&#34;&gt;Proyecto Sonar&lt;/a&gt; (2005 - 2006): Este proyecto fue mi primera experiencia con varias tecnologías, como ser Java, Eclipse, CVS, SWT, el stack de red de Java, etc., y colaborando/coordinando remotamente con un amigo lo que íbamos haciendo. Se trata de un pequeño programa que permitía el envío de SMSs a celulares en Argentina, estando uno conectado a Internet. Lástima que las telcos cambiaron mucho la forma de hacer esto, y obviamente ya no tiene funcionalidad práctica. Sin embargo, creo que queda la lección de el árbol de clases que armamos y el diseño que le metimos.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/marcelofernandez/python-spdy&#34; title=&#34;Python-SPDY&#34;&gt;Python-SPDY&lt;/a&gt; (2012-2013): Librería Python para parsear y generar frames del protocolo SPDY.&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Charlas</title>
+      <link>http://localhost:1313/charlas/</link>
+      <pubDate>Sat, 18 Jul 2009 23:08:13 +0000</pubDate>
+      <guid>http://localhost:1313/charlas/</guid>
+      <description>&lt;p&gt;Es muy común en el ámbito informático que se armen Conferencias, Reuniones, Cursos y Charlas, en donde se intercambia información, experiencias, eventualmente uno conoce caras detrás de los nombres y mucho más. De vez en cuando me animo a hablarles a algunas gentes, incluso dentro del ámbito universitario, para lo cual suelo crear algunos slides, que voy a dejar acá.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;http://localhost:1313/2009/04/charla-sobre-virtualizacion-slides/&#34;&gt;Virtualización&lt;/a&gt; (y Software Libre) (2010): Introducción al mundo de la virtualización, clasificación,introducción a su funcionamiento y presentación de soluciones basadasen Software Libre, como KVM y VirtualBox.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Publicaciones</title>
+      <link>http://localhost:1313/publicaciones/</link>
+      <pubDate>Sat, 18 Jul 2009 22:08:12 +0000</pubDate>
+      <guid>http://localhost:1313/publicaciones/</guid>
+      <description>&lt;p&gt;&lt;img alt=&#34;writing&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/wp-content/uploads/2009/07/writing1.jpg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Si bien me gusta mucho escribir sobre tecnología, no es muy común que desarrolle artículos profundos y/o de un detalle mayor, con lo cual la gran mayoría de lo que hago cuando tengo tiempo y ganas de escribir cae en los posts del blog.&lt;/p&gt;
+&lt;p&gt;Sin embargo, estas son algunas cosas que armé con anterioridad, ¡y que espero seguir haciendo!:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&amp;ldquo;HTTP/2. Un nuevo protocolo para la web&amp;rdquo;&lt;/strong&gt; v1.0 (2016): Es un documento que armé dentro del marco del grupo de Teleinformática y Redes de la UNLu, sobre el protocolo HTTP/2. La idea es ir actualizándolo y agregarle contenido, como ser HPACK, estudiar alguna implementación particular, y crear una guía de &amp;ldquo;buenas prácticas&amp;rdquo; migración de sitios web sobre HTTP/1.1.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Sobre Mí</title>
+      <link>http://localhost:1313/sobre-mi/</link>
+      <pubDate>Mon, 25 May 2009 00:36:39 +0000</pubDate>
+      <guid>http://localhost:1313/sobre-mi/</guid>
+      <description>&lt;h2 id=&#34;marcelo-fidel-fernández&#34;&gt;Marcelo Fidel Fernández&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Edad:&lt;/strong&gt; 43 años.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Profesión:&lt;/strong&gt; Licenciado en Sistemas. Líder de Proyectos, Programador, Administrador de Redes y Servicios, hoy devenido en DevOps.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Ubicación: &lt;a href=&#34;https://en.wikipedia.org/wiki/Moreno_Partido&#34;&gt;La Reja : Buenos Aires : Argentina&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Perfil Laboral y Profesional:&lt;/strong&gt; &lt;a href=&#34;https://www.linkedin.com/in/marcelofidelfernandez&#34; title=&#34;Ver mi perfil profesional en LinkedIn&#34;&gt;Ver en LinkedIn&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Correo Electrónico:&lt;/strong&gt; &lt;a href=&#34;mailto:marcelo.fidel.fernandez@gmail.com&#34;&gt;marcelo.fidel.fernandez@gmail.com&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Twitter&lt;/strong&gt;: &lt;a href=&#34;https://twitter.com/fidelfernandez&#34;&gt;@fidelfernandez&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Github:&lt;/strong&gt; &lt;a href=&#34;https://github.com/marcelofernandez&#34;&gt;github.com/marcelofernandez&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;biografía&#34;&gt;Biografía&lt;/h2&gt;
+&lt;p&gt;Analista y desarrollador de aplicaciones o servicios informáticos, orientadas a bases de datos, a la red o a múltiples propósitos. Administrador de Sistemas y admirador de &lt;a href=&#34;http://www.python.org&#34; title=&#34;Python Programming Language&#34;&gt;Python&lt;/a&gt; como Lenguaje de Programación y Linux como Sistema Operativo.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

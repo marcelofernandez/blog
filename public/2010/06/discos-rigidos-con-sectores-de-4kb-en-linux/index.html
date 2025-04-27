@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Discos Rígidos con Sectores de 4KB en Linux | El Blog de Marcelo!</title>
+<meta name="keywords" content="">
+<meta name="description" content="Actualización (Julio 2010): Armé y redacté no tan informalmente este post en forma de artículo; el mismo está disponible para su consulta, crítica y mejoras en la sección de Publicaciones del sitio.
+Los nuevos discos de Western Digital 
+En estos días tuve la oportunidad de comprar y configurar una máquina Ubuntu con un disco rígido Western Digital de 1,5 Terabytes (1500 Gigabytes aprox.); más precisamente el modelo WD15EARS, con 64 MB de caché, velocidad de rotación que varía entre 5400 y 7200 RPMs (llamado &quot; IntelliSeek&quot;), interfaz SATA II (3 Gb/seg), y que incluye una nueva tecnología de la marca conocida como &quot; Advanced Format Drive&quot; (paper aquí).">
+<meta name="author" content="mfernandez">
+<link rel="canonical" href="http://localhost:1313/2010/06/discos-rigidos-con-sectores-de-4kb-en-linux/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.6330bae568fb8548cd5ae396c8d8ff700d4fc0f161c35971ab47e9c5bf9a2e17.css" integrity="sha256-YzC65Wj7hUjNWuOWyNj/cA1PwPFhw1lxq0fpxb&#43;aLhc=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/2010/06/discos-rigidos-con-sectores-de-4kb-en-linux/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="" id="top">
+<script>
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="El Blog de Marcelo! (Alt + H)">El Blog de Marcelo!</a>
+            <div class="logo-switches">
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/" title="">
+                    <span></span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/" title="Inicio">
+                    <span>Inicio</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/charlas/" title="Charlas">
+                    <span>Charlas</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/proyectos/" title="Proyectos">
+                    <span>Proyectos</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/publicaciones/" title="Publicaciones">
+                    <span>Publicaciones</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/sobre-mi/" title="Sobre Mí">
+                    <span>Sobre Mí</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/about-me/" title="About Me">
+                    <span>About Me</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/search/" title="🔍">
+                    <span>🔍</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/posts/">Posts</a></div>
+    <h1 class="post-title entry-hint-parent">
+      Discos Rígidos con Sectores de 4KB en Linux
+    </h1>
+    <div class="post-meta"><span title='2010-06-14 02:52:03 +0000 +0000'>June 14, 2010</span>&nbsp;·&nbsp;12 min&nbsp;·&nbsp;mfernandez
+
+</div>
+  </header> 
+  <div class="post-content"><p><strong>Actualización (Julio 2010)</strong>: Armé y redacté no tan informalmente este post en forma de artículo; el mismo está disponible para su consulta, crítica y mejoras en la sección de <a href="/publicaciones/">Publicaciones</a> del sitio.</p>
+<h2 id="los-nuevos-discos-de-western-digital">Los nuevos discos de Western Digital <a href="http://www.wdc.com/en/products/products.asp?driveid=772"><img loading="lazy" src="/wp-content/uploads/2010/06/wdfDesktop_CaviarGreen_SATA64.jpg"></a><a hidden class="anchor" aria-hidden="true" href="#los-nuevos-discos-de-western-digital">#</a></h2>
+<p>En estos días tuve la oportunidad de comprar y configurar una máquina Ubuntu con un disco rígido Western Digital de 1,5 Terabytes (1500 Gigabytes aprox.); más precisamente el modelo <a href="http://www.wdc.com/en/products/products.asp?driveid=772">WD15EARS</a>, con 64 MB de caché, velocidad de rotación que varía entre 5400 y 7200 RPMs (llamado &quot; <a href="http://www.wdc.com/en/flash/index.asp?family=intelliseek">IntelliSeek</a>&quot;), interfaz SATA II (3 Gb/seg), y que incluye una nueva tecnología de la marca conocida como &quot; <a href="http://www.wdc.com/en/products/advancedformat/">Advanced Format Drive</a>&quot; (paper <a href="http://www.wdc.com/wdproducts/library/?id=216&amp;type=87">aquí</a>).</p>
+<p>Si bien yo pensé que estaba comprando un disco más aunque sólo de mayor capacidad, luego al mirarlo <a href="http://techreport.com/articles.x/15769">más de cerca</a> en su etiqueta decía:</p>
+<p><a href="http://www.wdc.com/en/products/advancedformat/"><img loading="lazy" src="/wp-content/uploads/2010/06/WD-Align_chart_r2.jpg"></a></p>
+<p>Resumiendo, dice que:</p>
+<ul>
+<li>Si va a utilizar el disco con Windows XP con una sola partición en el disco, sólo ponga el Jumper en los pins 7-8 del HD.</li>
+<li>Si va a utilizar el disco con Windows XP con más de una partición en el disco, use la utilidad &ldquo;WD Align&rdquo;.</li>
+<li><strong>Si va a utilizar otro SO (Windows Vista/7, Mac OS X, o Linux), el disco no requiere preparación adicional para el particionamiento.</strong></li>
+</ul>
+<p>&ldquo;Bueno, total no uso Windows&rdquo;, pensé. Particioné y formatié con el <a href="http://gparted.sourceforge.net/">GParted</a> el disco y me puse a utilizarlo normalmente. No noté nada raro, hasta que unos días después googleando sobre experiencias con éste disco y Linux me encontré con <a href="http://community.wdc.com/t5/Desktop/Problem-with-WD-Advanced-Format-drive-in-LINUX-WD15EARS/td-p/6395/">este hilo en el foro de WD</a> (&quot; <em>Problem with WD Advanced Format drive in LINUX (WD15EARS)</em>&quot;). Al parecer, mucha gente utilizando Linux con estos discos notaba una lentitud excesiva en cada cosa que hacía, como si hubiera un problema, no del hardware fallando y perdiendo datos, sino de demoras muy grandes en lectura/escritura. Resultó que <strong>aún usando Linux, el disco sí requiere preparación adicional, al contrario de lo que dice el fabricante</strong>, como veremos más adelante.</p>
+<h2 id="sectores-de-4-kbytes-en-vez-de-512-bytes-por-qué">Sectores de 4 KBytes en vez de 512 Bytes, ¿Por qué?<a hidden class="anchor" aria-hidden="true" href="#sectores-de-4-kbytes-en-vez-de-512-bytes-por-qué">#</a></h2>
+<p><a href="http://en.wikipedia.org/wiki/Cylinder-head-sector#cite_note-0">Desde los primeros días</a> de los discos rígidos, la mínima unidad de almacenamiento direccionable fue el <a href="http://en.wikipedia.org/wiki/Cylinder-head-sector">sector</a>, de <strong>512 Bytes</strong> de capacidad. Esta granularidad se eligió porque siempre fue un buen balance entre la <a href="http://elezeta.net/2004/09/16/fragmentacin-de-que-se-trata/">fragmentación interna</a> de los archivos <a href="#nota1">*</a> y el manejo físico del disco relativo a la corrección de errores, flags de inicio/fin del sector más la separación inter-sector ( <em>gap</em>). Toda la industria de la PC y el software creado para ella se apoyó en este estándar de facto, y casi ningún utilitario, BIOSes, ni Sistema Operativo se pensaron para un posible cambio&hellip; sólo hasta hace unos pocos años.</p>
+<p>Western Digital es una de las primeras marcas en sacar al mercado discos con sectores 8 veces más grandes que los anteriores, de 4 KBytes (4096 Bytes); estos discos son etiquetados como que poseen &ldquo;Advanced Format Technology&rdquo; (&ldquo;Tecnología de Formato Avanzado&rdquo;), y <strong>es lo primero que uno debería empezar a mirar al comprar discos nuevos de gran tamaño (1 TB o superior), ya sean de WD o de otros fabricantes</strong>. Casualmente (o no tanto), esto incluye al disco que compré.</p>
+<p>El motivo del cambio, según lo que explica <a href="http://www.anandtech.com/show/2888">este excelente post de AnandTech</a>, se debe a que existen <strong>3 factores esenciales que deben compensarse para buscar capacidades de almacenamiento cada vez mayores</strong> en el mismo tamaño de disco (que por lo general es de 3,5 pulgadas):</p>
+<ol>
+<li><a href="http://en.wikipedia.org/wiki/Memory_storage_density">Densidad de área</a>: Cuántos bits se pueden guardar en un área determinada (Bits/Pulgada cuadrada). Hasta ahora, con la <a href="http://en.wikipedia.org/wiki/Perpendicular_recording">Grabación Perpendicular</a>, estamos en el orden de unos 300/500 Gigabits por pulgada cuadrada ( <a href="http://arstechnica.com/hardware/news/2006/09/7765.ars">1</a>, <a href="http://arstechnica.com/science/news/2010/05/new-hard-drive-write-method-packs-in-one-terabyte-per-inch.ars">2</a>).</li>
+<li><a href="http://en.wikipedia.org/wiki/Signal-to-noise_ratio">Relación Señal/Ruido</a>: Al leer de los platos del disco, pueden ocurrir fallos, ya que el almacenamiento magnético en definitiva es analógico; y la señal, para ser convertida desde/hacia binario, debe ser procesada. Cuanto mejor sea la relación de la señal con respecto al ruido en el momento de leer o escribir en los platos, más confiable es la operación.</li>
+<li>El uso del <a href="http://en.wikipedia.org/wiki/Forward_error_correction">Código de Corrección de Errores - ECC</a>: Cada sector del disco incluye un área reservada para almacenar el ECC, imprescindible para recuperarse ante cualquier error de lectura/escritura.</li>
+</ol>
+<p>A medida que la Densidad del Area se incrementa, los sectores (siempre de 512 Bytes) lógicamente se reducen en el área que ocupan físicamente. Esto hace que se incremente el Ruido con respecto a la Señal porque las señales son más débiles y hay más interferencia de los datos adyacentes; por lo tanto el valor de SNR disminuye, y a su vez, la probabilidad de errores de lectura aumenta. Entonces, es necesario mejorar la capacidad del ECC para detectar y corregir errores, generalmente agregándole más bits. Esto requiere de más espacio físico reservado para un sector (siempre de 512 Bytes), y aquí volvemos a empezar.</p>
+<p>Lo que sucede es que aquí está el punto; se está llegando a un límite donde no se puede seguir con sectores de 512 Bytes y aumentar el tamaño total del disco, ya que todo este nuevo espacio obtenido con una mayor densidad termina no siendo utilizable, sino que será mayormente para el ECC (es decir, redundancia para contemplar posibles errores).</p>
+<p>La solución al problema es que, para almacenar más información globalmente, hay que incrementar la eficiencia del ECC. Y esto se logra haciendo que éste abarque más datos que sólo 512 Bytes; <strong>el ECC es mucho más eficiente (ocupa menos espacio en comparación) si su código de corrección abarca más datos</strong>, digamos, 4096 Bytes.</p>
+<p>Por ejemplo, para detectar y corregir corregir 4096 Bytes divididos en 8 sectores de 512 Bytes (de la vieja forma), necesitamos &ldquo;gastar&rdquo; 320 Bytes de ECC (ya que tenemos 40 Bytes por cada ECC de 512 Bytes), mientras que si usamos 1 sector de 4096 Bytes sólo vamos a usar 100 Bytes de ECC. Como se puede ver, uno se ahorra 220 Bytes de <em>overhead</em> por cada 4KB que tiene el disco para guardar cosas; en 1500 GB (= 1.500.000.000 KB / 4 = 375.000.000 sectores de 4 KB * 0,22 KB) son 82,5 GB más de espacio disponible para almacenar datos de usuario y no ECC (un 5,5% más). Esto y sin contar el espacio &ldquo;desperdiciado&rdquo; para los <em>gaps</em> entre sectores y el flag de sincronización/inicio de sector (para 4 KB, antes eran 8 y ahora es sólo 1). Además, estos 100 Bytes de ECC mejoran en un 50% la capacidad de detectar errores en &ldquo;ráfaga&rdquo; comparado con el anterior, es decir, <strong>el nuevo es un mejor y más eficiente ECC</strong>.</p>
+<p>Por todo esto, para tamaños tan grandes de disco, usar sectores de 4KB nos permite aprovechar de manera más eficiente la mayor densidad del área que disponemos. <strong>¿Y por qué 4 KB? No es un número al azar</strong>; coincide con el tamaño de las páginas de memoria en la arquitectura x86 y con el tamaño de <a href="http://en.wikipedia.org/wiki/Data_cluster">cluster</a> por defecto de la mayoría de los sistemas de archivos que pululan por ahí, con lo cual la velocidad de transferencia de páginas desde/hacia el disco no se ve afectada, y la fragmentación interna de los archivos almacenados es la misma que con sectores de 512 Bytes.</p>
+<p>Quizás con el gráfico se entienda un poco más; allí se ve cómo ocupan más lugar los 8 sectores de 512 Bytes puestos a la par del sector de 4 KB:</p>
+<p><a href="http://www.anandtech.com/show/2888"><img loading="lazy" src="/wp-content/uploads/2010/06/4kview.png"></a></p>
+<p>Nuevamente (espero comentarios y corrijo en todo caso), toda esta info está bien explicada en el <a href="http://www.anandtech.com/show/2888">artículo de AnandTech</a>, en <a href="http://arstechnica.com/microsoft/news/2010/03/why-new-hard-disks-might-not-be-much-fun-for-xp-users.ars">este artículo de Ars Technica</a>, en el <a href="http://www.wdc.com/wdproducts/library/?id=216&amp;type=87">Paper de WD</a> y en <a href="http://www.ibm.com/developerworks/linux/library/l-4kb-sector-disks/index.html?ca=dgr-lnxw074KB-Disksdth-LX">este artículo de IBM</a>.</p>
+<p>Bien, &ldquo;¿Y qué gano con sectores más grandes? ¿en qué me afecta?&rdquo;, es lo primero que uno se pregunta. Claramente, y por lo explicado recientemente, <strong>se gana en confiabilidad y capacidad de almacenamiento hoy y a futuro</strong>. <strong>¿Cuáles son las contras? básicamente, el proceso de migración</strong>, que como ya se dijo, deben afrontarse desde varias capas de software, desde el BIOS, pasando por el Sistema Operativo y llegando a las herramientas de defragmentación, clonado y administración de discos.</p>
+<h2 id="y-qué-problema-hay-con-linux-particiones-desalineadas">¿Y qué problema hay con Linux? Particiones desalineadas.<a hidden class="anchor" aria-hidden="true" href="#y-qué-problema-hay-con-linux-particiones-desalineadas">#</a></h2>
+<p>Teniendo en mente esto, esta serie de discos de WD <strong>emula ser un disco con sectores &ldquo;lógicos&quot;de 512 bytes, pero en realidad trabaja internamente con sectores &ldquo;físicos&rdquo; de 4 KB</strong>. De esta manera, los sectores de 512 bytes lógicos se ven así, dentro de uno de 4 KB:</p>
+<p><a href="http://www.anandtech.com/show/2888"><img loading="lazy" src="/wp-content/uploads/2010/06/512B.png"></a> Recordemos, la mínima unidad &ldquo;direccionable&rdquo; real del disco son 4 KB (un sector), y el tamaño de cluster por defecto (la mínima unidad &ldquo;direccionable&rdquo; por el sistema de archivos) son 4 KB; esto quiere decir en definitiva que el disco, cada vez que lee y escribe lo hace en unidades de 4 KB. Luego le agregamos la capa de emulación, para hacerlo compatible con los SOs que tenemos ahora. Bien, supongamos que vamos a crear una sola partición en el disco. <strong>¿Qué pasa si esta partición, donde vamos a guardar los datos, comienza en el sector 1 (o cualquier sector no múltiplo de 8 ) del disco en vez del sector 0?</strong> Va a pasar esto:</p>
+<p><a href="http://www.anandtech.com/show/2888"><img loading="lazy" src="/wp-content/uploads/2010/06/sector.png"></a></p>
+<p>Lo que sucede es que el primer cluster empieza y termina en dos sectores físicos; está &ldquo;desalineado&rdquo; con respecto a ellos. En realidad, todos los clusters de la partición estarán de esta forma, comenzando y finalizando a &ldquo;destiempo&rdquo; respecto de los bloques físicos. El problema que esto conlleva es que si el SO va a escribir algo en el disco (donde el &ldquo;algo&rdquo; es como mínimo generalmente un cluster de 4 KB), supongamos el cluster resaltado en azul, esto se transforma físicamente en:</p>
+<ol>
+<li>Leer los 4 KB del sector físico 0.</li>
+<li>Modificar los 7 sectores lógicos afectados por esta operación.</li>
+<li>Grabar los 4 KB del sector físico 0.</li>
+<li>Leer los 4 KB del sector físico 1.</li>
+<li>Modificar el 8vo sector lógico.</li>
+<li>Grabar los 4 KB del sector físico 1.</li>
+</ol>
+<p>Esto es, 2 operaciones de Leer-Modificar-Grabar ( <a href="http://en.wikipedia.org/wiki/Read-modify-write">RMW</a>) atómicas, una para cada sector físico, que involucra una vuelta ( <em>spin</em>) de disco por cada lectura/escritura de la lista enumerada. Es decir, <strong>que una partición comience en un sector lógico de 512 Bytes no múltiplo de 8 hace excesivamente lento el acceso al disco porque las operaciones llevan mucho, mucho más tiempo que antes</strong>.</p>
+<p>Y la cuestión reside aquí; si bien Linux a esta altura ya está preparado para manejar discos con sectores de 4 KB, <strong>el</strong> <strong>problema es que el disco &ldquo;le dice&rdquo; a Linux que tiene sectores físicos de 512 bytes por la emulación,</strong> <strong><a href="http://thread.gmane.org/gmane.linux.utilities.util-linux-ng/2926">cuando internamente trabaja con 4 KB</a></strong>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>marcelo@marcelo:~$ sudo hdparm -I /dev/sdb | grep Sector
+</span></span><span style="display:flex;"><span>	Logical/Physical Sector size:           512 bytes
+</span></span></code></pre></div><p>¿Y cuál es la consecuencia? La posibilidad de no tener los sectores alineados. Fdisk y cualquier software particionador de discos de Linux comienza la primer partición en el sector 63 de aquellos discos que reconoce como de sectores de 512 Bytes <a href="#nota2">**</a>. Esto hace que el disco funcione muy lento, como se describía en <a href="http://community.wdc.com/t5/Desktop/Problem-with-WD-Advanced-Format-drive-in-LINUX-WD15EARS/td-p/6395/">el foro de WD</a> que cité al comienzo.</p>
+<h2 id="cómo-particionar-estos-discos-en-general-y-en-linux-en-particular">Cómo particionar estos discos en general y en Linux en particular<a hidden class="anchor" aria-hidden="true" href="#cómo-particionar-estos-discos-en-general-y-en-linux-en-particular">#</a></h2>
+<p>Bueno, ¿cómo se hace para crear particiones de manera alineada? Es relativamente fácil. Según <a href="http://thunk.org/tytso/blog/2009/02/20/aligning-filesystems-to-an-ssds-erase-block-size/">Ted Ts&rsquo;o</a>, donde explica que hay un problema parecido con los nuevos discos <a href="http://en.wikipedia.org/wiki/Solid_state_storage">SSD</a>, hay que ejecutar <a href="http://tldp.org/HOWTO/Partition/fdisk_partitioning.html">fdisk</a> con los parámetros &ldquo;-H 224 -S 56 /dev/sdX&rdquo;, siendo /dev/sdX el disco en cuestión; esto hace que todas las particiones se creen en la sesión interactiva de fdisk en sectores múltiplos de 8. Otra opción es usar <a href="http://www.gnu.org/software/parted/index.shtml">GNU Parted</a> con los parámetros &ldquo;unit s&rdquo;, y de esta manera deja a uno configurar el primer sector de cada partición (más info <a href="http://www.gnu.org/software/parted/manual/html_node/Running-Parted.html#Running-Parted">acá</a>).</p>
+<p>En mi caso necesitaba crear 4 particiones. Este es un ejemplo de particiones bien alineadas, el último comando es para mostrar el tamaño de cada partición nada más:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>marcelo@marcelo:~$ sudo parted /dev/sdb unit s print
+</span></span><span style="display:flex;"><span>Modelo: ATA WDC WD15EARS-00S (scsi)
+</span></span><span style="display:flex;"><span>Disco /dev/sdb: 2930277168s
+</span></span><span style="display:flex;"><span>Tamaño de sector (lógico/físico): 512B/512B
+</span></span><span style="display:flex;"><span>Tabla de particiones. msdos
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Numero  Inicio       Fin          Tamaño       Tipo     Sistema de ficheros  Banderas
+</span></span><span style="display:flex;"><span> 1      56s          41959679s    41959624s    primary  ext4
+</span></span><span style="display:flex;"><span> 2      41959680s    46161919s    4202240s     primary
+</span></span><span style="display:flex;"><span> 3      46161920s    1673570303s  1627408384s  primary  ext4
+</span></span><span style="display:flex;"><span> 4      1673570304s  2930265855s  1256695552s  primary                       raid
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>marcelo@marcelo:~$ sudo fdisk -lu /dev/sdb
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Disco /dev/sdb: 1500.3 GB, 1500301910016 bytes
+</span></span><span style="display:flex;"><span>224 cabezas, 56 sectores/pista, 233599 cilindros, 2930277168 sectores en total
+</span></span><span style="display:flex;"><span>Unidades = sectores de 1 * 512 = 512 bytes
+</span></span><span style="display:flex;"><span>Tamaño de sector (lógico / físico): 512 bytes / 512 bytes
+</span></span><span style="display:flex;"><span>Tamaño E/S (mínimo/óptimo): 512 bytes / 512 bytes
+</span></span><span style="display:flex;"><span>Identificador de disco: 0x00094da1
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Dispositivo Inicio    Comienzo      Fin      Bloques  Id  Sistema
+</span></span><span style="display:flex;"><span>/dev/sdb1   *          56    41959679    20979812   83  Linux
+</span></span><span style="display:flex;"><span>/dev/sdb2        41959680    46161919     2101120   82  Linux swap / Solaris
+</span></span><span style="display:flex;"><span>/dev/sdb3        46161920  1673570303   813704192   83  Linux
+</span></span><span style="display:flex;"><span>/dev/sdb4      1673570304  2930265855   628347776   fd  Linux raid autodetect
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>marcelo@marcelo:~$ sudo parted /dev/sdb print
+</span></span><span style="display:flex;"><span>Modelo: ATA WDC WD15EARS-00S (scsi)
+</span></span><span style="display:flex;"><span>Disco /dev/sdb: 1500GB
+</span></span><span style="display:flex;"><span>Tamaño de sector (lógico/físico): 512B/512B
+</span></span><span style="display:flex;"><span>Tabla de particiones. msdos
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Numero  Inicio  Fin     Tamaño  Tipo     Sistema de ficheros  Banderas
+</span></span><span style="display:flex;"><span> 1      28,7kB  21,5GB  21,5GB  primary  ext4
+</span></span><span style="display:flex;"><span> 2      21,5GB  23,6GB  2152MB  primary
+</span></span><span style="display:flex;"><span> 3      23,6GB  857GB   833GB   primary  ext4
+</span></span><span style="display:flex;"><span> 4      857GB   1500GB  643GB   primary                       raid
+</span></span></code></pre></div><p>Nuevamente: Lo más importante para que los clusters estén alineados con los sectores físicos del disco es que cada partición debe comenzar en un sector múltiplo de 8, como el 56, ﻿41959680, 46161920 y 1673570304 de este caso.</p>
+<h2 id="conclusión">Conclusión<a hidden class="anchor" aria-hidden="true" href="#conclusión">#</a></h2>
+<p>Bueno, fue un artículo muy largo, donde me pareció que servía explayarse en el porqué de los sectores más grandes y qué problemas trae.  Tuve la grata oportunidad de intercambiar algunos mails al respecto con <a href="http://olo.org.pl/dr/cv_eng">Aleksander Adamowski</a>, la persona que en la lista de <a href="http://userweb.kernel.org/~kzak/util-linux-ng/">util-linux-ng</a> &quot; <a href="http://thread.gmane.org/gmane.linux.utilities.util-linux-ng/2926">descubrió</a>&rdquo; el inconveniente de la lentitud con esta serie de discos WD a base de un lote de pruebas disponible <a href="http://olo.org.pl/files/hw/postmark-automated/">aquí</a>.</p>
+<p>Aleksander me recomendó, en resumidas cuentas, al trabajar con discos &gt; 1 TB &ldquo;sospechosos&rdquo; de tener sectores de 4 KB:</p>
+<ul>
+<li>&ldquo;Las unidades de medida son críticas. Asegúrate que estás realmente operando a nivel de sectores <a href="#nota3">\<em>\</em>\*</a></li>
+<li>Después , hacer un test de performance es buena idea.</li>
+<li>Para esto, primero trata de crear una partición desalineada, crea un sistema de archivos, y ejecuta el benchmark de <a href="http://www.shub-internet.org/brad/FreeBSD/postmark.html">postmark</a> usando el archivo de configuración que publiqué ( <a href="http://olo.org.pl/files/hw/postmark-automated/postmark-quick.conf">http://olo.org.pl/files/hw/postmark-automated/postmark-quick.conf</a> - por supuesto, modifica la opción &ldquo;location&rdquo; en ese archivo acorde al disco a comprobar.</li>
+<li>Luego, borra todas las particiones y haz lo mismo en una partición alineada. Los resultados deben ser <strong>mucho</strong> mejores en cuanto al rendimiento. Si no lo son, el disco probablemente tiene sectores físicos de 512 Bytes.&rdquo;</li>
+</ul>
+<p>En resumen, hay que estar atentos. Sería bueno que los futuros discos que salgan con sectores de 4 KB informaran al SO qué estructura real tienen, y eliminar el &ldquo;modo compatibilidad&rdquo; de una vez por todas.</p>
+<p>Espero que les sirva.
+Saludos</p>
+<p>\* En tiempos donde la capacidad de los discos era muy pequeña comparada con los de ahora, el tamaño de un cluster del sistema de archivos era igual al de un sector.</p>
+<p>\<em>\</em> La utilización del sector 63 corresponde a que generalmente (y por herencia histórica del <a href="http://en.wikipedia.org/wiki/Cylinder-head-sector">modelo de direccionamiento CHS</a>) es el primer sector del track número 1. El track 0 siempre se utilizó para el <a href="http://en.wikipedia.org/wiki/Master_boot_record">MBR / Master Boot Record</a>.</p>
+<p>\<em>\</em>\* Esto porque por defecto las herramientas de particionamiento Linux no trabajan con sectores; fdisk trabaja con cilindros por ejemplo.</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+
+<ul class="share-buttons">
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share Discos Rígidos con Sectores de 4KB en Linux on x"
+            href="https://x.com/intent/tweet/?text=Discos%20R%c3%adgidos%20con%20Sectores%20de%204KB%20en%20Linux&amp;url=http%3a%2f%2flocalhost%3a1313%2f2010%2f06%2fdiscos-rigidos-con-sectores-de-4kb-en-linux%2f&amp;hashtags=">
+            <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+                <path
+                    d="M512 62.554 L 512 449.446 C 512 483.97 483.97 512 449.446 512 L 62.554 512 C 28.03 512 0 483.97 0 449.446 L 0 62.554 C 0 28.03 28.029 0 62.554 0 L 449.446 0 C 483.971 0 512 28.03 512 62.554 Z M 269.951 190.75 L 182.567 75.216 L 56 75.216 L 207.216 272.95 L 63.9 436.783 L 125.266 436.783 L 235.9 310.383 L 332.567 436.783 L 456 436.783 L 298.367 228.367 L 432.367 75.216 L 371.033 75.216 Z M 127.633 110 L 164.101 110 L 383.481 400.065 L 349.5 400.065 Z" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share Discos Rígidos con Sectores de 4KB en Linux on linkedin"
+            href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2flocalhost%3a1313%2f2010%2f06%2fdiscos-rigidos-con-sectores-de-4kb-en-linux%2f&amp;title=Discos%20R%c3%adgidos%20con%20Sectores%20de%204KB%20en%20Linux&amp;summary=Discos%20R%c3%adgidos%20con%20Sectores%20de%204KB%20en%20Linux&amp;source=http%3a%2f%2flocalhost%3a1313%2f2010%2f06%2fdiscos-rigidos-con-sectores-de-4kb-en-linux%2f">
+            <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+                <path
+                    d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-288.985,423.278l0,-225.717l-75.04,0l0,225.717l75.04,0Zm270.539,0l0,-129.439c0,-69.333 -37.018,-101.586 -86.381,-101.586c-39.804,0 -57.634,21.891 -67.617,37.266l0,-31.958l-75.021,0c0.995,21.181 0,225.717 0,225.717l75.02,0l0,-126.056c0,-6.748 0.486,-13.492 2.474,-18.315c5.414,-13.475 17.767,-27.434 38.494,-27.434c27.135,0 38.007,20.707 38.007,51.037l0,120.768l75.024,0Zm-307.552,-334.556c-25.674,0 -42.448,16.879 -42.448,39.002c0,21.658 16.264,39.002 41.455,39.002l0.484,0c26.165,0 42.452,-17.344 42.452,-39.002c-0.485,-22.092 -16.241,-38.954 -41.943,-39.002Z" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share Discos Rígidos con Sectores de 4KB en Linux on reddit"
+            href="https://reddit.com/submit?url=http%3a%2f%2flocalhost%3a1313%2f2010%2f06%2fdiscos-rigidos-con-sectores-de-4kb-en-linux%2f&title=Discos%20R%c3%adgidos%20con%20Sectores%20de%204KB%20en%20Linux">
+            <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+                <path
+                    d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-3.446,265.638c0,-22.964 -18.616,-41.58 -41.58,-41.58c-11.211,0 -21.361,4.457 -28.841,11.666c-28.424,-20.508 -67.586,-33.757 -111.204,-35.278l18.941,-89.121l61.884,13.157c0.756,15.734 13.642,28.29 29.56,28.29c16.407,0 29.706,-13.299 29.706,-29.701c0,-16.403 -13.299,-29.702 -29.706,-29.702c-11.666,0 -21.657,6.792 -26.515,16.578l-69.105,-14.69c-1.922,-0.418 -3.939,-0.042 -5.585,1.036c-1.658,1.073 -2.811,2.761 -3.224,4.686l-21.152,99.438c-44.258,1.228 -84.046,14.494 -112.837,35.232c-7.468,-7.164 -17.589,-11.591 -28.757,-11.591c-22.965,0 -41.585,18.616 -41.585,41.58c0,16.896 10.095,31.41 24.568,37.918c-0.639,4.135 -0.99,8.328 -0.99,12.576c0,63.977 74.469,115.836 166.33,115.836c91.861,0 166.334,-51.859 166.334,-115.836c0,-4.218 -0.347,-8.387 -0.977,-12.493c14.564,-6.47 24.735,-21.034 24.735,-38.001Zm-119.474,108.193c-20.27,20.241 -59.115,21.816 -70.534,21.816c-11.428,0 -50.277,-1.575 -70.522,-21.82c-3.007,-3.008 -3.007,-7.882 0,-10.889c3.003,-2.999 7.882,-3.003 10.885,0c12.777,12.781 40.11,17.317 59.637,17.317c19.522,0 46.86,-4.536 59.657,-17.321c3.016,-2.999 7.886,-2.995 10.885,0.008c3.008,3.011 3.003,7.882 -0.008,10.889Zm-5.23,-48.781c-16.373,0 -29.701,-13.324 -29.701,-29.698c0,-16.381 13.328,-29.714 29.701,-29.714c16.378,0 29.706,13.333 29.706,29.714c0,16.374 -13.328,29.698 -29.706,29.698Zm-160.386,-29.702c0,-16.381 13.328,-29.71 29.714,-29.71c16.369,0 29.689,13.329 29.689,29.71c0,16.373 -13.32,29.693 -29.689,29.693c-16.386,0 -29.714,-13.32 -29.714,-29.693Z" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share Discos Rígidos con Sectores de 4KB en Linux on facebook"
+            href="https://facebook.com/sharer/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2f2010%2f06%2fdiscos-rigidos-con-sectores-de-4kb-en-linux%2f">
+            <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+                <path
+                    d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-106.468,0l0,-192.915l66.6,0l12.672,-82.621l-79.272,0l0,-53.617c0,-22.603 11.073,-44.636 46.58,-44.636l36.042,0l0,-70.34c0,0 -32.71,-5.582 -63.982,-5.582c-65.288,0 -107.96,39.569 -107.96,111.204l0,62.971l-72.573,0l0,82.621l72.573,0l0,192.915l-191.104,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Z" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share Discos Rígidos con Sectores de 4KB en Linux on whatsapp"
+            href="https://api.whatsapp.com/send?text=Discos%20R%c3%adgidos%20con%20Sectores%20de%204KB%20en%20Linux%20-%20http%3a%2f%2flocalhost%3a1313%2f2010%2f06%2fdiscos-rigidos-con-sectores-de-4kb-en-linux%2f">
+            <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+                <path
+                    d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-58.673,127.703c-33.842,-33.881 -78.847,-52.548 -126.798,-52.568c-98.799,0 -179.21,80.405 -179.249,179.234c-0.013,31.593 8.241,62.428 23.927,89.612l-25.429,92.884l95.021,-24.925c26.181,14.28 55.659,21.807 85.658,21.816l0.074,0c98.789,0 179.206,-80.413 179.247,-179.243c0.018,-47.895 -18.61,-92.93 -52.451,-126.81Zm-126.797,275.782l-0.06,0c-26.734,-0.01 -52.954,-7.193 -75.828,-20.767l-5.441,-3.229l-56.386,14.792l15.05,-54.977l-3.542,-5.637c-14.913,-23.72 -22.791,-51.136 -22.779,-79.287c0.033,-82.142 66.867,-148.971 149.046,-148.971c39.793,0.014 77.199,15.531 105.329,43.692c28.128,28.16 43.609,65.592 43.594,105.4c-0.034,82.149 -66.866,148.983 -148.983,148.984Zm81.721,-111.581c-4.479,-2.242 -26.499,-13.075 -30.604,-14.571c-4.105,-1.495 -7.091,-2.241 -10.077,2.241c-2.986,4.483 -11.569,14.572 -14.182,17.562c-2.612,2.988 -5.225,3.364 -9.703,1.12c-4.479,-2.241 -18.91,-6.97 -36.017,-22.23c-13.314,-11.876 -22.304,-26.542 -24.916,-31.026c-2.612,-4.484 -0.279,-6.908 1.963,-9.14c2.016,-2.007 4.48,-5.232 6.719,-7.847c2.24,-2.615 2.986,-4.484 4.479,-7.472c1.493,-2.99 0.747,-5.604 -0.374,-7.846c-1.119,-2.241 -10.077,-24.288 -13.809,-33.256c-3.635,-8.733 -7.327,-7.55 -10.077,-7.688c-2.609,-0.13 -5.598,-0.158 -8.583,-0.158c-2.986,0 -7.839,1.121 -11.944,5.604c-4.105,4.484 -15.675,15.32 -15.675,37.364c0,22.046 16.048,43.342 18.287,46.332c2.24,2.99 31.582,48.227 76.511,67.627c10.685,4.615 19.028,7.371 25.533,9.434c10.728,3.41 20.492,2.929 28.209,1.775c8.605,-1.285 26.499,-10.833 30.231,-21.295c3.732,-10.464 3.732,-19.431 2.612,-21.298c-1.119,-1.869 -4.105,-2.99 -8.583,-5.232Z" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share Discos Rígidos con Sectores de 4KB en Linux on telegram"
+            href="https://telegram.me/share/url?text=Discos%20R%c3%adgidos%20con%20Sectores%20de%204KB%20en%20Linux&amp;url=http%3a%2f%2flocalhost%3a1313%2f2010%2f06%2fdiscos-rigidos-con-sectores-de-4kb-en-linux%2f">
+            <svg version="1.1" xml:space="preserve" viewBox="2 2 28 28" height="30px" width="30px" fill="currentColor">
+                <path
+                    d="M26.49,29.86H5.5a3.37,3.37,0,0,1-2.47-1,3.35,3.35,0,0,1-1-2.47V5.48A3.36,3.36,0,0,1,3,3,3.37,3.37,0,0,1,5.5,2h21A3.38,3.38,0,0,1,29,3a3.36,3.36,0,0,1,1,2.46V26.37a3.35,3.35,0,0,1-1,2.47A3.38,3.38,0,0,1,26.49,29.86Zm-5.38-6.71a.79.79,0,0,0,.85-.66L24.73,9.24a.55.55,0,0,0-.18-.46.62.62,0,0,0-.41-.17q-.08,0-16.53,6.11a.59.59,0,0,0-.41.59.57.57,0,0,0,.43.52l4,1.24,1.61,4.83a.62.62,0,0,0,.63.43.56.56,0,0,0,.4-.17L16.54,20l4.09,3A.9.9,0,0,0,21.11,23.15ZM13.8,20.71l-1.21-4q8.72-5.55,8.78-5.55c.15,0,.23,0,.23.16a.18.18,0,0,1,0,.06s-2.51,2.3-7.52,6.8Z" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share Discos Rígidos con Sectores de 4KB en Linux on ycombinator"
+            href="https://news.ycombinator.com/submitlink?t=Discos%20R%c3%adgidos%20con%20Sectores%20de%204KB%20en%20Linux&u=http%3a%2f%2flocalhost%3a1313%2f2010%2f06%2fdiscos-rigidos-con-sectores-de-4kb-en-linux%2f">
+            <svg version="1.1" xml:space="preserve" width="30px" height="30px" viewBox="0 0 512 512" fill="currentColor"
+                xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape">
+                <path
+                    d="M449.446 0C483.971 0 512 28.03 512 62.554L512 449.446C512 483.97 483.97 512 449.446 512L62.554 512C28.03 512 0 483.97 0 449.446L0 62.554C0 28.03 28.029 0 62.554 0L449.446 0ZM183.8767 87.9921H121.8427L230.6673 292.4508V424.0079H281.3328V292.4508L390.1575 87.9921H328.1233L256 238.2489z" />
+            </svg>
+        </a>
+    </li>
+</ul>
+
+  </footer>
+</article>
+    </main>
+    
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head>
+	<meta name="generator" content="Hugo 0.147.0"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>El Blog de Marcelo!</title>
+
+<meta name="description" content="Blog Informático sobre Programación, Software Libre y/o Open Source, Linux, Python y alguna que otra cosa más...">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.6330bae568fb8548cd5ae396c8d8ff700d4fc0f161c35971ab47e9c5bf9a2e17.css" integrity="sha256-YzC65Wj7hUjNWuOWyNj/cA1PwPFhw1lxq0fpxb&#43;aLhc=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/feed.xml">
+<link rel="alternate" type="application/json" href="http://localhost:1313/index.json">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="list" id="top">
+<script>
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="El Blog de Marcelo! (Alt + H)">El Blog de Marcelo!</a>
+            <div class="logo-switches">
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/" title="">
+                    <span class="active"></span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/" title="Inicio">
+                    <span class="active">Inicio</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/charlas/" title="Charlas">
+                    <span>Charlas</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/proyectos/" title="Proyectos">
+                    <span>Proyectos</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/publicaciones/" title="Publicaciones">
+                    <span>Publicaciones</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/sobre-mi/" title="Sobre Mí">
+                    <span>Sobre Mí</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/about-me/" title="About Me">
+                    <span>About Me</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/search/" title="🔍">
+                    <span>🔍</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Metaprogramación en Python
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Python está bárbaro, es sencillo y todo… siempre leí que era muy fácil hacer metaprogramming con él, pero el problema es que uno haga metaprogramming de una forma fácil en su mente. :-P
+Veamos, la función getattr(), disponible en el módulo __builtins__ (o sea, disponible en todo momento), me permite cambiar esto:
+def get_transportistas_custodia(id_custodia): &#34;&#34;&#34; Devuelvo todos los transportistas que están relacionados con una custodia &#34;&#34;&#34; c = Custodia.objects.get(id=1) # Necesito el conjunto de transportistas de la custodia return c.transportistacustodia_set.all() def get_asegurados_custodia(id_custodia): &#34;&#34;&#34; Devuelvo todos los asegurados que están relacionados con una custodia &#34;&#34;&#34; ... (lo malo es que tengo que hacer una función por cada tipo de empresa relacionada con custodia).
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2007-08-04 15:00:00 +0000 +0000'>August 4, 2007</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;mfernandez</footer>
+  <a class="entry-link" aria-label="post link to Metaprogramación en Python" href="http://localhost:1313/2007/08/metaprogramacion-en-python/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Un &amp;quot;Yo&amp;quot; dibujado por Matt Groening
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Después de haber disfrutado anoche de la película de Los Simpsons (si te gustan, no te la pierdas, es buenísima!), me tomé un ratito (un domingo aburrido…) en entrar a la página de los simpsons… está muy buena (aunque el uso de flash es obligatorio), y aunque no la recorrí toda, pude crear un avatar con la paleta de colores, barbas, cabello, ojos, nariz, etc. de los Simpsons. Y tratando de hacerme a mí mismo, me salió esto:
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2007-07-29 18:56:00 +0000 +0000'>July 29, 2007</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;mfernandez</footer>
+  <a class="entry-link" aria-label="post link to Un &quot;Yo&quot; dibujado por Matt Groening" href="http://localhost:1313/2007/07/un-yo-dibujado-por-matt-groening/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Muerte al top. Usá htop!
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>A éste post, sólo le agrego la captura obligada:
+Y cómo instalarlo:
+sudo apt-get install htop Htop es un reemplazo más amigable del viejo y querido top de consola, permitiéndote matar y hacer scroll entre los procesos (era hora!).
+Saludos Marcelo
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2007-07-15 23:44:00 +0000 +0000'>July 15, 2007</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;mfernandez</footer>
+  <a class="entry-link" aria-label="post link to Muerte al top. Usá htop!" href="http://localhost:1313/2007/07/muerte-al-top-usa-htop/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">MPX: Multi-Point X Server
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p> Buenas…
+Hace unos meses había salido la noticia de la presentación de Microsoft Surface, que aunque no va a estar disponible hasta fines de 2007, sus videos permiten apreciar una nueva manera de interactuar con una computadora, ya que el Touch Screen horizontal posee un sensor Multi-touch. Una combinación de hardware y software donde una o varias personas interactuaban en una “mesa digital”, al mismo tiempo… realmente es muy interesante! (más alla de que Microsoft lo sepa vender bien).
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2007-07-15 18:07:00 +0000 +0000'>July 15, 2007</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;mfernandez</footer>
+  <a class="entry-link" aria-label="post link to MPX: Multi-Point X Server" href="http://localhost:1313/2007/07/mpx-multi-point-x-server/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Samsung Syncmaster 206/226 NW en Ubuntu
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Tengo chiche nuevo!
+Después de algún tiempo de sacrificado laburo, me dí uno de los mayores gustos “informáticos” hasta ahora: comprarme un monitor LCD de 22&#34; wide… más precisamente el Samsung Syncmaster 226 NW. :-D
+De más está decir que es fantabuloso cómo se ve cualquier cosa que uno quiera ver. No hay “efecto arrastre” al hacer scroll, excelente contraste, excelente resolución y nitidez… Lo único “malo” técnicamente es que no viene con conexión DVI.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2007-07-14 20:58:00 +0000 +0000'>July 14, 2007</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;mfernandez</footer>
+  <a class="entry-link" aria-label="post link to Samsung Syncmaster 206/226 NW en Ubuntu" href="http://localhost:1313/2007/07/samsung-syncmaster-206226-nw-en-ubuntu/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Chusmeando SQLObject - Parte II
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p> Continuando el post de ayer, otra desventaja del sistema de persistencia de Django es que no soporta atributos en relaciones “Muchos a Muchos”. Un caso podría ser Usuario &lt;–&gt; Rol, donde un Usuario puede tener varios Roles y a su vez un Rol ser referenciado por varios usuarios; además, necesito almacenar si alguna combinación usuario&lt;-&gt;rol está activa o no. El atributo booleano “activo” sería una propiedad por cada Usuario&lt;-&gt;Rol en particular, y esto es lo que no soporta Django con su ManyToManyField.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2007-07-11 13:50:00 +0000 +0000'>July 11, 2007</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;mfernandez</footer>
+  <a class="entry-link" aria-label="post link to Chusmeando SQLObject - Parte II" href="http://localhost:1313/2007/07/chusmeando-sqlobject-parte-ii/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Chusmeando SQLObject - Parte I
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p> Aprovechando que el ORM en Python es noticia (ya que Canonical liberó Storm)… comento un par de desventajas del framework para acceder a BDs desde Django y cómo las soluciona SQLObject (específicamente no lo usé, pero estuve leyendo algo…)
+Al momento de laburar con Django y la forma en que maneja la BD (definición de los modelos) nos encontramos dos limitaciones graves:
+No soporte de herencia entre tablas. Es decir, si yo desde mi “mundo real” tengo que representar: class Transporte(): modelo = &#39;&#39; largo = &#39;&#39; ancho = &#39;&#39; patente = &#39;&#39; class Auto(Vehiculo): tiene_baul = &#39;&#39; class Camion(Vehiculo): tiene_semi = &#39;&#39; No puedo representar esto en Django, ya que no soporta herencia. Por lo tanto, se puede “simular” la herencia usando relaciones “uno a uno” o copiando y pegando. Con la primera opción caímos en varios problemas, así que tuvimos que “copiar y pegar” las propiedades que deberían haber sido heredadas.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2007-07-10 13:32:00 +0000 +0000'>July 10, 2007</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;mfernandez</footer>
+  <a class="entry-link" aria-label="post link to Chusmeando SQLObject - Parte I" href="http://localhost:1313/2007/07/chusmeando-sqlobject-parte-i/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Esto es groso... Banshee Media Server
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Después de entrar en esta página, sobre un servidor web de música, dije “es medio pobre, le falta algo de diseño…pero… funcionará?”
+Andá bárbaro!!! Pruébenlo.
+Me imagino que no es el primero en existir, pero sinceramente me sorprendió el equipo de Banshee (un reproductor de música desarrollado en Mono). Claro que está en desarrollo, pero parece que pronto reemplazo al Amarok (esperemos, pero si no tiene Crossfading no me cambio nada eh!).
+En este post hay más detalles al respecto (el sonido viene por un plugin Flash y es controlado con Javascript).
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2007-07-01 18:09:00 +0000 +0000'>July 1, 2007</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;mfernandez</footer>
+  <a class="entry-link" aria-label="post link to Esto es groso... Banshee Media Server" href="http://localhost:1313/2007/07/esto-es-groso-banshee-media-server/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Sufrís &#34;versionitis&#34;?
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Una de las cosas que hacen estable y previsible a una distribución como Ubuntu es que una vez que fue lanzada una versión definitiva, las actualizaciones de los programas que contiene sólo se limitan a correcciones de seguridad o errores críticos. Esto está bueno, si uno quiere que todo “sólo funcione” una vez se configuró y la PC se comenzó a usar diariamente; lo mismo pasa si se usa la PC para laburar y necesita que todo ande de forma ordenada y sin sobresaltos.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2007-07-01 15:38:00 +0000 +0000'>July 1, 2007</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;mfernandez</footer>
+  <a class="entry-link" aria-label="post link to Sufrís &#34;versionitis&#34;?" href="http://localhost:1313/2007/07/sufris-versionitis/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Tipeando Caracteres Unicode en Gnome (II)
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Tratando de probar el “truquito” que postié hace bastante pero ahora en Ubuntu Feisty, veo que si le doy al Ctrl&#43;Alt&#43;40 no me genera la @….
+Buscando, buscando por qué, encontré esto: http://live.gnome.org/TwoPointFifteen/ReleaseNotes
+que dice: “Use CTRL-SHIFT-u instead of CTRL_SHIFT- to generate unicode keys – This is a change in behaviour so important to note ( OlavVitters)”
+O sea, que a partir de Gnome 2.16 no es más Ctrl&#43;Shift&#43;Código_Unicode, sino que es Ctrl&#43;Shift&#43;u&#43;Código_Unicode.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2007-06-25 16:16:00 +0000 +0000'>June 25, 2007</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;mfernandez</footer>
+  <a class="entry-link" aria-label="post link to Tipeando Caracteres Unicode en Gnome (II)" href="http://localhost:1313/2007/06/tipeando-caracteres-unicode-en-gnome-ii/"></a>
+</article>
+<footer class="page-footer">
+  <nav class="pagination">
+    <a class="prev" href="http://localhost:1313/page/10/">
+      «&nbsp;Prev&nbsp;
+    </a>
+    <a class="next" href="http://localhost:1313/page/12/">Next&nbsp;&nbsp;»
+    </a>
+  </nav>
+</footer>
+    </main>
+    
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+</body>
+
+</html>

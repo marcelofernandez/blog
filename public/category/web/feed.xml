@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Web on El Blog de Marcelo!</title>
+    <link>http://localhost:1313/category/web/</link>
+    <description>Recent content in Web on El Blog de Marcelo!</description>
+    <generator>Hugo -- 0.147.0</generator>
+    <language>es</language>
+    <lastBuildDate>Wed, 04 Jan 2023 13:33:16 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/category/web/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Volviendo a Escribir - QUIC y HTTP/3</title>
+      <link>http://localhost:1313/2023/01/volviendo-a-escribir-quic-y-http-3/</link>
+      <pubDate>Wed, 04 Jan 2023 13:33:16 +0000</pubDate>
+      <guid>http://localhost:1313/2023/01/volviendo-a-escribir-quic-y-http-3/</guid>
+      <description>&lt;p&gt;De a poquito y con el reset del año, vuelven las ganas de leer y aprender sobre temas nuevos para escribir algo de texto y código como output de lo aprendido. En este caso, y para complementar &lt;a href=&#34;http://www.labredes.unlu.edu.ar/sites/www.labredes.unlu.edu.ar/files/site/data/tyr/http2_Fernandez_Tolosa.pdf&#34;&gt;aquello que escribí sobre HTTP/2&lt;/a&gt;, estoy preparando algo similar pero sobre QUIC como protocolo de transporte y HTTP/3 como protocolo de aplicación sobre él.&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/HTTP-1.1_vs._HTTP-2_vs._HTTP-3_Protocol_Stack.svg/640px-HTTP-1.1_vs._HTTP-2_vs._HTTP-3_Protocol_Stack.svg.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Ambos son Internet Standard desde hace muy poco tiempo ( &lt;a href=&#34;https://www.rfc-editor.org/rfc/rfc9000.html&#34;&gt;quic&lt;/a&gt;, &lt;a href=&#34;https://www.rfc-editor.org/rfc/rfc9114.html&#34;&gt;http/3&lt;/a&gt;) y vienen y/o dependen de un paquete de otros protocolos y especificaciones que &lt;a href=&#34;https://quicwg.org/&#34;&gt;no son poca cosa&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Nuevo Documento: &#34;HTTP/2. Un nuevo protocolo para la web&#34; (v1.0)</title>
+      <link>http://localhost:1313/2017/05/nuevo-documento-http2-un-nuevo-protocolo-para-la-web-v1-0/</link>
+      <pubDate>Sat, 06 May 2017 15:04:16 +0000</pubDate>
+      <guid>http://localhost:1313/2017/05/nuevo-documento-http2-un-nuevo-protocolo-para-la-web-v1-0/</guid>
+      <description>&lt;p&gt;Les comparto el documento que armé dentro del marco del grupo de &lt;a href=&#34;http://www.labredes.unlu.edu.ar/&#34;&gt;Teleinformática y Redes&lt;/a&gt; de la &lt;a href=&#34;http://www.unlu.edu.ar&#34;&gt;Universidad Nacional de Luján&lt;/a&gt; sobre el protocolo HTTP/2, a modo de recopilación, traducción y simplificación de todo lo que anda dando vueltas en la web. La idea es ir actualizándolo y completándolo a medida que pase el tiempo.&lt;/p&gt;
+&lt;p&gt;Dejo el link para bajarlo &lt;a href=&#34;http://www.labredes.unlu.edu.ar/sites/www.labredes.unlu.edu.ar/files/site/data/tyr/http2_Fernandez_Tolosa.pdf&#34;&gt;en PDF&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Se aceptan sugerencias, comentarios y críticas, por qué no. :-)&lt;/p&gt;
+&lt;p&gt;Saludos&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Habilitando HTTP/2 en Apache sobre Ubuntu 16.04 sin PPAs</title>
+      <link>http://localhost:1313/2017/03/habilitando-http2-en-apache-sobre-ubuntu-16-04-sin-ppas/</link>
+      <pubDate>Tue, 14 Mar 2017 19:39:58 +0000</pubDate>
+      <guid>http://localhost:1313/2017/03/habilitando-http2-en-apache-sobre-ubuntu-16-04-sin-ppas/</guid>
+      <description>&lt;p&gt;Una de las cosas que me sorprendió de la versión de &lt;a href=&#34;http://packages.ubuntu.com/xenial/apache2&#34;&gt;Apache 2.4.18 incluida en Ubuntu 16.04&lt;/a&gt; (y también en Ubuntu 16.10) es que &lt;a href=&#34;https://wiki.ubuntu.com/XenialXerus/ReleaseNotes?_ga=1.128555916.1457848077.1479625589#HTTP.2F2_support_in_Apache_httpd&#34;&gt;el módulo mod_http2 no está habilitado por ser considerado &amp;ldquo;experimental&lt;/a&gt;&amp;rdquo; por el proyecto Apache.&lt;/p&gt;
+&lt;p&gt;Discusiones de si debe estar o no al margen, esta característica funciona mayormente bien y no tiene fallas importantes. En mi caso evalué un par de alternativas:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Compilar un server nuevo desde los fuentes es poco práctico, ya que la integración de Apache lograda por el empaquetado de Debian/Ubuntu es mala o dificultosa como mínimo, además de tener que compilar por futuras actualizaciones de seguridad.&lt;/li&gt;
+&lt;li&gt;Confiar en un repositorio PPA ajeno (como indican &lt;a href=&#34;https://www.digitalocean.com/community/questions/enable-http2-in-apache-on-ubuntu-16-04&#34;&gt;otros posts&lt;/a&gt;) también es un problema, más aún bajo ciertos entornos.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Es por esto que, buscando una alternativa diferente, encontré una manera relativamente fácil, rápida y &amp;ldquo;con actualizaciones&amp;rdquo; de habilitar el módulo HTTP/2 sobre el mismo Apache 2.4.18 que trae Ubuntu 16.04/16.10.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Comparando costos de Amazon EC2 y Google Computing Engine</title>
+      <link>http://localhost:1313/2014/09/comparando-costos-de-amazon-ec2-y-google-computing-engine/</link>
+      <pubDate>Wed, 17 Sep 2014 20:11:37 +0000</pubDate>
+      <guid>http://localhost:1313/2014/09/comparando-costos-de-amazon-ec2-y-google-computing-engine/</guid>
+      <description>&lt;p&gt;Estuve mirando y por suerte son prácticamente similares las tablas disponibles en cada site ( &lt;a href=&#34;http://aws.amazon.com/es/ec2/purchasing-options/dedicated-instances/&#34; title=&#34;Amazon EC2 Purchasing Options&#34;&gt;EC2&lt;/a&gt; / &lt;a href=&#34;https://cloud.google.com/products/compute-engine/&#34; title=&#34;Google Compute Engine&#34;&gt;GCE&lt;/a&gt;) y es relativamente sencillo compararlas [1][2].&lt;/p&gt;
+&lt;p&gt;Para sus Data Centers en USA, establecí las siguientes relaciones:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;En las versiones de VMs &amp;quot; &lt;em&gt;standard&lt;/em&gt;&amp;quot;, los precios son exactamente iguales, con configuraciones &lt;em&gt;llamativamente&lt;/em&gt; similares.&lt;/li&gt;
+&lt;li&gt;En las versiones &amp;quot; &lt;em&gt;high memory&lt;/em&gt;&amp;quot;, es más barato Google (la mitad), aunque Amazon te da el doble de CPUs por una VM con la misma cantidad de memoria.
+Ej: Google te da 4 CPUs / 26 GB de RAM y Amazon en cambio te da 8 CPUs para su configuración de 26 GB de RAM. Dado que estamos en &amp;quot; &lt;em&gt;high memory&lt;/em&gt;&amp;quot;, igualé a cantidad de memoria disponible para luego decir &amp;ldquo;Google es la mitad de barato&amp;rdquo;.&lt;/li&gt;
+&lt;li&gt;En las versiones &amp;quot; &lt;em&gt;large&lt;/em&gt;&amp;quot; (&amp;quot; &lt;em&gt;high cpu&lt;/em&gt;&amp;quot; de Google), Amazon es un 15% más caro para igual cantidad de CPUs, pero te da el doble de memoria en sus VMs.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Observaciones&lt;/strong&gt;:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Novedades en SPDY/4, HTTP/2.0</title>
+      <link>http://localhost:1313/2013/05/novedades-en-spdy4-http2-0/</link>
+      <pubDate>Sun, 26 May 2013 15:38:30 +0000</pubDate>
+      <guid>http://localhost:1313/2013/05/novedades-en-spdy4-http2-0/</guid>
+      <description>&lt;p&gt;Si bien SPDY/4 todavía &lt;a href=&#34;https://github.com/grmocg/SPDY-Specification/blob/gh-pages/draft-mbelshe-spdy-00.txt&#34;&gt;está en desarrollo&lt;/a&gt;, por lo que se deduce &lt;a href=&#34;https://groups.google.com/d/msg/spdy-dev/EWEEWSYtlhc/usK342C5g_EJ&#34;&gt;de este hilo&lt;/a&gt; y por lo que puede apreciarse en la forma que tienen &lt;a href=&#34;http://http2.github.io/http2-spec/&#34; title=&#34;HTTP/2.0 HTML draft&#34;&gt;ambos&lt;/a&gt; &lt;a href=&#34;http://grmocg.github.io/SPDY-Specification/draft-mbelshe-spdy-00.html&#34; title=&#34;SPDY/4 specification draft&#34;&gt;drafts&lt;/a&gt;, éste va a dejar de ser un trabajo separado de HTTP/2.0 como sucedía hasta la versión anterior, sino que será un protocolo que implementará progresivamente lo que se vaya definiendo y ganando adhesiones en la discusión que se está teniendo en &lt;a href=&#34;http://lists.w3.org/Archives/Public/ietf-http-wg/&#34; title=&#34;Httpbis WG IETF list archives&#34;&gt;el marco del IETF&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>PyConAr 2012: Charla sobre el protocolo SPDY – Video</title>
+      <link>http://localhost:1313/2013/01/pyconar-2012-charla-sobre-el-protocolo-spdy-video/</link>
+      <pubDate>Wed, 02 Jan 2013 18:53:28 +0000</pubDate>
+      <guid>http://localhost:1313/2013/01/pyconar-2012-charla-sobre-el-protocolo-spdy-video/</guid>
+      <description>&lt;p&gt;Con el nuevo año, aparecieron en su totalidad los &lt;a href=&#34;http://www.youtube.com/user/mreingart/videos&#34; title=&#34;Videos PyConAr 2012&#34;&gt;videos de la PyConAr 2012&lt;/a&gt; subidos a Youtube por Mariano Reingart, el Coordinador del evento.&lt;/p&gt;
+&lt;p&gt;Dejo en este post el mío, no sin un dejo de &amp;ldquo;vergüencita&amp;rdquo;, je&amp;hellip; (encima todavía no lo vi):&lt;/p&gt;
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/BCB2Vbw-XJQ?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;&gt;&lt;/iframe&gt;
+    &lt;/div&gt;
+
+&lt;p&gt;Cualquier duda me pueden consultar o comentar este mismo post. Espero próximamente escribir más en profundidad de ciertos aspectos que me quedaron afuera de la charla.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Investigando el protocolo SPDY</title>
+      <link>http://localhost:1313/2012/07/investigando-el-protocolo-spdy/</link>
+      <pubDate>Sun, 15 Jul 2012 15:57:22 +0000</pubDate>
+      <guid>http://localhost:1313/2012/07/investigando-el-protocolo-spdy/</guid>
+      <description>&lt;p&gt;Un tiempo atrás venía buscando áreas de investigación para estudiar, y me encontré con una interesante propuesta de Google, de renovar el ya &amp;ldquo;viejito pero cumplidor&amp;rdquo; protocolo &lt;a href=&#34;http://tools.ietf.org/html/rfc2616&#34; title=&#34;RFC 2616: HTTP/1.1&#34;&gt;HTTP 1.1&lt;/a&gt;, llamada &lt;a href=&#34;http://dev.chromium.org/spdy/spdy-whitepaper&#34; title=&#34;SPDY Whitepaper&#34;&gt;SPDY&lt;/a&gt; (no sin algo de sentido comercial, se nota).&lt;/p&gt;
+&lt;p&gt;De ahí en adelante (dado que el desarrollo &lt;a href=&#34;http://groups.google.com/group/spdy-dev&#34; title=&#34;SPDY-Dev Group&#34;&gt;es abierto&lt;/a&gt; a la discusión en general) me dediqué &lt;a href=&#34;http://dev.chromium.org/spdy/spdy-protocol/spdy-protocol-draft3&#34; title=&#34;SPDY v3 Protocol Specification&#34;&gt;a profundizar en él&lt;/a&gt;, entender sus ventajas (lo cual implica entender algunas cosas feas de HTTP 1.1 y la Web de hoy en día), limitaciones, y cosas que faltan implementar. Me apasionó el tema, tanto es así que lo propuse como tema de Tesis para mis estudios y hasta ahora vengo bien (bien con las promesas a mi Director, claro está :-P).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>PyCon Argentina 2009, Cappuccino y LLVM</title>
+      <link>http://localhost:1313/2009/09/pycon-argentina-2009-cappuccino-y-llvm/</link>
+      <pubDate>Mon, 14 Sep 2009 05:41:36 +0000</pubDate>
+      <guid>http://localhost:1313/2009/09/pycon-argentina-2009-cappuccino-y-llvm/</guid>
+      <description>&lt;p&gt;Me gustaría hacer un post bien largo acerca de todo lo que me dejó personalmente la última &lt;a href=&#34;http://ar.pycon.org/2009/about/&#34;&gt;PyCon Argentina&lt;/a&gt;, pero lamentablemente estoy complicado con el tiempo, ya que no sólo quiero leer y escribir acerca de todo el &amp;ldquo;bombardeo&amp;rdquo; de información que te deja cada charla, sino que también quisiera investigar un poco cada cosa y dejar acá algo más que solamente los links. Pero bueno, vamos a hacer el intento de resaltar lo primero que me viene a la mente.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Ojo con Facebook...</title>
+      <link>http://localhost:1313/2009/06/ojo-con-el-facebook/</link>
+      <pubDate>Mon, 08 Jun 2009 19:00:36 +0000</pubDate>
+      <guid>http://localhost:1313/2009/06/ojo-con-el-facebook/</guid>
+      <description>&lt;p&gt;Luego de ver &lt;a href=&#34;http://geektheplanet.net/2972/how-to-ver-las-fotos-de-cualquiera-en-facebook.xhtml&#34;&gt;este post&lt;/a&gt; hace unos días, lo agendé para probarlo cuando tuviera tiempo. Anoche lo hice, y funciona a la perfección: en resumen, &lt;strong&gt;¡puedo ver las fotos de cualquiera en Facebook haciendo un test de una aplicación!&lt;/strong&gt; (y obviamente, eso incluye a los que no tengo como amigos).&lt;/p&gt;
+&lt;p&gt;No puedo agregar mucho más a lo que &lt;a href=&#34;http://www.securityartwork.es/author/mbenet/&#34;&gt;Manuel Benet&lt;/a&gt; escribe, analiza y explica en su &lt;a href=&#34;http://www.securityartwork.es/2009/06/05/no-es-una-feature-de-facebook-es-un-problema-de-seguridad/&#34;&gt;post&lt;/a&gt;, salvo que tengan mucho cuidado con las fotos e información que suben.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Novedades en Firefox 3.1 beta (será 3.5)</title>
+      <link>http://localhost:1313/2009/03/novedades-en-firefox-31-beta-sera-35/</link>
+      <pubDate>Fri, 13 Mar 2009 00:45:00 +0000</pubDate>
+      <guid>http://localhost:1313/2009/03/novedades-en-firefox-31-beta-sera-35/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://www.mozilla.org/&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://2.bp.blogspot.com/_nDZ247g0qSM/Sbm9wUh5i0I/AAAAAAAACMA/hZ19rzmamJk/s320/Firefoxlogo2.png&#34;&gt;&lt;/a&gt; Si bien la mayoría de los sitios de noticias tiene un enlace a &lt;a href=&#34;https://developer.mozilla.org/devnews/index.php/2009/03/12/firefox-31-beta-3-now-available-for-download/&#34;&gt;esta página&lt;/a&gt;, detallando las novedades más importantes y generales en la aplicación, me gustaría destacar algunas de las novedades &amp;ldquo;bajo el capó&amp;rdquo; del próximo Firefox 3.5, que se describen en &lt;a href=&#34;https://developer.mozilla.org/en/Firefox_3.1_for_developers&#34;&gt;esta otra página&lt;/a&gt; (&amp;ldquo;Firefox para desarrolladores web&amp;rdquo;).&lt;/p&gt;
+&lt;p&gt;Veamos, las que me parecen más interesantes son:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Soporte para los nuevos tags &lt;a href=&#34;http://www.whatwg.org/specs/web-apps/current-work/#audio&#34;&gt;audio&lt;/a&gt; y &lt;a href=&#34;http://www.whatwg.org/specs/web-apps/current-work/#video&#34;&gt;video&lt;/a&gt; del futuro (y en borrador todavía) &lt;a href=&#34;http://www.whatwg.org/specs/web-apps/current-work/&#34;&gt;HTML 5&lt;/a&gt; &lt;a href=&#34;https://developer.mozilla.org/En/Using_audio_and_video_in_Firefox&#34;&gt;incluído&lt;/a&gt;. Lo interesante es que no sólo &lt;a href=&#34;https://developer.mozilla.org/En/Using_audio_and_video_in_Firefox#Controlling_media_playback&#34;&gt;permite controlar la reproducción&lt;/a&gt; por Javascript (algo relativamente lógico), sino que también permite que &lt;a href=&#34;https://developer.mozilla.org/En/Manipulating_video_using_canvas&#34;&gt;Javascript procese y manipule la imagen mediante canvas&lt;/a&gt;. ¡ &lt;a href=&#34;http://www.0xdeadbeef.com/weblog/?p=1093&#34;&gt;Muy bueno&lt;/a&gt;! Un detalle es que por ahora soporta el formato &lt;a href=&#34;http://es.wikipedia.org/wiki/WAV&#34;&gt;WAV&lt;/a&gt; y &lt;a href=&#34;http://www.xiph.org/ogg/&#34;&gt;OGG&lt;/a&gt; únicamente.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Xplico, un decodificador de tráfico de Red</title>
+      <link>http://localhost:1313/2008/12/xplico-un-decodificador-de-trafico-de-red/</link>
+      <pubDate>Wed, 31 Dec 2008 17:33:00 +0000</pubDate>
+      <guid>http://localhost:1313/2008/12/xplico-un-decodificador-de-trafico-de-red/</guid>
+      <description>&lt;p&gt;Gracias al &lt;a href=&#34;http://laramies.blogspot.com/&#34;&gt;rincón de Laramies&lt;/a&gt; me sigo enterando de cosas novedosas acerca de herramientas y noticias sobre seguridad informática; esta vez de la existencia de &lt;a href=&#34;http://www.xplico.org/&#34;&gt;Xplico&lt;/a&gt;, un software para analizar y disecar [1] capturas de red en formato &lt;a href=&#34;http://wiki.wireshark.org/Development/LibpcapFileFormat&#34;&gt;PCap&lt;/a&gt; (el más común, utilizado por herramientas como &lt;a href=&#34;http://www.wireshark.org/&#34;&gt;Wireshark&lt;/a&gt; o &lt;a href=&#34;http://www.tcpdump.org/&#34;&gt;Tcpdump&lt;/a&gt;, por ejemplo).&lt;/p&gt;
+&lt;p&gt;Su objetivo es detectar el protocolo de aplicación (no basado en el número puerto, sino que lo hace &lt;a href=&#34;http://taosecurity.blogspot.com/2006/09/port-independent-protocol.html&#34;&gt;interpretándolo&lt;/a&gt; &lt;a href=&#34;http://spid.wiki.sourceforge.net/&#34;&gt;realmente&lt;/a&gt;), y extraer la información relevante (el &lt;em&gt;stream&lt;/em&gt; de datos), mostrarla y darle a uno la posibilidad de guardarla aparte para abrirla con un software que pueda reproducir dicho formato. Por ejemplo, puede detectar el formato &lt;a href=&#34;http://es.wikipedia.org/wiki/Session_Initiation_Protocol&#34;&gt;SIP&lt;/a&gt;(utilizado comúnmente en llamadas telefónicas de &lt;a href=&#34;http://es.wikipedia.org/wiki/Voz_sobre_IP&#34;&gt;VoIP&lt;/a&gt;) en una serie de paquetes capturados y guardarlo aparte para poder escuchar la llamada telefónica. :-)&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Dan Kaminsky en BlackHat 2008 - Japón</title>
+      <link>http://localhost:1313/2008/12/dan-kaminsky-en-blackhat-2008-japon/</link>
+      <pubDate>Sat, 27 Dec 2008 15:05:00 +0000</pubDate>
+      <guid>http://localhost:1313/2008/12/dan-kaminsky-en-blackhat-2008-japon/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://www.blackhat.com/presentations/bh-jp-08/bh-jp-08-Kaminsky/BlackHat-Japan-08-Kaminsky-DNS08-BlackOps.pdf&#34;&gt;Esta presentación&lt;/a&gt; es la única que me llamó la atención repasando &lt;a href=&#34;http://www.blackhat.com/html/bh-japan-08/brief-bh-jp-08-archives.html&#34;&gt;el archivo&lt;/a&gt; del &lt;a href=&#34;http://www.blackhat.com/html/bh-japan-08/bh-jp-08-main.html&#34;&gt;Black Hat de Octubre de este año en Japón&lt;/a&gt;. El ya conocido &lt;a href=&#34;http://www.doxpara.com/?page_id=1159&#34;&gt;Dan Kaminsky&lt;/a&gt; fue el keynote del evento, explicando no sólo (nuevamente) la vulnerabilidad de DNS descubierta por él este año, sino también qué se viene en general en materia de (in)seguridad informática.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.blackhat.com/html/bh-japan-08/bh-jp-08-main.html&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://2.bp.blogspot.com/_nDZ247g0qSM/SVZEa1_uKvI/AAAAAAAAB0o/oouIMK0iHIg/s400/hd_logo01.gif&#34;&gt;&lt;/a&gt;&lt;br&gt;
+Son un montón de diapositivas (101!), unas cuantas las pasé por alto, pero son útiles; a modo de resumen, enumero los &amp;quot; &lt;em&gt;highlights&lt;/em&gt;&amp;quot;:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Fábrica de &amp;quot;Startups Cooperativas&amp;quot;: FairSoftware</title>
+      <link>http://localhost:1313/2008/12/fabrica-de-startups-cooperativas-fairsoftware/</link>
+      <pubDate>Sat, 27 Dec 2008 12:28:00 +0000</pubDate>
+      <guid>http://localhost:1313/2008/12/fabrica-de-startups-cooperativas-fairsoftware/</guid>
+      <description>&lt;p&gt;En mi lista de &lt;a href=&#34;http://www.ideashower.com/ideas/launched/read-it-later/&#34;&gt;links pendientes&lt;/a&gt;, figuraba visitar &lt;a href=&#34;http://fairsoftware.net/&#34;&gt;este sitio&lt;/a&gt;. Realmente olvidé cuándo lo agregué, y me lo puse a leer. Resulta que se trata de un sistema de administración, promoción y gestión administrativa de una startup de software.&lt;br&gt;
+&lt;a href=&#34;http://fairsoftware.net/&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://1.bp.blogspot.com/_nDZ247g0qSM/SVYfkbbD8cI/AAAAAAAAB0g/H3OKO-tNLVk/s400/logo.jpg&#34;&gt;&lt;/a&gt; La idea es que uno registre un proyecto software (Aplicación Web, Blog, Aplicación Desktop, etc.), pueda reclutar un equipo para colaborar en él, generar ingresos monetarios reales (supongamos que por el &lt;a href=&#34;https://www.google.com/adsense&#34;&gt;Adsense&lt;/a&gt; del blog, o por el cobro de la descarga de la aplicación) y luego se dividan las ganancias en el equipo. Cada colaborador tiene un &amp;quot; &lt;em&gt;share&lt;/em&gt;&amp;quot; (&amp;ldquo;acción&amp;rdquo;) virtual del proyecto, y cobra (en $ reales, je) una parte de los ingresos según las acciones que se posean, en forma equitativa.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Escaneos QScan con Nmap</title>
+      <link>http://localhost:1313/2007/09/escaneos-qscan-con-nmap/</link>
+      <pubDate>Sat, 29 Sep 2007 22:56:00 +0000</pubDate>
+      <guid>http://localhost:1313/2007/09/escaneos-qscan-con-nmap/</guid>
+      <description>&lt;p&gt;Buenas&amp;hellip; leyendo el &lt;a href=&#34;http://blog.buanzo.com.ar/&#34;&gt;blog de Buanzo&lt;/a&gt;, me interesé por el tipo de ataques &amp;ldquo;QScan&amp;rdquo; que menciona en este artículo:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://blog.buanzo.com.ar/2007/09/informe-de-puertos-proxeados-fibertel.html&#34;&gt;http://blog.buanzo.com.ar/2007/09/informe-de-puertos-proxeados-fibertel.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://insecure.org/nmap/&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://1.bp.blogspot.com/_nDZ247g0qSM/Rv7dRn7y11I/AAAAAAAAALo/WJdLioF0SlQ/s400/nmap_bnr_m4rc3l0-2.jpg&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Con lo cual, después de una breve consulta en Google, me encontré con este excelente documento:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://hcsw.org/nmap/QSCAN&#34;&gt;http://hcsw.org/nmap/QSCAN&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Básicamente, los tipos de escaneos QScan se basan en comparar las medias (mediante la &lt;a href=&#34;http://es.wikipedia.org/wiki/Distribuci%C3%B3n_t_de_Student&#34;&gt;distribución T de Student&lt;/a&gt;) de los &lt;a href=&#34;http://en.wikipedia.org/wiki/Round-trip_delay_time&#34;&gt;RTT&lt;/a&gt; s de una cantidad N (la muestra) de paquetes enviados a distintos puertos de un mismo (o diferentes) hosts. Además, para sacar más el jugo a la técnica, uno puede configurar el &lt;a href=&#34;http://es.wikipedia.org/wiki/Intervalo_de_confianza&#34;&gt;intervalo de confianza&lt;/a&gt;, la cantidad de muestras y la demora N entre paquete y paquete enviado (que para hacer la prueba estadísticamente más &amp;lsquo;fuerte&amp;rsquo;, el parche hace un random que tiene como punto medio al N configurado). El objetivo es saber si el host que recibe los paquetes (el &amp;rsquo;target&amp;rsquo; del escaneo) hace tratamientos diferentes de los paquetes de acuerdo a al puerto destino.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Esto es groso... Banshee Media Server</title>
+      <link>http://localhost:1313/2007/07/esto-es-groso-banshee-media-server/</link>
+      <pubDate>Sun, 01 Jul 2007 18:09:00 +0000</pubDate>
+      <guid>http://localhost:1313/2007/07/esto-es-groso-banshee-media-server/</guid>
+      <description>&lt;p&gt;Después de entrar en esta página, sobre un &lt;a href=&#34;http://joeshaw.org/banshee-web/&#34;&gt;servidor web de música&lt;/a&gt;, dije &amp;ldquo;es medio pobre, le falta algo de diseño&amp;hellip;pero&amp;hellip; funcionará?&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;Andá bárbaro!!! &lt;a href=&#34;http://joeshaw.org/banshee-web/&#34;&gt;Pruébenlo&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Me imagino que no es el primero en existir, pero sinceramente me sorprendió el equipo de &lt;a href=&#34;http://banshee-project.org/Main_Page&#34;&gt;Banshee&lt;/a&gt; (un reproductor de música desarrollado en &lt;a href=&#34;http://www.mono-project.com/&#34;&gt;Mono)&lt;/a&gt;. Claro que está en desarrollo, pero parece que pronto reemplazo al Amarok (esperemos, pero si no tiene Crossfading no me cambio nada eh!).&lt;/p&gt;
+&lt;p&gt;En &lt;a href=&#34;http://joeshaw.org/2007/06/27/477&#34;&gt;este post&lt;/a&gt; hay más detalles al respecto (el sonido viene por un plugin Flash y es controlado con Javascript).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Nuevas características en Firefox Alpha 3</title>
+      <link>http://localhost:1313/2007/03/nuevas-caracteristicas-en-firefox-alpha-3/</link>
+      <pubDate>Sat, 31 Mar 2007 12:07:00 +0000</pubDate>
+      <guid>http://localhost:1313/2007/03/nuevas-caracteristicas-en-firefox-alpha-3/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://1.bp.blogspot.com/_nDZ247g0qSM/Rg5Sf0O5rEI/AAAAAAAAAFI/9C15saWW-dk/s1600-h/mozicon128.png&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://1.bp.blogspot.com/_nDZ247g0qSM/Rg5Sf0O5rEI/AAAAAAAAAFI/9C15saWW-dk/s400/mozicon128.png&#34;&gt;&lt;/a&gt; Les dejo una pequeña reseña de las nuevas características que van apareciendo en la versión de desarrollo de Firefox 3.&lt;/p&gt;
+&lt;p&gt;Me parece muy útil el tema del agregado de indicadores de Cookies &amp;ldquo;no legibles&amp;rdquo; por scripts, cosa que sólo tiene el IE (qué raro, je) y también la aparición de un tag que indica un recurso &amp;ldquo;off-line&amp;rdquo;, para que Firefox la &amp;ldquo;cachee&amp;rdquo; para uso posterior.&lt;/p&gt;
+&lt;p&gt;Esto último, bien utilizado, puede permitir el laburo desconectado de aplicaciones web.&lt;br&gt;
+&lt;a href=&#34;http://ejohn.org/blog/javascript-updates-in-firefox-30a3/&#34;&gt;http://ejohn.org/blog/javascript-updates-in-firefox-30a3/&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Excelente Documentación de Linux en Castellano</title>
+      <link>http://localhost:1313/2007/03/excelente-documentacion-de-linux-en-castellano/</link>
+      <pubDate>Sun, 04 Mar 2007 02:32:00 +0000</pubDate>
+      <guid>http://localhost:1313/2007/03/excelente-documentacion-de-linux-en-castellano/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://3.bp.blogspot.com/_nDZ247g0qSM/Reo1JqvI66I/AAAAAAAAAD0/2OuZJ_oSQHY/s1600-h/logo_molinux.png&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://3.bp.blogspot.com/_nDZ247g0qSM/Reo1JqvI66I/AAAAAAAAAD0/2OuZJ_oSQHY/s400/logo_molinux.png&#34;&gt;&lt;/a&gt;&lt;a href=&#34;http://www.molinux.info/&#34;&gt;Molinux&lt;/a&gt; es la distro de Linux de la &lt;a href=&#34;http://www.jccm.es/&#34;&gt;Junta Comunitaria de Castilla-La Mancha&lt;/a&gt;. Está basada en Ubuntu; en realidad es muy parecida y esta documentación es 100% aplicable a Ubuntu también. Vía &lt;a href=&#34;http://www.meneame.net/&#34;&gt;Meneame&lt;/a&gt; encuentro &lt;a href=&#34;http://meneame.net/story/uno-mejores-manuales-linux-todo-internet&#34;&gt;un post&lt;/a&gt; sobre su excelente documentación.&lt;/p&gt;
+&lt;p&gt;De curioso la bajé, y está muy buena, más que nada al nivel del famoso &amp;ldquo;Usuario Final&amp;rdquo; y en español, además de ser extensa: tiene 334 páginas. Documenta la mayoría de los programas Linux de uso general*: Entorno Gnome y sus aplicaciones, &lt;a href=&#34;http://www.openoffice.org/&#34;&gt;OpenOffice.org&lt;/a&gt;, &lt;a href=&#34;http://www.mozilla.com/&#34;&gt;Firefox&lt;/a&gt;, &lt;a href=&#34;http://www.gnome.org/projects/evolution/&#34;&gt;Evolution&lt;/a&gt;, &lt;a href=&#34;http://gaim.sf.net/&#34;&gt;Gaim&lt;/a&gt;, &lt;a href=&#34;http://www.ekiga.org/&#34;&gt;Ekiga&lt;/a&gt;, &lt;a href=&#34;http://www.nvu.com/&#34;&gt;Nvu&lt;/a&gt;, &lt;a href=&#34;http://gthumb.sourceforge.net/&#34;&gt;Gthumb&lt;/a&gt;, &lt;a href=&#34;http://www.inkscape.org/&#34;&gt;Inkscape&lt;/a&gt;, &lt;a href=&#34;http://www.gimp.org/&#34;&gt;Gimp&lt;/a&gt;, &lt;a href=&#34;http://www.gnome.org/projects/totem/&#34;&gt;Totem&lt;/a&gt;, la Configuración del Sistema y sus Herramientas de Administración.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Applets y LiveConnect en Firefox</title>
+      <link>http://localhost:1313/2006/11/applets-y-liveconnect-en-firefox/</link>
+      <pubDate>Fri, 24 Nov 2006 12:13:00 +0000</pubDate>
+      <guid>http://localhost:1313/2006/11/applets-y-liveconnect-en-firefox/</guid>
+      <description>&lt;p&gt;Holas. Ultimamente estuve metiendo mano en un &lt;a href=&#34;http://en.wikipedia.org/wiki/Java_applet&#34;&gt;Applet de Java&lt;/a&gt; embebido en un Sistema Web, que entre otras cosas, lo que hacía era ejecutar lo siguiente:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-gdscript3&#34; data-lang=&#34;gdscript3&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;import java&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;applet&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;Applet;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;import netscape&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;javascript&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;JSException;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;import netscape&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;javascript&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;JSObject;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;public &lt;span style=&#34;color:#66d9ef&#34;&gt;class&lt;/span&gt; imprimesecescape01 &lt;span style=&#34;color:#66d9ef&#34;&gt;extends&lt;/span&gt; Applet {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  public void paint(Graphics g) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#f92672&#34;&gt;//&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;....&lt;/span&gt; código Java haciendo lo que hace el Applet &lt;span style=&#34;color:#f92672&#34;&gt;...&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#f92672&#34;&gt;//&lt;/span&gt; Al finalizar:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      try {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          JSObject jsobject &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; JSObject&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;getWindow(this);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          &lt;span style=&#34;color:#f92672&#34;&gt;//&lt;/span&gt; windowClose es una función Javascript que
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          &lt;span style=&#34;color:#f92672&#34;&gt;//&lt;/span&gt; está en el HTML que sólo llama a window&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;close();
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          jsobject&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;call(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;windowClose&amp;#34;&lt;/span&gt;, null);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      } catch(JSException jsexception) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          g&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;drawString(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;caught JS: &amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; jsexception, &lt;span style=&#34;color:#ae81ff&#34;&gt;20&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;20&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Es decir, este Applet utiliza las clases de &lt;a href=&#34;http://en.wikipedia.org/wiki/LiveConnect&#34;&gt;LiveConnect&lt;/a&gt; del navegador para llamar a la función &lt;a href=&#34;http://en.wikipedia.org/wiki/Javascript&#34;&gt;JavaScript&lt;/a&gt; windowClose() residente en el HTML, que a su vez llama a window.close(). Todo para que, una vez que se ejecutó el código del applet, se cierre la ventana.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Hotmail me dio 1GB de espacio!</title>
+      <link>http://localhost:1313/2006/11/hotmail-me-dio-1gb-de-espacio/</link>
+      <pubDate>Thu, 16 Nov 2006 12:44:00 +0000</pubDate>
+      <guid>http://localhost:1313/2006/11/hotmail-me-dio-1gb-de-espacio/</guid>
+      <description>&lt;p&gt;Al fin!!! Después de tener Hotmail (gratuito) desde el &lt;a href=&#34;http://web.archive.org/web/19970408045703/http://www.hotmail.com/&#34;&gt;año 1998&lt;/a&gt;, con fantabulosos 2MB de almacenamiento, y una interfaz &amp;ldquo;novedosa&amp;rdquo; para la época&amp;hellip;&lt;/p&gt;
+&lt;p&gt;&amp;hellip; Microsoft &lt;a href=&#34;http://web.archive.org/web/19990125090134/http://hotmail.com/&#34;&gt;compró Hotmail&lt;/a&gt; y nunca ofreció nada más &amp;ldquo;atractivo&amp;rdquo; de Hotmail&amp;hellip; por eso empecé a usar Yahoo (100MB de espacio contra 2MB era muucha diferencia, no?), hasta que llegó el gran &lt;a href=&#34;http://www.gmail.com/&#34;&gt;GMail&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Sin palabras: GMail estaba y está todavía muy por delante de cualquier otro servicio de correo. Su &lt;a href=&#34;http://mail.google.com/mail/help/about.html#screenshots&#34;&gt;interfaz totalmente novedosa&lt;/a&gt; (no igualada todavía por los otros) y &amp;ldquo;liviana&amp;rdquo; utilizando AJAX, simple y con muchas características (hasta tiene un cliente de mensajería en el mismo webmail!), 2.6 GB de almacenamiento, bla bla bla&amp;hellip; hacen que esto:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>URL de la Rock and Pop</title>
+      <link>http://localhost:1313/2006/11/url-de-la-rock-and-pop/</link>
+      <pubDate>Wed, 15 Nov 2006 13:56:00 +0000</pubDate>
+      <guid>http://localhost:1313/2006/11/url-de-la-rock-and-pop/</guid>
+      <description>&lt;p&gt;Para la gente que quiera escuchar la Rock and Pop y necesite la URL para agregarla directamente en su reproductor de música sin andar dando vueltas por la página, las URLs son:&lt;/p&gt;
+&lt;p&gt;Banda Ancha:&lt;br&gt;
+&lt;a href=&#34;mms://200.59.146.10/rockandpop-ba&#34;&gt;mms://200.59.146.10/rockandpop-ba&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Dial Up:&lt;br&gt;
+&lt;a href=&#34;mms://200.59.146.10/rockandpop-ba&#34;&gt;mms://200.59.146.10/rockandpop-du&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;En Linux con los códecs de gstreamer-ugly deberían funcionar (tengo tantos códecs que ya no sé con cuáles específicamente funcionan&amp;hellip;)&lt;/p&gt;
+&lt;p&gt;Marcelo&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Nueva Versión de TabMixPlus!</title>
+      <link>http://localhost:1313/2006/11/nueva-version-de-tabmixplus/</link>
+      <pubDate>Mon, 06 Nov 2006 21:48:00 +0000</pubDate>
+      <guid>http://localhost:1313/2006/11/nueva-version-de-tabmixplus/</guid>
+      <description>&lt;p&gt;Mi plugin preferido para Firefox de manejo de pestañas por fin fue actualizado para soportar la versión 2.0 de Firefox!&lt;/p&gt;
+&lt;p&gt;Trae un par de novedades, pero lo más importante es que ya tengo las funcionalidades extra de la versión anterior. :-D&lt;/p&gt;
+&lt;p&gt;Screenshot:&lt;br&gt;
+&lt;a href=&#34;http://photos1.blogger.com/blogger2/448/981953459584652/1600/Pantallazo-Tab%20Mix%20Plus%20Options.png&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://photos1.blogger.com/blogger2/448/981953459584652/320/Pantallazo-Tab%20Mix%20Plus%20Options.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Acá se puede ver la opción de dejar a Firefox manejar las restauración de sesiones.&lt;/p&gt;
+&lt;p&gt;Links:&lt;br&gt;
+&lt;a href=&#34;https://addons.mozilla.org/firefox/1122/&#34;&gt;Página en addons.mozilla.org&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;http://tmp.garyr.net/&#34;&gt;Página del proyecto&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Salu2&lt;br&gt;
+PD: Les dejo un &lt;a href=&#34;http://www.econsultant.com/i-want-firefox-extension/index.html&#34;&gt;link con muchísimas extensiones&lt;/a&gt; para Firefox, pero categorizadas.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Un Poco de Cada Cosa</title>
+      <link>http://localhost:1313/2006/08/un-poco-de-cada-cosa/</link>
+      <pubDate>Fri, 01 Sep 2006 00:37:00 +0000</pubDate>
+      <guid>http://localhost:1313/2006/08/un-poco-de-cada-cosa/</guid>
+      <description>&lt;p&gt;Empezamos el día haciendo un pequeño relevamiento de los sitios &lt;a href=&#34;http://joomla.org/&#34;&gt;Joomla&lt;/a&gt; que administro. Primero, actualizando a la nueva &lt;a href=&#34;http://www.joomla.org/content/view/1843/74/&#34;&gt;versión 1.0.11&lt;/a&gt;, ya que corrige algunas vulnerabilidades críticas (y algunas que no lo son tanto). Y segundo, más hincha (pero hay que hacerlo), es revisar de los 6 sitios que tengo, qué componentes hay que actualizar, reemplazar o verificar si hay alguna vulnerabilidad grave.&lt;/p&gt;
+&lt;p&gt;El resumen fue:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Componente SEF404 desactualizado (reemplazar por &lt;a href=&#34;http://www.open-sef.org/&#34;&gt;OpenSEF&lt;/a&gt;).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Revisar &lt;a href=&#34;http://coders.mlshomequest.com/&#34;&gt;samSiteMap&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Actualizar &lt;a href=&#34;http://www.zoomfactory.org/&#34;&gt;zOOm Media Gallery&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

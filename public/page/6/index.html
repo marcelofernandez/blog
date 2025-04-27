@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head>
+	<meta name="generator" content="Hugo 0.147.0"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>El Blog de Marcelo!</title>
+
+<meta name="description" content="Blog Informático sobre Programación, Software Libre y/o Open Source, Linux, Python y alguna que otra cosa más...">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.6330bae568fb8548cd5ae396c8d8ff700d4fc0f161c35971ab47e9c5bf9a2e17.css" integrity="sha256-YzC65Wj7hUjNWuOWyNj/cA1PwPFhw1lxq0fpxb&#43;aLhc=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/feed.xml">
+<link rel="alternate" type="application/json" href="http://localhost:1313/index.json">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="list" id="top">
+<script>
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="El Blog de Marcelo! (Alt + H)">El Blog de Marcelo!</a>
+            <div class="logo-switches">
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/" title="">
+                    <span class="active"></span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/" title="Inicio">
+                    <span class="active">Inicio</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/charlas/" title="Charlas">
+                    <span>Charlas</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/proyectos/" title="Proyectos">
+                    <span>Proyectos</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/publicaciones/" title="Publicaciones">
+                    <span>Publicaciones</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/sobre-mi/" title="Sobre Mí">
+                    <span>Sobre Mí</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/about-me/" title="About Me">
+                    <span>About Me</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/search/" title="🔍">
+                    <span>🔍</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">PostgreSQL Conference 2009
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Gracias a este post del sitio de PostgreSQL en español, me entero que terminó la conferencia anual de la comunidad de PostgreSQL, llamada PGCon 2009. Obviamente, la nueva versión que está al caer ( 8.4) acaparó todo un track completo, así que acá está la lista de charlas para ver de qué se trató.
+Particularmente, a mí me interesó mirar los slides de:
+Introducing Windowing functions: Es una nueva e importante característica de PostgreSQL 8.4, el soporte de consultas con varios niveles de aggregates, no sólo el primero con la cláusula GROUP BY, sino que también se pueden subdividir estos grupos (llamados Windows) y ejecutar funciones dentro de cada subrango. Muy interesante. No More Waiting: La clásica y necesaria charla sobre las nuevas cosas de PostgreSQL 8.4. SkyTools3: Replication (Londiste3): Si hay algo que se le puede “recriminar” a PostgreSQL es la falta de replicación built-in (está prometido para la 8.5, tough). Sin embargo, hay muchas herramientas extra para hacerlo, y Londiste es una de ellas (desarrollada por la gente de Skype, que usa PostgreSQL para todo). En fin, PostgreSQL es una base de datos muy robusta y confiable, la vengo utilizando profesionalmente y nunca me dejó de a pie. Tiene una excelente documentación, una licencia extremadamente libre (BSD), casi todas las características de las grandes, y un muy buen soporte en la lista de PostgreSQL en español.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2009-05-24 21:09:00 +0000 +0000'>May 24, 2009</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;mfernandez</footer>
+  <a class="entry-link" aria-label="post link to PostgreSQL Conference 2009" href="http://localhost:1313/2009/05/postgresql-conference-2009/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Renderizando PDFs en Python con Poppler
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Buenas… hoy voy a mostrar una forma de renderizar archivos PDF dentro de nuestras aplicaciones y desde Python, para casi cualquier plataforma con la estemos trabajando.
+Introducción Si bien cuando se arma una aplicación de escritorio se suele “llamar” a un software externo ( Acrobat Reader, Fox-It, Evince, etc.) para que muestre el contenido de un archivo PDF, generalmente queda “feo”; nuestro programa pierde la interacción y el control de lo que el usuario hace con el mismo, implica superponer un programa arriba del otro, etc. Esto suele producir una experiencia dificultosa para el usuario de nuestro querido programa, y como corresponde, los programadores nos ponemos tristes. :-(
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2009-05-02 21:34:00 +0000 +0000'>May 2, 2009</span>&nbsp;·&nbsp;5 min&nbsp;·&nbsp;mfernandez</footer>
+  <a class="entry-link" aria-label="post link to Renderizando PDFs en Python con Poppler" href="http://localhost:1313/2009/05/renderizando-pdfs-en-python-con-poppler/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Charla sobre Virtualización - Slides
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p> Estos slides los estuve preparando para dar una charla sobre virtualización en el último FLI SOL en la UNLu. No se dio (¡era mucha gente para atender instalando máquinas! :-D), pero las subo acá por un lado, y por el otro no va a faltar la oportunidad en darla. Es más, estamos pensando seriamente en hacer algún “pequeño evento” en la UNLu no muy lejano para juntar charlas…
+En fin, los slides en cuestión, están disponibles aquí formato OpenOffice, y aquí en formato PDF.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2009-04-28 14:12:00 +0000 +0000'>April 28, 2009</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;mfernandez</footer>
+  <a class="entry-link" aria-label="post link to Charla sobre Virtualización - Slides" href="http://localhost:1313/2009/04/charla-sobre-virtualizacion-slides/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Flisol 2009
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Este año, y como todos los años, se realiza el Festival Latinoamericano de Instalacion de Software Libre, más conocido como FLISOL. Yo voy a estar dando una mano en la que se realiza en la ciudad de Luján, sin embargo se realizan en un montón de ciudades del país y latinoamérica… en fin, ¡los esperamos!
+Va a haber alguna que otra charla, regalada de CDs, instalación de nuevos equipos y reunión del grupo del UNLuX.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2009-04-14 15:51:00 +0000 +0000'>April 14, 2009</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;mfernandez</footer>
+  <a class="entry-link" aria-label="post link to Flisol 2009" href="http://localhost:1313/2009/04/flisol-2009/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">PyCon Chicago 2009
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Hace algunos días que están disponibles los videos (versión más “navegable” acá) de unas cuantas charlas de PyCon 2009 - Chicago (terminó hace unos pocos días), y como me apasionan este tipo de eventos, suelo dedicarle algún tiempo libre a ver las que más me interesan (que “filtro” por el título, no me queda otra).
+Les dejo una lista de las más importantes según mi criterio* (aclaro, sin haberlas visto):
+A Whirlwind Excursion through Writing a C Extension: Excelente charla, me viene en un momento justo, por decirlo de alguna manera, cuando quería meter algo de mano en Python desde C. Los slides y la charla en formato de texto están acá (aunque obviamente no es lo mismo que el video de Ned Batchelder). Se trata de una introducción bastante completa y sencilla a extender Python con C (por performance, por interacción con componentes nativos o por capricho). :-)
+Un detalle más que quiero agregar es que el proyecto Boost tiene una biblioteca Boost.Python esto que hace todo automágicamente (pero sólo sirve usando C&#43;&#43;). PyPy status talk. Reinteract: a better way to interact with Python Introduction to Python Profiling Python in a sandbox Jython Progress: Bueno, me alegra saber que queda poco para que Jython se actualice a Python 2.5 de manera oficial. Básicamente pusieron el énfasis en compatibilidad, tienen unas cuantas mejoras bajo el capó y espero que lo saquen lo antes posible. Sun (Oracle ahora) está (estaba?) metiéndole fichas al desarrollo de Python en la JVM… veremos qué pasa. Panel: Object Relational Mappers: Philosophies and Design Decisions. Python 2.6 and 3.0 compatibility Dejavu: Language INtegrated Query for data Dabo: Rich Client Web Applications in 100% Python: Miren el último cuarto de la charla, todo lo anterior es una gran intro de ventajas y desventajas de las desktop apps vs. browser apps, para hablar de una aplicación que parece muy piola (y que se integra con Dabo) para “lanzar” aplicaciones y que se actualizen automágicamente. Recomendable. Concurrency and Distributed Computing with Python Today The Browser Interface, Local Server (BILS) Application Keynote: Guido van Rossum: Es un groso, no hay ninguna duda… pero siendo sincero me aburrió bastante, ya que no tocó ningún tema técnico, y fue un “gracias a la comunidad” de una hora. Easy AI with Python Introduction to Multiprocessing in Python ¡Puff! Son un montón, y revisando un poco los títulos, se ve que me interesaron los temas bien técnicos. Para cada uno tengo un motivo, pero en vez de gastarme escribiendo (el tiempo es tirano, je), prometo que a medida que las vaya viendo (cada una dura algo así como 40 minutos), voy a actualizar este post.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2009-04-08 18:26:00 +0000 +0000'>April 8, 2009</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;mfernandez</footer>
+  <a class="entry-link" aria-label="post link to PyCon Chicago 2009" href="http://localhost:1313/2009/04/pycon-chicago-2009/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Novedades en Firefox 3.1 beta (será 3.5)
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p> Si bien la mayoría de los sitios de noticias tiene un enlace a esta página, detallando las novedades más importantes y generales en la aplicación, me gustaría destacar algunas de las novedades “bajo el capó” del próximo Firefox 3.5, que se describen en esta otra página (“Firefox para desarrolladores web”).
+Veamos, las que me parecen más interesantes son:
+Soporte para los nuevos tags audio y video del futuro (y en borrador todavía) HTML 5 incluído. Lo interesante es que no sólo permite controlar la reproducción por Javascript (algo relativamente lógico), sino que también permite que Javascript procese y manipule la imagen mediante canvas. ¡ Muy bueno! Un detalle es que por ahora soporta el formato WAV y OGG únicamente.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2009-03-13 00:45:00 +0000 +0000'>March 13, 2009</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;mfernandez</footer>
+  <a class="entry-link" aria-label="post link to Novedades en Firefox 3.1 beta (será 3.5)" href="http://localhost:1313/2009/03/novedades-en-firefox-31-beta-sera-35/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Otra vez el Cambio de Horario en Ubuntu
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p> Este post es sólo para comentar, amigos sysadmins, que este domingo a las 00:00 hs. se “atrasará” una hora el reloj del lado este del país, y que todos aquellos que tengan actualizados el paquete tzdata van a tener actualizados el reloj automáticamente, a diferencia de otras oportunidades donde lo repentino de los caprichos las decisiones políticas hicieron que hubiera que hacer esto a mano.
+Para comprobar esto, pueden correr en la consola:
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2009-03-10 12:57:00 +0000 +0000'>March 10, 2009</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;mfernandez</footer>
+  <a class="entry-link" aria-label="post link to Otra vez el Cambio de Horario en Ubuntu" href="http://localhost:1313/2009/03/otra-vez-el-cambio-de-horario-en-ubuntu/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Artículo sobre Optimización en Software
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>En este artículo el autor ( Shlomi Fish) discute un poco sobre optimización de algoritmos, y está orientado bastante a lo pragmático, desmitificando (o intentando derribar) algunos viejos “axiomas” de la programación.
+Para mí fue muy interesante la introducción de la idea de que optimizar factores constantes en la complejidad de un algoritmo también sirve; es decir, no sólo reducir órdenes de magnitud como único objetivo al optimizar, sino que también es importante hacerlo en factores. Con lo cual tiende a derribar dentro de su criterio el mito de “O(N²) es igual a O(2N²)”, por ejemplo.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2009-02-19 01:04:00 +0000 +0000'>February 19, 2009</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;mfernandez</footer>
+  <a class="entry-link" aria-label="post link to Artículo sobre Optimización en Software" href="http://localhost:1313/2009/02/articulo-sobre-optimizacion-en-software/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">QT será licenciado como LGPL
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Creo que es la mejor noticia de los últimos (¿años?) con respecto al mundo del software libre en el escritorio: las bibliotecas de desarrollo QT, en su versión desktop y embedded, piedra fundamental de todo el entorno de escritorio KDE (y de muchísimas aplicaciones más), se distribuirá con licencia LGPL, a partir de su versión 4.5.
+Ahora los programadores seremos libres de desarrollar aplicaciones cerradas (“comerciales”) o no con QT, tanto para móviles/smartphones ( Windows CE, S60) y/o dispositivos varios como para el escritorio (Windows, Linux, Mac, y más). No todos podíamos pagar la licencia comercial de QT (no lo dice, pero era muy salada, por asiento y en euros), y nos perdíamos de usar una de las mejores bibliotecas de desarrollo de su tipo en existencia.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2009-01-14 13:34:00 +0000 +0000'>January 14, 2009</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;mfernandez</footer>
+  <a class="entry-link" aria-label="post link to QT será licenciado como LGPL" href="http://localhost:1313/2009/01/qt-sera-licenciado-como-lgpl/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Sobre KVM - Virtualización en Servidores
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p> Leyendo la blogósfera, me detuve en esta crónica de una migración de VMWare Server a KVM, explicando las razones de porqué elegir KVM y no el resto. :-)
+Las enumero, tratando de traducirlas lo mejor posible:
+El host corriendo KVM es un Linux estándar sin modificar. Para ambos ( Xen y VMWare ESX) se necesita correr un Sistema Operativo modificado especialmente (que lo hace relativamente difícil de mantener al día con actualizaciones de seguridad).
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2009-01-04 19:45:00 +0000 +0000'>January 4, 2009</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;mfernandez</footer>
+  <a class="entry-link" aria-label="post link to Sobre KVM - Virtualización en Servidores" href="http://localhost:1313/2009/01/sobre-kvm-virtualizacion-en-servidores/"></a>
+</article>
+<footer class="page-footer">
+  <nav class="pagination">
+    <a class="prev" href="http://localhost:1313/page/5/">
+      «&nbsp;Prev&nbsp;
+    </a>
+    <a class="next" href="http://localhost:1313/page/7/">Next&nbsp;&nbsp;»
+    </a>
+  </nav>
+</footer>
+    </main>
+    
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+</body>
+
+</html>

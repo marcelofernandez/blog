@@ -1,0 +1,79 @@
+baseURL: http://blog.marcelofernandez.info
+languageCode: es
+title: El Blog de Marcelo!
+theme: PaperMod
+taxonomies:
+  category: category
+  tag: tag
+params:
+  description: Blog Informático sobre Programación, Software Libre y/o Open Source, Linux, Python y alguna que otra cosa más...
+  defaultTheme: auto
+  disableThemeToggle: true
+  showShareButtons: true
+  showReadingTime: true
+  showToc: false
+  showBreadCrumbs: true
+  showCodeCopyButtons: true
+  comments: true
+  hideFooter: true
+  assets:
+    favicon: /favicon.ico
+    disableHLJS: true
+markup:
+  highlight:
+    codeFences: true
+    guessSyntax: true
+    style: monokai
+  goldmark:
+    renderer:
+      unsafe: true
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+outputFormats:
+  RSS:
+    mediaType: application/rss+xml
+    baseName: feed
+menu:
+  main:
+    - name: ""
+      url: https://x.com/fidelfernandez
+      weight: 1
+    - name: ""
+      url: https://www.instagram.com/marcelo.fidel.fernandez/
+      weight: 2
+    - name: ""
+      url: https://github.com/marcelofernandez
+      weight: 3
+    - name: ""
+      url: https://www.linkedin.com/in/marcelofidelfernandez
+      weight: 4
+    - name: ""
+      url: marcelo.fidel.fernandez@gmail.com
+      weight: 5
+    - name: ""
+      url: ""
+      weight: 6
+    - name: Inicio
+      url: /
+      weight: 7
+    - name: Charlas
+      url: /charlas/
+      weight: 8
+    - name: Proyectos
+      url: /proyectos/
+      weight: 9
+    - name: Publicaciones
+      url: /publicaciones/
+      weight: 10
+    - name: Sobre Mí
+      url: /sobre-mi/
+      weight: 11
+    - name: About Me
+      url: /about-me/
+      weight: 12
+    - name: "\U0001F50D"
+      url: /search/
+      weight: 13

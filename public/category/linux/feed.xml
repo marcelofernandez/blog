@@ -1,0 +1,915 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Linux on El Blog de Marcelo!</title>
+    <link>http://localhost:1313/category/linux/</link>
+    <description>Recent content in Linux on El Blog de Marcelo!</description>
+    <generator>Hugo -- 0.147.0</generator>
+    <language>es</language>
+    <lastBuildDate>Tue, 27 Feb 2018 03:38:25 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/category/linux/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Taller de Programación de Sockets TCP/IP</title>
+      <link>http://localhost:1313/2018/02/taller-programacion-de-sockets-tcp-ip/</link>
+      <pubDate>Tue, 27 Feb 2018 03:38:25 +0000</pubDate>
+      <guid>http://localhost:1313/2018/02/taller-programacion-de-sockets-tcp-ip/</guid>
+      <description>&lt;p&gt;En este mes de febrero tuve la suerte de llevar adelante en la UNLu un breve pero conciso taller de programación de sockets basado en Python. Dejo los slides, ejemplos de código y ejercicios planteados en el apartado de &lt;a href=&#34;http://localhost:1313/charlas/&#34;&gt;Charlas&lt;/a&gt; de mi blog, y en este post.&lt;/p&gt;
+&lt;p&gt;Agenda:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Clase 1: Introducción Sockets API. Modelo OSI, entornos de ejecución.Introducción a Python. Socket API para UDP. Ejercicios.
+&lt;ul&gt;
+&lt;li&gt;Descargar en Formato &lt;a href=&#34;http://marcelofernandez.info/sockets/slides/Taller%20Sockets-C1.odp&#34;&gt;ODP&lt;/a&gt; / Formato &lt;a href=&#34;http://marcelofernandez.info/sockets/slides/Taller%20Sockets-C1.pdf&#34;&gt;PDF&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Código de ejemplo: &lt;a href=&#34;http://marcelofernandez.info/sockets/code/Clase%201%20-%20UDP.zip&#34;&gt;ZIP&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Clase 2: Socket API para TCP. Código de ejemplo y ejercicios.
+&lt;ul&gt;
+&lt;li&gt;Descargar en Formato &lt;a href=&#34;http://marcelofernandez.info/sockets/slides/Taller%20Sockets-C2.odp&#34;&gt;ODP&lt;/a&gt; / Formato &lt;a href=&#34;http://marcelofernandez.info/sockets/slides/Taller%20Sockets-C2.pdf&#34;&gt;PDF&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Clase 3: Multiprogramación, concurrencia, paralelismo. Syscall fork() y relacionados. Ejemplos de servidor multiproceso. Procesos vs. Threads.
+&lt;ul&gt;
+&lt;li&gt;Descargar en Formato &lt;a href=&#34;http://marcelofernandez.info/sockets/slides/Taller%20Sockets-C3.odp&#34;&gt;ODP&lt;/a&gt; / Formato &lt;a href=&#34;http://marcelofernandez.info/sockets/slides/Taller%20Sockets-C3.pdf&#34;&gt;PDF&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Código de ejemplo: &lt;a href=&#34;http://marcelofernandez.info/sockets/code/Clase%203%20-%20Procesos.zip&#34;&gt;ZIP&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Clase 4: Sockets asincrónicos. Modelo de trabajo, syscall select(). Ejemplos de código. Introducción a Scapy.
+&lt;ul&gt;
+&lt;li&gt;Descargar en Formato &lt;a href=&#34;http://marcelofernandez.info/sockets/slides/Taller%20Sockets-C4.odp&#34;&gt;ODP&lt;/a&gt; / Formato &lt;a href=&#34;http://marcelofernandez.info/sockets/slides/Taller%20Sockets-C4.pdf&#34;&gt;PDF&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Código de ejemplo: &lt;a href=&#34;http://marcelofernandez.info/sockets/code/Clase%204%20-%20Select.zip&#34;&gt;ZIP&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;¡Saludos!&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>CORE Network Emulator</title>
+      <link>http://localhost:1313/2018/01/core-network-emulator/</link>
+      <pubDate>Wed, 31 Jan 2018 13:06:39 +0000</pubDate>
+      <guid>http://localhost:1313/2018/01/core-network-emulator/</guid>
+      <description>&lt;p&gt;Investigando herramientas de simulación/emulación de redes con fines educativos, &lt;a href=&#34;http://bitnegro.blogspot.com.ar/&#34;&gt;un amigo&lt;/a&gt; pasó &lt;a href=&#34;http://www.brianlinkletter.com/open-source-network-simulators/&#34;&gt;esta página&lt;/a&gt;, bastante nutrida por cierto, con un listado de simuladores/emuladores de red, recomendando probar &lt;a href=&#34;https://www.nrl.navy.mil/itd/ncs/products/core&#34;&gt;CORE&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;C.O.R.E., acrónimo de &lt;em&gt;Common Open Research Environment&lt;/em&gt;, fue un proyecto inicialmente de Boeing (sí, la de los aviones) y que ahora es sponsoreado por el &lt;a href=&#34;https://www.nrl.navy.mil/&#34;&gt;Laboratorio de Investigación Naval de los Estados Unidos&lt;/a&gt;. Le dediqué un rato a revisar qué tal funcionaba, y aquí está lo que pude probar.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Nuevo Documento: &#34;HTTP/2. Un nuevo protocolo para la web&#34; (v1.0)</title>
+      <link>http://localhost:1313/2017/05/nuevo-documento-http2-un-nuevo-protocolo-para-la-web-v1-0/</link>
+      <pubDate>Sat, 06 May 2017 15:04:16 +0000</pubDate>
+      <guid>http://localhost:1313/2017/05/nuevo-documento-http2-un-nuevo-protocolo-para-la-web-v1-0/</guid>
+      <description>&lt;p&gt;Les comparto el documento que armé dentro del marco del grupo de &lt;a href=&#34;http://www.labredes.unlu.edu.ar/&#34;&gt;Teleinformática y Redes&lt;/a&gt; de la &lt;a href=&#34;http://www.unlu.edu.ar&#34;&gt;Universidad Nacional de Luján&lt;/a&gt; sobre el protocolo HTTP/2, a modo de recopilación, traducción y simplificación de todo lo que anda dando vueltas en la web. La idea es ir actualizándolo y completándolo a medida que pase el tiempo.&lt;/p&gt;
+&lt;p&gt;Dejo el link para bajarlo &lt;a href=&#34;http://www.labredes.unlu.edu.ar/sites/www.labredes.unlu.edu.ar/files/site/data/tyr/http2_Fernandez_Tolosa.pdf&#34;&gt;en PDF&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Se aceptan sugerencias, comentarios y críticas, por qué no. :-)&lt;/p&gt;
+&lt;p&gt;Saludos&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Habilitando HTTP/2 en Apache sobre Ubuntu 16.04 sin PPAs</title>
+      <link>http://localhost:1313/2017/03/habilitando-http2-en-apache-sobre-ubuntu-16-04-sin-ppas/</link>
+      <pubDate>Tue, 14 Mar 2017 19:39:58 +0000</pubDate>
+      <guid>http://localhost:1313/2017/03/habilitando-http2-en-apache-sobre-ubuntu-16-04-sin-ppas/</guid>
+      <description>&lt;p&gt;Una de las cosas que me sorprendió de la versión de &lt;a href=&#34;http://packages.ubuntu.com/xenial/apache2&#34;&gt;Apache 2.4.18 incluida en Ubuntu 16.04&lt;/a&gt; (y también en Ubuntu 16.10) es que &lt;a href=&#34;https://wiki.ubuntu.com/XenialXerus/ReleaseNotes?_ga=1.128555916.1457848077.1479625589#HTTP.2F2_support_in_Apache_httpd&#34;&gt;el módulo mod_http2 no está habilitado por ser considerado &amp;ldquo;experimental&lt;/a&gt;&amp;rdquo; por el proyecto Apache.&lt;/p&gt;
+&lt;p&gt;Discusiones de si debe estar o no al margen, esta característica funciona mayormente bien y no tiene fallas importantes. En mi caso evalué un par de alternativas:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Compilar un server nuevo desde los fuentes es poco práctico, ya que la integración de Apache lograda por el empaquetado de Debian/Ubuntu es mala o dificultosa como mínimo, además de tener que compilar por futuras actualizaciones de seguridad.&lt;/li&gt;
+&lt;li&gt;Confiar en un repositorio PPA ajeno (como indican &lt;a href=&#34;https://www.digitalocean.com/community/questions/enable-http2-in-apache-on-ubuntu-16-04&#34;&gt;otros posts&lt;/a&gt;) también es un problema, más aún bajo ciertos entornos.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Es por esto que, buscando una alternativa diferente, encontré una manera relativamente fácil, rápida y &amp;ldquo;con actualizaciones&amp;rdquo; de habilitar el módulo HTTP/2 sobre el mismo Apache 2.4.18 que trae Ubuntu 16.04/16.10.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Charlas: Introducción a AWS y a HTTP/2</title>
+      <link>http://localhost:1313/2016/09/charlas-introduccion-a-aws-y-a-http2/</link>
+      <pubDate>Tue, 13 Sep 2016 18:30:45 +0000</pubDate>
+      <guid>http://localhost:1313/2016/09/charlas-introduccion-a-aws-y-a-http2/</guid>
+      <description>&lt;p&gt;Hace unos días tuve el placer de &lt;a href=&#34;http://www.prensa.unlu.edu.ar/?q=node/3244&#34;&gt;dar una charla&lt;/a&gt; en el &lt;a href=&#34;http://cidetic.unlu.edu.ar/&#34;&gt;CIDETIC&lt;/a&gt;, perteneciente a la &lt;a href=&#34;http://www.unlu.edu.ar/&#34;&gt;Universidad Nacional de Luján&lt;/a&gt;, respecto a los servicios de cloud computing en general y a los de Amazon Web Services en particular.&lt;/p&gt;
+&lt;p&gt;Como siempre, preparar y hablar en público sobre un tema no es lo mismo que tener los conceptos algo desordenados, producto únicamente de la experiencia práctica; por lo que fue un desafío organizar tantas ideas algo deshilachadas&amp;hellip; y acepté gustoso. De hecho, tengo un par de críticas que hacerme a mí mismo sobre cómo salió, como que por ejemplo, me quedaron cosas en el tintero y me llevó más tiempo de lo planificado.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Fedora Day Buenos Aires 2014</title>
+      <link>http://localhost:1313/2014/12/fedora-day-buenos-aires-2014/</link>
+      <pubDate>Wed, 10 Dec 2014 16:00:41 +0000</pubDate>
+      <guid>http://localhost:1313/2014/12/fedora-day-buenos-aires-2014/</guid>
+      <description>&lt;p&gt;La comunidad &lt;a href=&#34;https://fedoraproject.org/wiki/Fedora-Argentina&#34; title=&#34;Fedora Argentina&#34;&gt;Fedora Argentina&lt;/a&gt; se complace en anunciar el evento más importante de &lt;a href=&#34;https://getfedora.org/&#34; title=&#34;Fedora Project&#34;&gt;Fedora&lt;/a&gt; en el país hasta el momento:&lt;/p&gt;
+&lt;p&gt;¡El &lt;strong&gt;Sábado 13 de Diciembre&lt;/strong&gt; los esperamos en la &lt;strong&gt;&lt;a href=&#34;http://www.frba.utn.edu.ar/&#34; title=&#34;Universidad Tecnológica Nacional - Facultad Regional Buenos Aires&#34;&gt;UTN&lt;/a&gt; de &lt;a href=&#34;https://www.google.com/maps/dir//Av+Medrano+951,+Buenos+Aires,+Argentina/@-34.5985656,-58.4224142,17z/data=!3m1!4b1!4m8!4m7!1m0!1m5!1m1!1s0x95bcca7cd547261d:0x60e88fc2c2496c7d!2m2!1d-58.4202684!2d-34.5985656&#34;&gt;Medrano 951, CABA&lt;/a&gt;&lt;/strong&gt;, para celebrar el Fedora Day!&lt;/p&gt;
+&lt;p&gt;Será un día con charlas de varios ponentes de Argentina y Latinoamérica, donde se hablará del futuro de la distribución y de varias tecnologías como &lt;a href=&#34;http://www.ovirt.org/Home&#34; title=&#34;oVirt&#34;&gt;Ovirt&lt;/a&gt;, &lt;a href=&#34;https://www.docker.com/&#34; title=&#34;Docker&#34;&gt;Docker&lt;/a&gt;, &lt;a href=&#34;https://www.openshift.com/&#34; title=&#34;OpenShift&#34;&gt;Openshift&lt;/a&gt;, etc. También estaremos celebrando el Release Party de la nueva versión de Fedora, &lt;a href=&#34;http://fedoraproject.org/get-prerelease&#34;&gt;Fedora 21&lt;/a&gt;, ¡con la posibilidad de instalarlo en sus computadoras o en un pendrive para llevarlo!&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Pwning hardware</title>
+      <link>http://localhost:1313/2014/11/pwning-hardware/</link>
+      <pubDate>Sat, 01 Nov 2014 16:00:51 +0000</pubDate>
+      <guid>http://localhost:1313/2014/11/pwning-hardware/</guid>
+      <description>&lt;p&gt;El video dura media hora, pero a mí me gustó muchísimo, aprendí mucho. &lt;a href=&#34;http://scanlime.org/&#34; title=&#34;Scanlime - One girl&#39;s diary of improvisational engineering&#34;&gt;Mikah Scott&lt;/a&gt; es &lt;a href=&#34;http://scanlime.org/resume/&#34; title=&#34;Mikah Scott - Resume&#34;&gt;una&lt;/a&gt; &lt;a href=&#34;http://www.misc.name/&#34; title=&#34;Micah Scott Art Portfolio&#34;&gt;genia&lt;/a&gt;, y se propone investigar cómo customizar el firmware de una lectora/grabadora de CD/DVD/Blu-Ray, para dominarlo por completo, empezando por el microcontrolador ARM que posee. Por ejemplo, moviendo el láser en la posición que uno quiera y dispararlo. Habla un excelente y puntilloso inglés, así que se le entiende palabra por palabra, sugiero que lo vean incluso para practicar su inglés técnico.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Comparando costos de Amazon EC2 y Google Computing Engine</title>
+      <link>http://localhost:1313/2014/09/comparando-costos-de-amazon-ec2-y-google-computing-engine/</link>
+      <pubDate>Wed, 17 Sep 2014 20:11:37 +0000</pubDate>
+      <guid>http://localhost:1313/2014/09/comparando-costos-de-amazon-ec2-y-google-computing-engine/</guid>
+      <description>&lt;p&gt;Estuve mirando y por suerte son prácticamente similares las tablas disponibles en cada site ( &lt;a href=&#34;http://aws.amazon.com/es/ec2/purchasing-options/dedicated-instances/&#34; title=&#34;Amazon EC2 Purchasing Options&#34;&gt;EC2&lt;/a&gt; / &lt;a href=&#34;https://cloud.google.com/products/compute-engine/&#34; title=&#34;Google Compute Engine&#34;&gt;GCE&lt;/a&gt;) y es relativamente sencillo compararlas [1][2].&lt;/p&gt;
+&lt;p&gt;Para sus Data Centers en USA, establecí las siguientes relaciones:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;En las versiones de VMs &amp;quot; &lt;em&gt;standard&lt;/em&gt;&amp;quot;, los precios son exactamente iguales, con configuraciones &lt;em&gt;llamativamente&lt;/em&gt; similares.&lt;/li&gt;
+&lt;li&gt;En las versiones &amp;quot; &lt;em&gt;high memory&lt;/em&gt;&amp;quot;, es más barato Google (la mitad), aunque Amazon te da el doble de CPUs por una VM con la misma cantidad de memoria.
+Ej: Google te da 4 CPUs / 26 GB de RAM y Amazon en cambio te da 8 CPUs para su configuración de 26 GB de RAM. Dado que estamos en &amp;quot; &lt;em&gt;high memory&lt;/em&gt;&amp;quot;, igualé a cantidad de memoria disponible para luego decir &amp;ldquo;Google es la mitad de barato&amp;rdquo;.&lt;/li&gt;
+&lt;li&gt;En las versiones &amp;quot; &lt;em&gt;large&lt;/em&gt;&amp;quot; (&amp;quot; &lt;em&gt;high cpu&lt;/em&gt;&amp;quot; de Google), Amazon es un 15% más caro para igual cantidad de CPUs, pero te da el doble de memoria en sus VMs.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Observaciones&lt;/strong&gt;:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Migrando Host de VMs KVM de Ubuntu 12.04 a 14.04</title>
+      <link>http://localhost:1313/2014/05/migrando-host-de-vms-kvm-12-04-14-04/</link>
+      <pubDate>Fri, 16 May 2014 22:07:05 +0000</pubDate>
+      <guid>http://localhost:1313/2014/05/migrando-host-de-vms-kvm-12-04-14-04/</guid>
+      <description>&lt;p&gt;En estos días arranqué la tarea de migrar Máquinas Virtuales de Hosts Ubuntu 12.04 (entorno QEmu-KVM/Libvirt) a Ubuntu 14.04, para testear que esté funcionando todo ok, y me encontré con dos particularidades:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Por defecto, las interfaces de red no se llaman más &amp;ldquo;ethX&amp;rdquo; ni se guían como antes con el archivo en /etc/udev/rules.d/70-net-persistent.rules, sino que ahora son medio raras (&amp;ldquo;p2p1&amp;rdquo;, &amp;ldquo;p5p4&amp;rdquo;, &amp;ldquo;eno1&amp;rdquo;, &amp;ldquo;enp2s0&amp;rdquo;, etc). &lt;a href=&#34;http://www.freedesktop.org/wiki/Software/systemd/PredictableNetworkInterfaceNames/&#34; title=&#34;Predictable Network Interface Names&#34;&gt;Acá está explicado el por qué del cambio&lt;/a&gt; [1]. A priori no me gusta nada este cambio, por no respetar ninguna convención como sí lo hacía ethX, y encima por ser un cambio por defecto, pero como todo&amp;hellip; supongo que me acostumbraré. Es adaptarse o morir; no es un capricho de Ubuntu, sino de udev.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>FLISOL 2014 en Luján</title>
+      <link>http://localhost:1313/2014/04/flisol-2014-en-lujan/</link>
+      <pubDate>Mon, 07 Apr 2014 04:21:36 +0000</pubDate>
+      <guid>http://localhost:1313/2014/04/flisol-2014-en-lujan/</guid>
+      <description>&lt;p&gt;El grupo de usuarios de &lt;a href=&#34;http://www.unlux.com.ar/&#34;&gt;Software Libre de la Universidad de Luján -&lt;/a&gt; &lt;a href=&#34;http://www.unlux.com.ar/&#34;&gt;UNLUX-&lt;/a&gt; invita a toda la comunidad a participar de la &lt;strong&gt;edición 2014 del &lt;a href=&#34;http://flisol.info/FLISOL2014/Argentina/Lujan&#34;&gt;FLISOL – Festival Latinoamericano de Instalación de Software Libre&lt;/a&gt;&lt;/strong&gt; en la ciudad de Luján, a llevarse a cabo el día &lt;strong&gt;sábado 26 de abril&lt;/strong&gt;, en concordancia con numerosas ciudades de Argentina y el continente. Las actividades se desarrollaran en la Sede Central de la Universidad Nacional de Luján (UNLu) a partir de las 13:00 hs.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Cómo compartir un dispositivo serie por la red en Linux</title>
+      <link>http://localhost:1313/2013/05/como-compartir-un-dispositivo-serie-por-la-red-en-linux/</link>
+      <pubDate>Mon, 27 May 2013 17:12:54 +0000</pubDate>
+      <guid>http://localhost:1313/2013/05/como-compartir-un-dispositivo-serie-por-la-red-en-linux/</guid>
+      <description>&lt;p&gt;En el trabajo me encontré con la necesidad de utilizar un puerto serial (por ejemplo, un dispositivo con un adaptador USB/Serie en /dev/ttyUSB0, un módem 3G o una placa &lt;a href=&#34;http://www.arduino.cc/&#34; title=&#34;Arduino - HomePage&#34;&gt;Arduino&lt;/a&gt; en /dev/ttyACM0, etc.) conectado físicamente a una máquina en mi red, que por diferentes motivos (distancia, pereza, lo que sea), lo quería acceder con un programa en mi máquina, pero como si fuera local.&lt;/p&gt;
+&lt;p&gt;Es decir, tenía un programa en mi máquina que usa &lt;a href=&#34;http://pyserial.sourceforge.net&#34; title=&#34;pySerial&#34;&gt;pySerial&lt;/a&gt; para acceder al Arduino en /dev/ttyACM0, pero por diferentes motivos el Arduino está conectado en otra máquina de mi red y quería que, sin tocar mi programa, éste acceda al Arduino como si estuviera directamente conectado a mi PC, haciendo de alguna manera &amp;ldquo;transparente&amp;rdquo; la red que nos separaba. Por suerte lo pude resolver, y quizás esta herramienta y acercamiento sirva a más de uno para resolver algún otro problema similar.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Instalando DD-WRT en un TP-Link TL-WR941ND</title>
+      <link>http://localhost:1313/2012/06/instalando-dd-wrt-en-un-tp-link-tl-wr941nd/</link>
+      <pubDate>Sat, 02 Jun 2012 08:34:56 +0000</pubDate>
+      <guid>http://localhost:1313/2012/06/instalando-dd-wrt-en-un-tp-link-tl-wr941nd/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://www.tp-link.com/ar/products/details/?model=TL-WR941ND&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/wp-content/uploads/2012/06/TL-WR941ND-01-300x180.jpg&#34;&gt;&lt;/a&gt; Uno compra un Router/Access Point estos días con la esperanza de que el firmware (software en el equipo) que tiene cargado sea eficiente, no tenga bugs (o al menos tenga actualizaciones periódicas del fabricante que los corrija), e incorpore muchas capacidades interesantes para sacarle el jugo, como el uso de conexiones VPN, priorización de tráfico, poder regular el poder de la antena, gráficos/estadísticas de uso de la conexión, y muchas &amp;ldquo;cositas&amp;rdquo; que a nosotros (la gente técnica) nos gusta aprovechar del dispositivo, todo por el mismo precio.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Virtualizando sólo una partición de una máquina física</title>
+      <link>http://localhost:1313/2011/01/virtualizando-solo-una-particion-de-una-maquina-fisica/</link>
+      <pubDate>Sat, 15 Jan 2011 00:26:20 +0000</pubDate>
+      <guid>http://localhost:1313/2011/01/virtualizando-solo-una-particion-de-una-maquina-fisica/</guid>
+      <description>&lt;p&gt;Hace poquito un amigo me contó que estuvo leyendo &lt;a href=&#34;http://localhost:1313/2010/08/achicando-imagenes-de-maquinas-virtuales-kvm-qcow2/&#34;&gt;el post anterior&lt;/a&gt; de Consolidación y &amp;ldquo;Shrinking&amp;rdquo; de discos físicos para pasarlos a una máquina virtual, pero tenía un pequeño obstáculo relacionado con el espacio en disco necesario, que más o menos era así:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Quería consolidar un disco real de 80 GB que tiene XP instalado en su C:, pero en total el disco tiene 4 particiones (primarias). Sólo me interesaba el disco C:, con lo que ahorraba espacio en el proceso ya que la partición del C: sólo ocupa 25 GB.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Comparativas de Virtualización KVM</title>
+      <link>http://localhost:1313/2011/01/comparativas-de-virtualizacion-kvm/</link>
+      <pubDate>Wed, 05 Jan 2011 10:47:10 +0000</pubDate>
+      <guid>http://localhost:1313/2011/01/comparativas-de-virtualizacion-kvm/</guid>
+      <description>&lt;p&gt;Ultimamente por diferentes cuestiones personales estoy bastante desconectado de la lectura de noticias, blogs y demás. Sin embargo, me pareció útil dejar por acá dos comparativas sobre KVM de &lt;a href=&#34;http://www.phoronix.com/&#34;&gt;Phoronix.com&lt;/a&gt;, que si bien en algunos lados me encontré que se quejan de la &amp;ldquo;calidad&amp;rdquo; de su suite de &lt;a href=&#34;http://www.phoronix-test-suite.com/&#34;&gt;benchmarks&lt;/a&gt; para software libre/abierto, por el otro, ¡hey! ¡al menos se preocupan en hacerlo! :-)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;http://www.phoronix.com/scan.php?page=article&amp;amp;item=linux_kvm_virtualbox4&amp;amp;num=1&#34;&gt;Linux KVM vs. VirtualBox 4.0 Virtualization Benchmarks&lt;/a&gt;&lt;/strong&gt;
+Este es un test de performance entre &lt;a href=&#34;http://www.linux-kvm.com/&#34;&gt;KVM&lt;/a&gt; y &lt;a href=&#34;http://www.virtualbox.org/&#34;&gt;Virtualbox&lt;/a&gt;. En resumen, y con los parámetros por defecto en cuanto a I/O, VBox gana, pero parece que es debido a que no hace los &lt;a href=&#34;http://pubs.opengroup.org/onlinepubs/007908799/xsh/fsync.html&#34;&gt;fsync&lt;/a&gt; del guest en el host y termina utilizando su caché; muy probablemente este comportamiento es configurable (¿ver &lt;a href=&#34;http://www.virtualbox.org/manual/ch05.html#iocaching&#34;&gt;acá&lt;/a&gt;?), pero así y todo ¡es bueno saberlo!. De todas maneras, de alguna manera es peligroso para un entorno de servidores ya que hay riesgo de pérdida de datos, pero por ejemplo, para mi notebook ( &lt;em&gt;target&lt;/em&gt; primario adonde Virtualbox siempre estuvo orientado) está bien.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Navegador simple con wxPython &#43; Webkit/GTK</title>
+      <link>http://localhost:1313/2010/10/navegador-simple-con-wxpython-webkitgtk/</link>
+      <pubDate>Sun, 10 Oct 2010 01:28:54 +0000</pubDate>
+      <guid>http://localhost:1313/2010/10/navegador-simple-con-wxpython-webkitgtk/</guid>
+      <description>&lt;p&gt;Hace algunos posts (¡casi un año ya!) &lt;a href=&#34;http://localhost:1313/2009/11/navegador-simple-con-pywebkitgtk/&#34;&gt;escribí&lt;/a&gt; sobre una manera fácil y rápida de tener un componente &amp;ldquo;navegador web&amp;rdquo; en Python sobre Linux/BSD, gracias a &lt;a href=&#34;http://www.pygtk.org&#34;&gt;PyGTK&lt;/a&gt; y &lt;a href=&#34;http://webkitgtk.org/&#34;&gt;WebkitGTK&lt;/a&gt;, llamado lógicamente, &lt;a href=&#34;http://code.google.com/p/pywebkitgtk/&#34;&gt;pyWebkitGTK&lt;/a&gt;. En pocas líneas de código uno puede disponer de un navegador potente y completo en un panel de su aplicación basada en &lt;a href=&#34;http://www.pygtk.org&#34;&gt;PyGTK&lt;/a&gt;, ideal para integrar aún más la cada omnipresente Web.&lt;/p&gt;
+&lt;p&gt;Las vueltas de la vida y las ganas de experimentar y aprender te llevan a probar otros frameworks/librerías, como lo es &lt;a href=&#34;http://www.wxpython.org&#34;&gt;wxPython&lt;/a&gt;; tanto es así que de vez en cuando tengo el placer de dar &lt;a href=&#34;http://localhost:1313/charlas/&#34;&gt;alguna charla&lt;/a&gt; al respecto &lt;a href=&#34;#nota1&#34;&gt;[1]&lt;/a&gt;, y una de las debilidades que le usualmente le encontraba es la falta de un componente &amp;ldquo;browser web&amp;rdquo; nativo y soportado en todas las plataformas (wxPython sólo incluye IE embebible como ActiveX en Windows).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Achicando imágenes de Máquinas Virtuales (KVM-QCow2)</title>
+      <link>http://localhost:1313/2010/08/achicando-imagenes-de-maquinas-virtuales-kvm-qcow2/</link>
+      <pubDate>Sat, 14 Aug 2010 07:14:26 +0000</pubDate>
+      <guid>http://localhost:1313/2010/08/achicando-imagenes-de-maquinas-virtuales-kvm-qcow2/</guid>
+      <description>&lt;h2 id=&#34;consolidando-máquinas-físicas-a-virtuales&#34;&gt;Consolidando Máquinas Físicas a Virtuales&lt;/h2&gt;
+&lt;p&gt;Dentro del mundo de la Virtualización, al momento de consolidar máquinas &lt;a href=&#34;#1&#34;&gt;[1]&lt;/a&gt; lo más sencillo (o lo que primero se le puede ocurrir a uno &lt;a href=&#34;#2&#34;&gt;[2]&lt;/a&gt;) es hacer una imagen bit a bit del disco donde éste se aloja a un archivo del &lt;em&gt;Host&lt;/em&gt;, mediante alguna herramienta como &lt;a href=&#34;http://en.wikipedia.org/wiki/Dd_(Unix)&#34;&gt;dd&lt;/a&gt; en Linux:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ dd if=/dev/sdb of=/vms/images/imagen.raw
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Este mecanismo es generalmente infalible; luego de ésto, uno crea un perfil de una Máquina Virtual (típicamente un archivo XML donde se describen las características del &lt;em&gt;Guest&lt;/em&gt;), se lo relaciona a esta imagen &amp;ldquo;cruda&amp;rdquo; de la ex-Máquina Física, y en un minutos la misma está corriendo como Máquina Virtual sin problemas.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Free Pascal y Lazarus en Ubuntu</title>
+      <link>http://localhost:1313/2010/06/free-pascal-y-lazarus-en-ubuntu/</link>
+      <pubDate>Sun, 20 Jun 2010 11:00:18 +0000</pubDate>
+      <guid>http://localhost:1313/2010/06/free-pascal-y-lazarus-en-ubuntu/</guid>
+      <description>&lt;p&gt;Creo que la gran mayoría de los programadores debemos recordar aquellos primeros momentos en que uno pasaba tardes y noches enteras escribiendo y escribiendo líneas de código en aquellas XT, AT, Commodores 64/128, etc., sólo por amor al arte y puro fanatismo. Supongo que diríamos lo mismo de los primeros años de facultad, cuando en materias de título &amp;ldquo;Programación I&amp;rdquo; uno repasaba el paradigma de la &lt;a href=&#34;http://es.wikipedia.org/wiki/Programaci%C3%B3n_estructurada&#34;&gt;Programación Estructurada&lt;/a&gt;, casi siempre en el lenguaje de aprendizaje facultativo por excelencia, al menos acá en Argentina: &lt;strong&gt;&lt;a href=&#34;http://es.wikipedia.org/wiki/Lenguaje_de_programaci%C3%B3n_Pascal&#34;&gt;Pascal&lt;/a&gt;&lt;/strong&gt;, usando &lt;a href=&#34;http://en.wikipedia.org/wiki/Turbo_pascal&#34;&gt;Turbo Pascal&lt;/a&gt;, su versión más popular.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Sincronizar carpetas a un Servidor Casero automáticamente</title>
+      <link>http://localhost:1313/2010/06/sincronizar-carpetas-a-un-servidor-casero-automaticamente/</link>
+      <pubDate>Fri, 18 Jun 2010 11:00:46 +0000</pubDate>
+      <guid>http://localhost:1313/2010/06/sincronizar-carpetas-a-un-servidor-casero-automaticamente/</guid>
+      <description>&lt;h2 id=&#34;introducción&#34;&gt;Introducción&lt;/h2&gt;
+&lt;p&gt;Supongamos que tengo un equipo donde usualmente estoy trabajando y otro equipo que está siempre encendido, ambos separados por Internet. En este último, el único puerto abierto sobre una IP Pública es el 22 para usar &lt;a href=&#34;http://www.openssh.com/&#34;&gt;SSH&lt;/a&gt;, con lo cual me viene perfecta la capacidad de &lt;a href=&#34;http://samba.anu.edu.au/rsync/&#34;&gt;rsync&lt;/a&gt; de sincronizar carpetas y los últimos cambios mientras estoy trabajando, todo mediante un canal seguro.&lt;/p&gt;
+&lt;h2 id=&#34;el-script-de-sincronización&#34;&gt;El Script de sincronización&lt;/h2&gt;
+&lt;p&gt;Lo único que necesito es este script en la carpeta personal de mi equipo &amp;ldquo;cliente&amp;rdquo;, o sea, donde hago mis quehaceres diarios:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Reiniciando las conexiones de red automáticamente en Ubuntu</title>
+      <link>http://localhost:1313/2010/06/reiniciando-las-conexiones-de-red-automaticamente-en-ubuntu/</link>
+      <pubDate>Wed, 16 Jun 2010 11:00:43 +0000</pubDate>
+      <guid>http://localhost:1313/2010/06/reiniciando-las-conexiones-de-red-automaticamente-en-ubuntu/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://www.encore-usa.com/ar/product/ENUWI-G2&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/wp-content/uploads/2010/06/ENUWI-G2_pdt_main_090107.png&#34;&gt;&lt;/a&gt; Hace un tiempo que tengo una interfaz &lt;a href=&#34;http://www.encore-usa.com/ar/product/ENUWI-G2&#34;&gt;Wifi USB Encore&lt;/a&gt;; siempre la usé ocasionalmente, en Ubuntu se conectaba y tenía red sin problemas, pero al momento de usarla en forma constante nunca supuse que el módulo rtl8187, responsable de su funcionamiento, &lt;a href=&#34;https://bugs.launchpad.net/ubuntu/+source/linux/+bug/182473&#34;&gt;iba&lt;/a&gt; &lt;a href=&#34;https://bugs.launchpad.net/ubuntu/+source/linux/+bug/225851&#34;&gt;a&lt;/a&gt; &lt;a href=&#34;https://bugs.launchpad.net/ubuntu/+source/linux/+bug/293946&#34;&gt;tener&lt;/a&gt; &lt;a href=&#34;https://bugs.launchpad.net/ubuntu/+source/linux/+bug/254438&#34;&gt;tantos&lt;/a&gt; &lt;a href=&#34;https://bugs.launchpad.net/ubuntu/+source/linux/+bug/215802&#34;&gt;bugs&lt;/a&gt;. :-(&lt;/p&gt;
+&lt;p&gt;En Ubuntu 10.04 funciona sin instalar nada adicional, pero los principales problemas son que funciona sólo a 11Mbps y que aleatoriamente se desconecta, sin causa aparente, y el Network Manager vuelve a reconectarse. El problema es más serio cuando Network Manager se cansa de revivir a la placa, y el equipo se queda desconectado definitivamente. Y más si no estoy cerca para reconectarla a mano. :-P&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Discos Rígidos con Sectores de 4KB en Linux</title>
+      <link>http://localhost:1313/2010/06/discos-rigidos-con-sectores-de-4kb-en-linux/</link>
+      <pubDate>Mon, 14 Jun 2010 02:52:03 +0000</pubDate>
+      <guid>http://localhost:1313/2010/06/discos-rigidos-con-sectores-de-4kb-en-linux/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Actualización (Julio 2010)&lt;/strong&gt;: Armé y redacté no tan informalmente este post en forma de artículo; el mismo está disponible para su consulta, crítica y mejoras en la sección de &lt;a href=&#34;http://localhost:1313/publicaciones/&#34;&gt;Publicaciones&lt;/a&gt; del sitio.&lt;/p&gt;
+&lt;h2 id=&#34;los-nuevos-discos-de-western-digital&#34;&gt;Los nuevos discos de Western Digital &lt;a href=&#34;http://www.wdc.com/en/products/products.asp?driveid=772&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/wp-content/uploads/2010/06/wdfDesktop_CaviarGreen_SATA64.jpg&#34;&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;En estos días tuve la oportunidad de comprar y configurar una máquina Ubuntu con un disco rígido Western Digital de 1,5 Terabytes (1500 Gigabytes aprox.); más precisamente el modelo &lt;a href=&#34;http://www.wdc.com/en/products/products.asp?driveid=772&#34;&gt;WD15EARS&lt;/a&gt;, con 64 MB de caché, velocidad de rotación que varía entre 5400 y 7200 RPMs (llamado &amp;quot; &lt;a href=&#34;http://www.wdc.com/en/flash/index.asp?family=intelliseek&#34;&gt;IntelliSeek&lt;/a&gt;&amp;quot;), interfaz SATA II (3 Gb/seg), y que incluye una nueva tecnología de la marca conocida como &amp;quot; &lt;a href=&#34;http://www.wdc.com/en/products/advancedformat/&#34;&gt;Advanced Format Drive&lt;/a&gt;&amp;quot; (paper &lt;a href=&#34;http://www.wdc.com/wdproducts/library/?id=216&amp;amp;type=87&#34;&gt;aquí&lt;/a&gt;).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Renderizando PDFs en Python con Poppler II</title>
+      <link>http://localhost:1313/2010/04/renderizando-pdfs-en-python-con-poppler-ii/</link>
+      <pubDate>Thu, 15 Apr 2010 18:04:29 +0000</pubDate>
+      <guid>http://localhost:1313/2010/04/renderizando-pdfs-en-python-con-poppler-ii/</guid>
+      <description>&lt;p&gt;Hace unos días me llegó un mail de alguien preguntándome cómo, a partir de la &lt;a href=&#34;http://localhost:1313/2009/05/renderizando-pdfs-en-python-con-poppler/&#34;&gt;parte I de este artículo&lt;/a&gt;, hacer un sencillo visor de PDFs con &lt;a href=&#34;http://www.wxpython.org&#34;&gt;wxPython&lt;/a&gt;. Me encontré con algunas dificultades, principalmente que el &lt;a href=&#34;www.wxpython.org/docs/api/wx.ScrolledWindow-class.html&#34;&gt;ScrolledWindow&lt;/a&gt; de wxPython no permite actualizarse dinámicamente, o automáticamente según el contenido (esto &lt;a href=&#34;http://www.pygtk.org/docs/pygtk/class-gtkadjustment.html&#34;&gt;sí es bastante sencillo en GTK&lt;/a&gt;); con lo cual se complicaba hacer zoom, modificar el tamaño de la ventana y adaptar los scrollbars, etc.&lt;/p&gt;
+&lt;p&gt;Sin embargo, con alguna vuelta de más pude armar un ejemplo, que paso a dejar &lt;a href=&#34;http://code.activestate.com/recipes/577195-wxpython-pdf-viewer-using-poppler/&#34;&gt;acá&lt;/a&gt;:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Curso de Asterisk</title>
+      <link>http://localhost:1313/2010/03/curso-de-asterisk/</link>
+      <pubDate>Tue, 30 Mar 2010 22:08:29 +0000</pubDate>
+      <guid>http://localhost:1313/2010/03/curso-de-asterisk/</guid>
+      <description>&lt;p&gt;Este es un &lt;em&gt;quick-post&lt;/em&gt; como favor a un amigazo que participa de un emprendimiento involucrado en estos cursos de &lt;a href=&#34;http://www.asterisk.org/&#34;&gt;Asterisk&lt;/a&gt;&amp;hellip;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.bitsense.com.ar&#34;&gt;Bitsense&lt;/a&gt; empresa dedicada a la implementación de soluciones telefónicas, dará comienzo a su 3er curso de capacitación de Telefonía IP denominado Biac (Bitsense Initial Asterisk Course), el mismo es el primer curso en la Argentina dictado por dos instructores certificados dCAP (Digium-certified Asterisk Professional) junto con el apoyo de certificados Cisco y Juniper.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Cómo remover el módulo USB 2.0 en Ubuntu 9.10&#43;</title>
+      <link>http://localhost:1313/2010/03/como-remover-el-modulo-usb-2-0-en-ubuntu-9-10/</link>
+      <pubDate>Fri, 19 Mar 2010 18:14:13 +0000</pubDate>
+      <guid>http://localhost:1313/2010/03/como-remover-el-modulo-usb-2-0-en-ubuntu-9-10/</guid>
+      <description>&lt;p&gt;Este post va a intentar ser breve y me parece que es bastante técnico, pero puede serle útil a más de uno.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://localhost:1313/wp-content/uploads/2010/03/SCX4200.jpg&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/wp-content/uploads/2010/03/SCX4200-300x236.jpg&#34;&gt;&lt;/a&gt; Resulta que yo tengo una Impresora Multifunción &lt;a href=&#34;http://www.samsung.com/ar/support/download/supportDown.do?group=&amp;amp;group_cd=&amp;amp;type=impresoras&amp;amp;type_cd=06010000&amp;amp;subtype=multifunci%C3%B3nblancoynegro&amp;amp;subtype_cd=06010300&amp;amp;model_nm=SCX-4200&amp;amp;dType=D&amp;amp;mType=&amp;amp;model_cd=&amp;amp;menu=&amp;amp;prd_ia_cd=06010300&amp;amp;disp_nm=SCX-4200&amp;amp;language=&#34;&gt;Samsung SCX-4200&lt;/a&gt;, que tiene unos drivers (cerrados) para Linux [1]. Estos drivers sirven para imprimir y escanear, y si bien hoy en día Ubuntu se las arregla bárbaro para imprimir con los drivers libres de &lt;a href=&#34;http://splix.ap2c.org/&#34;&gt;SpliX&lt;/a&gt; (¡instalación y configuración automágica!), queda pendiente aún el tema del escaneo.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Virtio - Paravirtualización de I/O</title>
+      <link>http://localhost:1313/2010/02/virtio-paravirtualizacion-de-io/</link>
+      <pubDate>Sat, 27 Feb 2010 19:55:25 +0000</pubDate>
+      <guid>http://localhost:1313/2010/02/virtio-paravirtualizacion-de-io/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://www.linux-kvm.org&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/wp-content/uploads/2010/02/kvmbanner-logo2.png&#34;&gt;&lt;/a&gt; Hace un rato que estoy leyendo sobre virtualización, pero no de CPU, sino de &lt;a href=&#34;http://arstechnica.com/business/guides/2010/02/io-virtualization.ars/&#34;&gt;I/O&lt;/a&gt; (otro más &lt;a href=&#34;http://www.ibm.com/developerworks/linux/library/l-virtio/index.html?ca=dgr-lnxw07Viriodth-LX&amp;amp;S_TACT=105AGX59&amp;amp;S_CMP=grlnxw07&#34;&gt;acá&lt;/a&gt;)&amp;hellip; muy interesante, me aclaró algunas dudas que tenía, dado que últimamente al configurar este tipo de software se me confundían las cosas :-)&lt;/p&gt;
+&lt;p&gt;Resulta que a nivel de I/O tenemos algo parecido a la virtualización al nivel de CPU: emulación, paravirtualización y ejecución &amp;ldquo;directa&amp;rdquo;, por llamarlo de alguna manera. Sugiero leer el artículo para más detalles, pero sólo quiero agregar que recién estamos en la etapa de paravirtualización, y que (en buena hora) Intel y AMD agregaron unidades &lt;a href=&#34;http://en.wikipedia.org/wiki/IOMMU&#34;&gt;IOMMU&lt;/a&gt; en sus últimos diseños para poder asignar dispositivos directamente a una (o más, según el caso) VM, evitando el Hypervisor y ahorrando ciclos de CPU. Pero esto parece estar verde aún.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>PostgreSQL &lt;strike&gt;8.5&lt;/strike&gt; 9.0 - Replicación mejorada</title>
+      <link>http://localhost:1313/2010/02/postgresql-9-0-streaming-replication/</link>
+      <pubDate>Sat, 06 Feb 2010 18:04:28 +0000</pubDate>
+      <guid>http://localhost:1313/2010/02/postgresql-9-0-streaming-replication/</guid>
+      <description>&lt;p&gt;Para los que no están enterados, &lt;a href=&#34;http://wiki.postgresql.org/wiki/Streaming_Replication&#34;&gt;Streaming Replication&lt;/a&gt; es la nueva &lt;strong&gt;gran&lt;/strong&gt; característica de PostgreSQL 9.0 (ex-8.5), todavía en desarrollo. Estoy muy contento por la noticia, realmente era algo pendiente ver integrado algo de esto en &lt;a href=&#34;http://www.postgresql.org&#34;&gt;PostgreSQL&lt;/a&gt; mismo (ya que hay productos y/o &lt;a href=&#34;http://slony.info/&#34;&gt;versiones modificadas&lt;/a&gt; para hacer esto, pero no es lo mismo que &amp;ldquo;el original&amp;rdquo;, claro está :-) ) y lo hace cada vez más adecuado para evitar (o al menos dejar a uno la opción de) utilizar motores de bases de datos muy buenas pero caras y propietarias (Oracle) o lamentablemente en problemas políticos/de gestión (MySQL).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Ubuntu 9.10 - Alpha 3</title>
+      <link>http://localhost:1313/2009/07/ubuntu-9-10-alpha-3/</link>
+      <pubDate>Mon, 27 Jul 2009 23:00:11 +0000</pubDate>
+      <guid>http://localhost:1313/2009/07/ubuntu-9-10-alpha-3/</guid>
+      <description>&lt;p&gt;Anoche estuve probando cerca de una hora el &lt;a href=&#34;http://www.ubuntu.com/testing/karmic/alpha3&#34;&gt;Alpha 3&lt;/a&gt; de lo que va a ser Ubuntu 9.10. No suelo testear las alphas de Ubuntu en etapas tan tempranas del desarrollo (generalmente porque hay pocas cosas novedosas salvo actualizaciones de infraestructura como el kernel, gcc y X.org), pero en esta oportunidad sabía &lt;a href=&#34;http://www.ubuntu.com/testing/karmic/alpha3#New%20Intel%20video%20driver%20architecture%20available%20for%20testing&#34;&gt;qué iba a buscar&lt;/a&gt; :-)&lt;/p&gt;
+&lt;p&gt;Si bien hay pocos cambios visuales (a lo que dice &lt;a href=&#34;http://www.ubunlog.com.ar/blog/lo-que-veras-en-karmic-koala-ubuntu-9-10/&#34;&gt;este artículo&lt;/a&gt; le agregaría que la configuración del audio &lt;a href=&#34;http://fedoraproject.org/wiki/Features/VolumeControl&#34;&gt;ahora sí va a estar un poco más integrada&lt;/a&gt; con &lt;a href=&#34;http://www.pulseaudio.org/&#34;&gt;PulseAudio&lt;/a&gt;), quería comentar que incorpora los últimos y nuevos drivers de Intel 2.8, &lt;a href=&#34;http://www.phoronix.com/scan.php?page=news_item&amp;amp;px=NzM5MQ&#34;&gt;publicados como estables esta última semana&lt;/a&gt;, que al fin elimina completamente el soporte a &lt;a href=&#34;http://en.wikipedia.org/wiki/Direct_Rendering_Infrastructure&#34;&gt;DRI1&lt;/a&gt;/ &lt;a href=&#34;http://www.rojtberg.net/67/exa-uxa-dri-gem-ttm/&#34;&gt;EXA&lt;/a&gt;, y pone a &lt;a href=&#34;http://wiki.x.org/wiki/DRI2&#34;&gt;DRI2&lt;/a&gt;/ &lt;a href=&#34;http://www.phoronix.com/scan.php?page=article&amp;amp;item=intel_uxa&amp;amp;num=1&#34;&gt;UXA&lt;/a&gt; como nuevo esquema de drivers (más, &lt;a href=&#34;http://www.fayerwayer.com/2009/04/intel-aplica-guadana-en-su-driver-para-linux/&#34;&gt;acá&lt;/a&gt;).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Las cosas bien claras...</title>
+      <link>http://localhost:1313/2009/07/las-cosas-bien-claras/</link>
+      <pubDate>Tue, 21 Jul 2009 23:00:50 +0000</pubDate>
+      <guid>http://localhost:1313/2009/07/las-cosas-bien-claras/</guid>
+      <description>&lt;p&gt;&lt;img alt=&#34;SO Diferentes&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/wp-content/uploads/2009/07/SO-Diferentes-300x75.png&#34;&gt;Leyendo &lt;a href=&#34;http://desarrollandoideas.com.ar/2009/07/20/instalacion-y-usabilidad-en-windows-7-%C2%BFvale-la-pena/&#34;&gt;un post&lt;/a&gt; sobre &lt;a href=&#34;http://windows.microsoft.com/en-US/windows7/products/home&#34;&gt;Windows 7&lt;/a&gt; (no quiero opinar al respecto, sólo me voy a limitar a decir que no me gustó el post), quisiera rescatar este comentario de &lt;a href=&#34;http://www.mauroveron.com/&#34;&gt;Mauro Verón&lt;/a&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;A veces lo que jode del sistema operativo es que no nos gusta el “modelo” o la forma de hacer algo y está bien. Yo no lo veo a mi viejo en linux, porque esta acostumbrado a levantar el telefono y pedir comida por delivery, limitandose al menu del mismo. A mi me gusta Linux porque es como tener un chef al lado que te pregunta “que quiere comer señor?” y hace exactamente lo que le digo, cuando le digo, como le digo y rápido. Puede que necesite dare instrucciones complejas y especificas al chef si quiero algo muy extravagante pero, hey!, tengo un chef y puedo comer lo que yo quiera !
+Para no dejar de lado al querido OSX este vendría a ser como un finísimo restaurante, con la mejor comida, el mejor vino, las mozas mas lindas, el servicio más rápido pero solo vende carne (haciendo referencia a lo “cerrado” que es apple en su hard/soft).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Applets Java en Ubuntu de 64 bits recargados</title>
+      <link>http://localhost:1313/2009/07/applets-java-en-ubuntu-de-64-bits/</link>
+      <pubDate>Sat, 18 Jul 2009 23:55:44 +0000</pubDate>
+      <guid>http://localhost:1313/2009/07/applets-java-en-ubuntu-de-64-bits/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://www.java.com&#34;&gt;&lt;img alt=&#34;java_logo&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/wp-content/uploads/2009/07/java_logo.png&#34;&gt;&lt;/a&gt; Ayer actualicé mi Ubuntu 9.04 (64 bits) y vi que había una actualización de los paquetes &amp;quot; &lt;a href=&#34;http://packages.ubuntu.com/search?keywords=sun-java6&amp;amp;searchon=names&amp;amp;suite=jaunty&amp;amp;section=all&#34;&gt;sun-java6&lt;/a&gt;&amp;quot;, que corresponden a la &lt;a href=&#34;http://es.wikipedia.org/wiki/M%C3%A1quina_virtual_Java&#34;&gt;Máquina Virtual Java&lt;/a&gt;. Para mi sorpresa, se trata de una actualización bastante importante de todos los paquetes de la &lt;a href=&#34;http://java.sun.com/javase/&#34;&gt;implementación&lt;/a&gt; distribuida por &lt;a href=&#34;http://www.sun.com&#34;&gt;Sun&lt;/a&gt; de Java (que aún no es lo mismo que el proyecto &lt;a href=&#34;https://openjdk.dev.java.net/&#34;&gt;OpenJDK&lt;/a&gt;), y que incluye (después de &lt;a href=&#34;http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=4802695&#34;&gt;¡6 años de espera!&lt;/a&gt;) una implementación del &lt;a href=&#34;http://packages.ubuntu.com/jaunty/sun-java6-plugin&#34;&gt;Java Plugin de Sun&lt;/a&gt; para 64 bits.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>PostgreSQL 8.5</title>
+      <link>http://localhost:1313/2009/07/postgresql-8-5/</link>
+      <pubDate>Sat, 04 Jul 2009 16:16:56 +0000</pubDate>
+      <guid>http://localhost:1313/2009/07/postgresql-8-5/</guid>
+      <description>&lt;p&gt;No, no me equivoqué de número de versión. :-) &lt;a href=&#34;http://www.postgresql.org&#34;&gt;&lt;img alt=&#34;pgsql_logo&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/wp-content/uploads/2009/07/pgsql_logo.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Si bien &lt;a href=&#34;http://www.postgresql.org/about/news.1108&#34;&gt;PostgreSQL 8.4 ya salió&lt;/a&gt; y tiene &lt;a href=&#34;http://www.postgresql.org/about/press/features84&#34;&gt;unas cuantas novedades&lt;/a&gt;, quisiera &lt;a href=&#34;http://www.depesz.com/index.php/2009/07/03/waiting-for-8-5-lets-start/&#34;&gt;hacerme eco&lt;/a&gt; de lo que está en la cola de parches a aprobar para integrar la nueva rama de desarrollo de PostgreSQL 8.5. &lt;a href=&#34;http://commitfest.postgresql.org/action/commitfest_view?id=2&#34;&gt;Esta lista&lt;/a&gt; está compuesta por cosas como:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://archives.postgresql.org/message-id/4A4DE104.8090605@pjmodos.net&#34;&gt;&lt;strong&gt;GRANT ON ALL IN schema&lt;/strong&gt;&lt;/a&gt;: Una manera de otorgar permisos a todos los objetos de un esquema.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://archives.postgresql.org/message-id/603c8f070906172043w6dba5b18x60e1cea76c44dba0@mail.gmail.com&#34;&gt;&lt;strong&gt;Machine-readable explain output v2&lt;/strong&gt;&lt;/a&gt;: Salidas del comando &lt;a href=&#34;http://www.postgresql.org/docs/8.3/interactive/using-explain.html&#34;&gt;EXPLAIN&lt;/a&gt; fácilemente legibles por otro software, es decir, fácilmente parseables para su procesamiento. El comando explain aceptaría como segundo parámetro el formato (además de los actuales) la keyword FORMAT, quedando así: EXPLAIN FORMAT [TEXT | JSON | XML]. Está bueno porque abre la puerta del desarrollo de herramientas de auto-tunning, basado en reglas estilo Sistema Experto.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://wiki.postgresql.org/wiki/SEPostgreSQL&#34;&gt;&lt;strong&gt;SE-PostgreSQL&lt;/strong&gt;&lt;/a&gt;: Security-Enhanced PostgreSQL, una mejora sustancial en la seguridad del SGBD y en el nivel de detalles del sistema de privilegios.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://wiki.postgresql.org/wiki/NTT%27s_Development_Projects#Synch_Rep&#34;&gt;&lt;strong&gt;Replicación Sincrónica&lt;/strong&gt;&lt;/a&gt;: Si algo le faltaba a PostgreSQL es una manera de replicación sincrónica integrada en el gestor. Esperemos que esto sí entre, aunque está &lt;a href=&#34;http://archives.postgresql.org/message-id/3f0b79eb0906152313n7d566aa8u80c73516453e5777@mail.gmail.com&#34;&gt;bastante&lt;/a&gt; &lt;a href=&#34;http://archives.postgresql.org/message-id/603c8f070907021902ufbb62cj7ca435f9d8712b4d@mail.gmail.com&#34;&gt;discutido&lt;/a&gt; el asunto porque es un cambio relativamente &amp;ldquo;gordo&amp;rdquo; en los internals del código, pero por lo que leí de estas discusiones parece haber consenso en llevarlo adelante e implementarlo. Por mi parte&amp;hellip; ¡lo necesito ya! :-)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://archives.postgresql.org/pgsql-hackers/2009-07/msg00158.php&#34;&gt;&lt;strong&gt;\dL para listas los lenguajes utilizados en psql&lt;/strong&gt;&lt;/a&gt;: Es una nueva característica en &lt;a href=&#34;http://www.postgresql.org/docs/8.3/interactive/app-psql.html&#34;&gt;psql&lt;/a&gt;, la de poder listar los lenguajes instalados en la base de datos (plpythonu, plpgsql, etc.).&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://archives.postgresql.org/message-id/497CFC84.2070302@paradise.net.nz&#34;&gt;&lt;strong&gt;Estadísticas de esperas por bloqueos&lt;/strong&gt;:&lt;/a&gt; La idea es poder tener un historial de los bloqueos sufridos por los clientes en la BD, para poder detectar problemas y saber bien qué pasa en todo momento.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Bueno, de más está decir que no hay ninguna garantía de que todo esto sea finalmente integrado en 8.5, sino que se está evaluando al mejor estilo Software Libre &lt;strong&gt;™&lt;/strong&gt;: &lt;a href=&#34;http://es.wikipedia.org/wiki/Revisi%C3%B3n_por_pares&#34;&gt;peer-review&lt;/a&gt;, discusión de estrategias del proyecto, consenso en la comunidad de desarrolladores y posterior aceptación/pedido de mejoras/rechazo. Así que veremos cómo sigue.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Dos herramientas para Sysadmins: Ninja y KSplice</title>
+      <link>http://localhost:1313/2009/06/dos-herramientas-para-sysadmins-ninja-y-ksplice/</link>
+      <pubDate>Sat, 06 Jun 2009 17:20:54 +0000</pubDate>
+      <guid>http://localhost:1313/2009/06/dos-herramientas-para-sysadmins-ninja-y-ksplice/</guid>
+      <description>&lt;p&gt;Navegando por ahí, me acabo de encontrar con dos herramientas interesantes, que me interesa compartir&amp;hellip;&lt;/p&gt;
+&lt;h2 id=&#34;ninja&#34;&gt;&lt;strong&gt;Ninja&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.forkbomb.org/ninja/&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/wp-content/uploads/2009/06/ninja_the_last_thing_you_see-150x150.jpg&#34;&gt;&lt;/a&gt;
+La primera llamada &lt;a href=&#34;http://www.forkbomb.org/ninja/&#34;&gt;Ninja&lt;/a&gt;, que viene a ser algo así (traducido de su página web):&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Ninja es un sistema de detección y prevención de &lt;a href=&#34;http://en.wikipedia.org/wiki/Privilege_escalation&#34;&gt;escaladas de privilegios&lt;/a&gt; para GNU/Linux. Mientras está corriendo, monitorea las actividades de los procesos locales por un lado, y de los procesos corriendo como root por el otro. Si un proceso lanza a otro nuevo con UID o GID cero (root), Ninja va a loguear la información necesaria acerca del mismo, y opcionalmente lo puede finalizar si fue creado por un usuario &lt;em&gt;(es decir, un proceso de un usuario&lt;/em&gt;) sin autorización.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Renderizando PDFs en Python con Poppler</title>
+      <link>http://localhost:1313/2009/05/renderizando-pdfs-en-python-con-poppler/</link>
+      <pubDate>Sat, 02 May 2009 21:34:00 +0000</pubDate>
+      <guid>http://localhost:1313/2009/05/renderizando-pdfs-en-python-con-poppler/</guid>
+      <description>&lt;p&gt;Buenas&amp;hellip; hoy voy a mostrar una forma de renderizar archivos PDF dentro de nuestras aplicaciones y desde Python, para casi cualquier plataforma con la estemos trabajando.&lt;/p&gt;
+&lt;p&gt;Introducción
+Si bien cuando se arma una aplicación de escritorio se suele &amp;ldquo;llamar&amp;rdquo; a un software externo ( &lt;a href=&#34;http://www.adobe.com/es/products/reader/&#34;&gt;Acrobat Reader&lt;/a&gt;, &lt;a href=&#34;http://www.foxitsoftware.com/pdf/reader/&#34;&gt;Fox-It&lt;/a&gt;, &lt;a href=&#34;http://projects.gnome.org/evince/&#34;&gt;Evince&lt;/a&gt;, etc.) para que muestre el contenido de un archivo &lt;a href=&#34;http://es.wikipedia.org/wiki/Pdf&#34;&gt;PDF&lt;/a&gt;, generalmente queda &amp;ldquo;feo&amp;rdquo;; nuestro programa pierde la interacción y el control de lo que el usuario hace con el mismo, implica superponer un programa arriba del otro, etc. Esto suele producir una experiencia dificultosa para el usuario de nuestro querido programa, y como corresponde, los programadores nos ponemos tristes. :-(&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Charla sobre Virtualización - Slides</title>
+      <link>http://localhost:1313/2009/04/charla-sobre-virtualizacion-slides/</link>
+      <pubDate>Tue, 28 Apr 2009 14:12:00 +0000</pubDate>
+      <guid>http://localhost:1313/2009/04/charla-sobre-virtualizacion-slides/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://1.bp.blogspot.com/_nDZ247g0qSM/SfcUJs61L5I/AAAAAAAACQ8/EbY7cCRVI_w/s1600-h/logo_bochs.png&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://1.bp.blogspot.com/_nDZ247g0qSM/SfcUJs61L5I/AAAAAAAACQ8/EbY7cCRVI_w/s320/logo_bochs.png&#34;&gt;&lt;/a&gt; Estos slides los estuve preparando para dar una charla sobre &lt;a href=&#34;http://es.wikipedia.org/wiki/Virtualizaci%C3%B3n&#34;&gt;virtualización&lt;/a&gt; en el último &lt;a href=&#34;http://www.flisol.info/FLISOL2009&#34;&gt;FLI&lt;/a&gt; &lt;a href=&#34;http://www.flisol.info/FLISOL2009&#34;&gt;SOL&lt;/a&gt; en la &lt;a href=&#34;http://www.unlu.edu.ar/&#34;&gt;UNLu&lt;/a&gt;. No se dio (¡era mucha gente para atender instalando máquinas! :-D), pero las subo acá por un lado, y por el otro no va a faltar la oportunidad en darla. Es más, estamos pensando seriamente en hacer algún &amp;ldquo;pequeño evento&amp;rdquo; en la UNLu no muy lejano para juntar charlas&amp;hellip;&lt;/p&gt;
+&lt;p&gt;En fin, los slides en cuestión, están disponibles &lt;a href=&#34;http://marcelofernandez.info/charlas/Virtualizacion.odp&#34;&gt;aquí&lt;/a&gt; formato OpenOffice, y &lt;a href=&#34;http://marcelofernandez.info/charlas/Virtualizacion.pdf&#34;&gt;aquí&lt;/a&gt; en formato PDF.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Otra vez el Cambio de Horario en Ubuntu</title>
+      <link>http://localhost:1313/2009/03/otra-vez-el-cambio-de-horario-en-ubuntu/</link>
+      <pubDate>Tue, 10 Mar 2009 12:57:00 +0000</pubDate>
+      <guid>http://localhost:1313/2009/03/otra-vez-el-cambio-de-horario-en-ubuntu/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://www.flickr.com/photos/trvr3307/224752387/&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://3.bp.blogspot.com/_nDZ247g0qSM/SbZkYeipkjI/AAAAAAAACL4/U00MPcbKV2c/s320/224752387_1d26835f93_b.jpg&#34;&gt;&lt;/a&gt; Este post es sólo para comentar, amigos sysadmins, que &lt;a href=&#34;http://www.clarin.com/diario/2009/03/09/um/m-01873771.htm&#34;&gt;este domingo a las 00:00 hs. se &amp;ldquo;atrasará&amp;rdquo; una hora el reloj del lado este del país&lt;/a&gt;, y que todos aquellos que tengan actualizados el paquete &lt;a href=&#34;http://packages.ubuntu.com/search?keywords=tzdata&amp;amp;searchon=names&#34;&gt;tzdata&lt;/a&gt; van a tener actualizados el reloj automáticamente, a diferencia de otras oportunidades donde lo repentino de los caprichos las decisiones políticas hicieron que hubiera que hacer esto a mano.&lt;/p&gt;
+&lt;p&gt;Para comprobar esto, pueden correr en la consola:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Sobre KVM - Virtualización en Servidores</title>
+      <link>http://localhost:1313/2009/01/sobre-kvm-virtualizacion-en-servidores/</link>
+      <pubDate>Sun, 04 Jan 2009 19:45:00 +0000</pubDate>
+      <guid>http://localhost:1313/2009/01/sobre-kvm-virtualizacion-en-servidores/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://kvm.qumranet.com/kvmwiki&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://4.bp.blogspot.com/_nDZ247g0qSM/SWEbCLcU0wI/AAAAAAAAB2E/gtbSu49pFeo/s400/banner_kvm_forum_2008.jpg&#34;&gt;&lt;/a&gt; Leyendo la blogósfera, me detuve en &lt;a href=&#34;http://blogs.thehumanjourney.net/oaubuntu/entry/about_kvm&#34;&gt;esta crónica de una migración&lt;/a&gt; de &lt;a href=&#34;http://www.vmware.com/products/server/&#34;&gt;VMWare Server&lt;/a&gt; a &lt;a href=&#34;http://kvm.qumranet.com/kvmwiki&#34;&gt;KVM&lt;/a&gt;, explicando las razones de porqué elegir KVM y no el resto. :-)&lt;/p&gt;
+&lt;p&gt;Las enumero, tratando de traducirlas lo mejor posible:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;El host corriendo KVM es un Linux estándar sin modificar. Para ambos ( &lt;a href=&#34;http://www.xen.org/&#34;&gt;Xen&lt;/a&gt; y &lt;a href=&#34;http://www.vmware.com/products/esxi/&#34;&gt;VMWare ESX&lt;/a&gt;) se necesita correr un Sistema Operativo modificado especialmente (que lo hace relativamente difícil de mantener al día con actualizaciones de seguridad).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Xplico, un decodificador de tráfico de Red</title>
+      <link>http://localhost:1313/2008/12/xplico-un-decodificador-de-trafico-de-red/</link>
+      <pubDate>Wed, 31 Dec 2008 17:33:00 +0000</pubDate>
+      <guid>http://localhost:1313/2008/12/xplico-un-decodificador-de-trafico-de-red/</guid>
+      <description>&lt;p&gt;Gracias al &lt;a href=&#34;http://laramies.blogspot.com/&#34;&gt;rincón de Laramies&lt;/a&gt; me sigo enterando de cosas novedosas acerca de herramientas y noticias sobre seguridad informática; esta vez de la existencia de &lt;a href=&#34;http://www.xplico.org/&#34;&gt;Xplico&lt;/a&gt;, un software para analizar y disecar [1] capturas de red en formato &lt;a href=&#34;http://wiki.wireshark.org/Development/LibpcapFileFormat&#34;&gt;PCap&lt;/a&gt; (el más común, utilizado por herramientas como &lt;a href=&#34;http://www.wireshark.org/&#34;&gt;Wireshark&lt;/a&gt; o &lt;a href=&#34;http://www.tcpdump.org/&#34;&gt;Tcpdump&lt;/a&gt;, por ejemplo).&lt;/p&gt;
+&lt;p&gt;Su objetivo es detectar el protocolo de aplicación (no basado en el número puerto, sino que lo hace &lt;a href=&#34;http://taosecurity.blogspot.com/2006/09/port-independent-protocol.html&#34;&gt;interpretándolo&lt;/a&gt; &lt;a href=&#34;http://spid.wiki.sourceforge.net/&#34;&gt;realmente&lt;/a&gt;), y extraer la información relevante (el &lt;em&gt;stream&lt;/em&gt; de datos), mostrarla y darle a uno la posibilidad de guardarla aparte para abrirla con un software que pueda reproducir dicho formato. Por ejemplo, puede detectar el formato &lt;a href=&#34;http://es.wikipedia.org/wiki/Session_Initiation_Protocol&#34;&gt;SIP&lt;/a&gt;(utilizado comúnmente en llamadas telefónicas de &lt;a href=&#34;http://es.wikipedia.org/wiki/Voz_sobre_IP&#34;&gt;VoIP&lt;/a&gt;) en una serie de paquetes capturados y guardarlo aparte para poder escuchar la llamada telefónica. :-)&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Dan Kaminsky en BlackHat 2008 - Japón</title>
+      <link>http://localhost:1313/2008/12/dan-kaminsky-en-blackhat-2008-japon/</link>
+      <pubDate>Sat, 27 Dec 2008 15:05:00 +0000</pubDate>
+      <guid>http://localhost:1313/2008/12/dan-kaminsky-en-blackhat-2008-japon/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://www.blackhat.com/presentations/bh-jp-08/bh-jp-08-Kaminsky/BlackHat-Japan-08-Kaminsky-DNS08-BlackOps.pdf&#34;&gt;Esta presentación&lt;/a&gt; es la única que me llamó la atención repasando &lt;a href=&#34;http://www.blackhat.com/html/bh-japan-08/brief-bh-jp-08-archives.html&#34;&gt;el archivo&lt;/a&gt; del &lt;a href=&#34;http://www.blackhat.com/html/bh-japan-08/bh-jp-08-main.html&#34;&gt;Black Hat de Octubre de este año en Japón&lt;/a&gt;. El ya conocido &lt;a href=&#34;http://www.doxpara.com/?page_id=1159&#34;&gt;Dan Kaminsky&lt;/a&gt; fue el keynote del evento, explicando no sólo (nuevamente) la vulnerabilidad de DNS descubierta por él este año, sino también qué se viene en general en materia de (in)seguridad informática.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.blackhat.com/html/bh-japan-08/bh-jp-08-main.html&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://2.bp.blogspot.com/_nDZ247g0qSM/SVZEa1_uKvI/AAAAAAAAB0o/oouIMK0iHIg/s400/hd_logo01.gif&#34;&gt;&lt;/a&gt;&lt;br&gt;
+Son un montón de diapositivas (101!), unas cuantas las pasé por alto, pero son útiles; a modo de resumen, enumero los &amp;quot; &lt;em&gt;highlights&lt;/em&gt;&amp;quot;:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>USB 3.0</title>
+      <link>http://localhost:1313/2008/12/usb-30/</link>
+      <pubDate>Mon, 15 Dec 2008 11:18:00 +0000</pubDate>
+      <guid>http://localhost:1313/2008/12/usb-30/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://2.bp.blogspot.com/_nDZ247g0qSM/SUZchhZ3DEI/AAAAAAAABvU/azv0EDc3BMw/s1600-h/firewire.png&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://2.bp.blogspot.com/_nDZ247g0qSM/SUZchhZ3DEI/AAAAAAAABvU/azv0EDc3BMw/s320/firewire.png&#34;&gt;&lt;/a&gt; Más allá de que el &lt;a href=&#34;http://video.google.com/videoplay?docid=-6015621370324169356&amp;amp;hl=en&#34;&gt;video de la señorita de Intel&lt;/a&gt; lo pueden encontrar en todos los sitios de noticias (me hace acordar a &lt;a href=&#34;http://www.imdb.com/name/nm0707476/&#34;&gt;Chloe de 24&lt;/a&gt;, je), es muy interesante el &lt;a href=&#34;http://hardware.slashdot.org/article.pl?sid=08%2F12%2F13%2F2032211&#34;&gt;hilo de comentarios&lt;/a&gt; de &lt;a href=&#34;http://www.slashdot.org/&#34;&gt;Slashdot&lt;/a&gt;, similar a lo que hablaba ayer con un amigo sobre &lt;a href=&#34;http://en.wikipedia.org/wiki/USB&#34;&gt;USB 2.0&lt;/a&gt; vs. &lt;a href=&#34;http://en.wikipedia.org/wiki/Firewire&#34;&gt;Firewire&lt;/a&gt; (aka IEEE 1394). USB está diseñado para ser muy dependiente del CPU (no por nada lo hizo Intel, guiño, guiño, aunque tiene el &lt;em&gt;side-effect&lt;/em&gt; de ser un poco más barato), y Firewire (más dependiente de hardware específico, y por ende un poco más caro) le gana en la práctica por lejos. USB tiene un ancho de banda máximo (teórico) de 480 Mbps, mientras que Firewire viene en &lt;em&gt;sabores&lt;/em&gt; de 400 Mbps a 800 Mbps (y ya están saliendo productos de 1600 y 3200 Mbps).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Charlas de Software Libre en la Universidad Nacional de Luján</title>
+      <link>http://localhost:1313/2008/11/charlas-de-software-libre-en-la-universidad-nacional-de-lujan/</link>
+      <pubDate>Tue, 18 Nov 2008 22:08:00 +0000</pubDate>
+      <guid>http://localhost:1313/2008/11/charlas-de-software-libre-en-la-universidad-nacional-de-lujan/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://www.unlux.com.ar&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://4.bp.blogspot.com/_nDZ247g0qSM/SSM_HbbVlQI/AAAAAAAABtc/vXtkKkGJwmY/s320/unlux.jpg&#34;&gt;&lt;/a&gt; Bueno, este sábado 22 de Noviembre los muchachos del &lt;a href=&#34;http://www.unlux.com.ar/&#34;&gt;UNLuX&lt;/a&gt; (del cual soy orgullosamente integrante) hacen su 2do evento anual sobre tecnología y software libre&amp;hellip; a mí se me hace imposible ir por motivos personales (¡realmente un bajón!), pero espero que vayan, ¡va a estar más que interesante y va a haber muy buena onda!&lt;/p&gt;
+&lt;p&gt;Resumo de su &lt;a href=&#34;http://unlux.com.ar/index.php?option=com_content&amp;amp;task=view&amp;amp;id=27&amp;amp;Itemid=1&#34;&gt;nota principal&lt;/a&gt;:&lt;br&gt;
+&amp;ldquo;El Grupo de Usuarios de Software Libre de la Universidad Nacional de Luján ( &lt;a href=&#34;http://www.unlux.com.ar/&#34;&gt;UNLUX&lt;/a&gt;) invita a toda la comunidad educativa, profesionales e interesados en Tecnologías de la Información al &amp;ldquo;Ciclo de charlas UNLUX 2008&amp;rdquo;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>(Mi) Migración a Ubuntu 8.10</title>
+      <link>http://localhost:1313/2008/11/mi-migracion-a-ubuntu-810/</link>
+      <pubDate>Mon, 10 Nov 2008 10:30:00 +0000</pubDate>
+      <guid>http://localhost:1313/2008/11/mi-migracion-a-ubuntu-810/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://www.ubuntu.com/&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://4.bp.blogspot.com/_nDZ247g0qSM/SRgOizVugjI/AAAAAAAABsM/FxbyIjDuuE0/s320/LaptopUbuntu.jpg&#34;&gt;&lt;/a&gt;(Este es un Post que debería haberse publicado el 31/10/2008 y que por diferentes motivos no pude terminar&amp;hellip;)&lt;/p&gt;
+&lt;p&gt;Bueno, hoy llegó el día&amp;hellip; luego de leer &lt;a href=&#34;https://help.ubuntu.com/community/IntrepidUpgrades&#34;&gt;este&lt;/a&gt; y &lt;a href=&#34;http://www.ubuntu.com/getubuntu/releasenotes/810&#34;&gt;este&lt;/a&gt; documento, ayer bajé tranquilo por &lt;a href=&#34;http://es.wikipedia.org/wiki/BitTorrent_%28protocolo%29&#34;&gt;BitTorrent&lt;/a&gt; &lt;a href=&#34;http://www.ubuntu.com/getubuntu/downloadmirrors#bt&#34;&gt;las imágenes de Ubuntu 8.10&lt;/a&gt; para la arquitectura x86-64 versión &lt;a href=&#34;http://releases.ubuntu.com/8.10/ubuntu-8.10-desktop-amd64.iso.torrent&#34;&gt;desktop&lt;/a&gt; y &lt;a href=&#34;http://releases.ubuntu.com/8.10/ubuntu-8.10-alternate-amd64.iso.torrent&#34;&gt;alternate&lt;/a&gt;, con la intención de probar la primera como Live-CD primero y luego, si todo iba bien, actualizar mi Ubuntu 8.04 a 8.10 aprovechando la segunda &lt;a href=&#34;http://es.wikipedia.org/wiki/Imagen_ISO&#34;&gt;ISO&lt;/a&gt;, tal como está documentado en la página de &lt;a href=&#34;http://www.ubuntu.com/getubuntu/upgrading&#34;&gt;&amp;ldquo;Cómo Actualizar a Ubuntu 8.10&amp;rdquo;&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Nvidia CUDA</title>
+      <link>http://localhost:1313/2008/10/nvidia-cuda/</link>
+      <pubDate>Fri, 24 Oct 2008 22:41:00 +0000</pubDate>
+      <guid>http://localhost:1313/2008/10/nvidia-cuda/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://www.nvidia.com/&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://3.bp.blogspot.com/_nDZ247g0qSM/SQSmesw-xtI/AAAAAAAABRE/EhtnyF7zG6U/s320/nvidia_logo.jpg&#34;&gt;&lt;/a&gt; Estoy leyendo &lt;a href=&#34;http://www.linuxjournal.com/article/10184&#34;&gt;un artículo&lt;/a&gt; de la última &lt;a href=&#34;http://www.linuxjournal.com/&#34;&gt;Linux Journal&lt;/a&gt;, referido a la tecnología &lt;a href=&#34;http://www.nvidia.com/object/cuda_home.html&#34;&gt;CUDA&lt;/a&gt;, que sacó hace un tiempito nomás &lt;a href=&#34;http://www.nvidia.com/&#34;&gt;NVidia&lt;/a&gt;. Básicamente se trata de una plataforma de software (compilador + libs + soporte en hardware) para que cualquier programador pueda acceder al enorme poder de cálculo que tienen las tarjetas gráficas actuales, que es mucho mayor que las CPUs que se utilizan todos los días; se comenta que la mejora de performance es de ¡uno a dos órdenes de magnitud como regla general!&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Tip para vagos (como yo) al usar SSH</title>
+      <link>http://localhost:1313/2008/10/tip-para-vagos-como-yo-al-usar-ssh/</link>
+      <pubDate>Thu, 23 Oct 2008 17:59:00 +0000</pubDate>
+      <guid>http://localhost:1313/2008/10/tip-para-vagos-como-yo-al-usar-ssh/</guid>
+      <description>&lt;p&gt;Tip estilo &amp;ldquo;cortita y al pie&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;Para el que tiene varios equipos remotos a los que entra usualmente por SSH pero bajo diferentes usuarios al del host propio, termina siendo un garrón tener que escribir diferentes usuarios, y un montón de veces, &amp;ldquo;ssh usuariopepe@mihost&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;Pero con sólo crear un archivo .ssh/config parecido a este:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;marcelo@marcelo-laptop:~$ cat .ssh/config
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Host *.dominio.com.ar *.dominio server1 server2 server3
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;User mfernandez
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Host desarrollo.dominio.com.ar desarrollo.dominio desarrollo
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;User usuario1
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Host vm1 vm2
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;User prueba
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;A partir de ahora sólo hay que escribir &amp;ldquo;ssh vm1&amp;rdquo; para entrar!!!&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Habemus Nuevo Kernel: 2.6.27</title>
+      <link>http://localhost:1313/2008/10/habemus-nuevo-kernel-2627/</link>
+      <pubDate>Mon, 13 Oct 2008 02:14:00 +0000</pubDate>
+      <guid>http://localhost:1313/2008/10/habemus-nuevo-kernel-2627/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://www.linux.org/&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://2.bp.blogspot.com/_nDZ247g0qSM/SPOIkrrCP5I/AAAAAAAABPU/KBeSP9b3qDQ/s320/officialpenguin.gif&#34;&gt;&lt;/a&gt; Bueno, si bien hace unos días que salió una nueva revisión del &lt;a href=&#34;http://www.kernel.org/&#34;&gt;kernel de Linux&lt;/a&gt;, 2.6.27, yo tenía pendiente leer &lt;a href=&#34;http://kernelnewbies.org/Linux_2_6_27&#34;&gt;los cambios&lt;/a&gt; (versión &amp;ldquo;light&amp;rdquo;, o sea, entendible por alguien más o menos técnico) al estilo que me tiene acostumbrado &lt;a href=&#34;http://kernelnewbies.org/&#34;&gt;KernelNewbies&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Y aunque en el &lt;a href=&#34;http://diegocg.blogspot.com/&#34;&gt;Blog de Diego Calleja&lt;/a&gt; &lt;a href=&#34;http://diegocg.blogspot.com/2008/09/lo-que-traer-linux-2627.html&#34;&gt;ya hay un buen resumen&lt;/a&gt; de lo más &amp;ldquo;grueso&amp;rdquo; (aka &amp;ldquo;The Cool Stuff&amp;rdquo;) de esta versión (en castellano), yo quería comentar algunas cosas que están en la &amp;ldquo;letra chica&amp;rdquo; del changelog. De nuevo, para lo más importante, los invito a pasar por &lt;a href=&#34;http://diegocg.blogspot.com/2008/09/lo-que-traer-linux-2627.html&#34;&gt;el Blog de Diego&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Análisis de Performance de un Script Python</title>
+      <link>http://localhost:1313/2008/10/analisis-de-performance-de-un-script-python/</link>
+      <pubDate>Sat, 11 Oct 2008 16:25:00 +0000</pubDate>
+      <guid>http://localhost:1313/2008/10/analisis-de-performance-de-un-script-python/</guid>
+      <description>&lt;p&gt;Hola!&lt;/p&gt;
+&lt;p&gt;De toda la pila de mails que recibo, leo y analizo (cuando puedo) de &lt;a href=&#34;http://www.python.com.ar/moin/ListaDeCorreo&#34;&gt;PyAr&lt;/a&gt;, me interesó mucho uno de &lt;a href=&#34;http://thread.gmane.org/gmane.org.user-groups.python.argentina/16293&#34;&gt;este hilo&lt;/a&gt;, referido al &lt;a href=&#34;http://en.wikipedia.org/wiki/Dot_language&#34;&gt;lenguaje DOT&lt;/a&gt; y su utilización práctica en el desarrollo en general. Básicamente, &lt;a href=&#34;http://article.gmane.org/gmane.org.user-groups.python.argentina/16299&#34;&gt;se comentó&lt;/a&gt; lo útil que es graficar la salida de la ejecución de un &lt;a href=&#34;http://en.wikipedia.org/wiki/Performance_analysis&#34;&gt;profiler&lt;/a&gt;, con este generador de lenguaje DOT basado en el log de cualquiera de los 3 módulos de &lt;a href=&#34;http://docs.python.org/library/profile.html&#34;&gt;profiling de Python&lt;/a&gt; [1][2]: &lt;a href=&#34;http://code.google.com/p/jrfonseca/wiki/Gprof2Dot&#34;&gt;Gprof2Dot&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Brevemente, lo probé con un script que tengo para armar un archivo de texto con cierto formato, resultado de un query a una base de datos. Ejecuté esto, tal como dice el sitio de la herramienta:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Wikipedia migra a Ubuntu Server</title>
+      <link>http://localhost:1313/2008/10/wikipedia-migra-a-ubuntu-server/</link>
+      <pubDate>Fri, 10 Oct 2008 13:25:00 +0000</pubDate>
+      <guid>http://localhost:1313/2008/10/wikipedia-migra-a-ubuntu-server/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://es.wikipedia.org/&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://4.bp.blogspot.com/_nDZ247g0qSM/SO9iWKSWZvI/AAAAAAAABO8/TiXHeU0Tloo/s200/Wiki.png&#34;&gt;&lt;/a&gt; Según &lt;a href=&#34;http://www.computerworld.com/action/article.do?command=viewArticleBasic&amp;amp;articleId=9116787&amp;amp;intsrc=news_ts_head&#34;&gt;este artículo&lt;/a&gt;, la &lt;a href=&#34;http://www.wikimedia.org/&#34;&gt;Fundación Wikimedia&lt;/a&gt;, entidad que mantiene online a la &lt;a href=&#34;http://es.wikipedia.org/&#34;&gt;Wikipedia&lt;/a&gt;, decidió migrar sus servidores de una combinación de &lt;a href=&#34;http://www.redhat.com/&#34;&gt;Red Hat Linux&lt;/a&gt; y &lt;a href=&#34;http://fedoraproject.org/&#34;&gt;Fedora&lt;/a&gt; a &lt;a href=&#34;http://www.ubuntu.com/products/WhatIsUbuntu/serveredition&#34;&gt;Ubuntu Server&lt;/a&gt; (8.04 LTS, para ser más precisos).&lt;/p&gt;
+&lt;p&gt;Quiero destacar algunos puntos de la noticia:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;400 servidores soportan un tráfico de 684.000.000 visitantes al año (1.873.972 promedio por día, 1301 visitantes por minuto). Viendo su &lt;a href=&#34;http://en.wikipedia.org/wiki/Wikipedia:Statistics&#34;&gt;página de estadísticas&lt;/a&gt;, esta semana, estuvo teniendo picos de 55.000 hits por segundo. Y ojo, que esto es sólo Wikipedia, los servidores migrados sirven a todos los sites de la Fundación.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&#34;http://1.bp.blogspot.com/_nDZ247g0qSM/SO9dLkBptMI/AAAAAAAABO0/slnRqVnHtmI/s1600-h/reqstats-weekly.png&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://1.bp.blogspot.com/_nDZ247g0qSM/SO9dLkBptMI/AAAAAAAABO0/slnRqVnHtmI/s400/reqstats-weekly.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Cómo corregir el Adelanto de Hora en Ubuntu</title>
+      <link>http://localhost:1313/2008/10/como-corregir-el-adelanto-de-hora-en-ubuntu/</link>
+      <pubDate>Tue, 07 Oct 2008 10:30:00 +0000</pubDate>
+      <guid>http://localhost:1313/2008/10/como-corregir-el-adelanto-de-hora-en-ubuntu/</guid>
+      <description>&lt;p&gt;Hola!&lt;/p&gt;
+&lt;p&gt;Visto y considerando el &lt;a href=&#34;https://bugs.launchpad.net/ubuntu/+source/tzdata/+bug/278419&#34;&gt;bug&lt;/a&gt; que surgió este fin de semana con la información de husos horarios y &lt;a href=&#34;http://es.wikipedia.org/wiki/Horario_de_verano&#34;&gt;DSTs&lt;/a&gt; de la vasta mayoría de sistemas &lt;a href=&#34;http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=501169&#34;&gt;Linuxes&lt;/a&gt;, &lt;a href=&#34;http://discussions.apple.com/thread.jspa?threadID=1742160&amp;amp;tstart=90&#34;&gt;Mac OSXs&lt;/a&gt;, celulares, mp3, etc., a partir de las 00:00 hs. de este último 5 de Octubre (y que erróneamente produjo el adelanto de 1 hora), acá voy a postear cómo arreglarlo en forma (relativamente) sencilla, a la espera de las actualizaciones de rigor que hacen los SOs.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>VPNs en Ubuntu</title>
+      <link>http://localhost:1313/2008/07/vpns-en-ubuntu/</link>
+      <pubDate>Tue, 15 Jul 2008 23:16:00 +0000</pubDate>
+      <guid>http://localhost:1313/2008/07/vpns-en-ubuntu/</guid>
+      <description>&lt;p&gt;Buenas&amp;hellip; esta es una guía de instalación y configuración de un vínculo punto a punto autenticado y encriptado por medio de una red insegura (como puede ser Internet), denominado más comúnmente &lt;a href=&#34;http://es.wikipedia.org/wiki/Red_privada_virtual&#34;&gt;VPN&lt;/a&gt;. Para su implementación se utilizará &lt;a href=&#34;http://openvpn.net/&#34;&gt;OpenVPN&lt;/a&gt; sobre el Sistema Operativo &lt;a href=&#34;http://www.ubuntu.com/&#34;&gt;Ubuntu 8.04&lt;/a&gt;, aunque seguramente estos mismos pasos servirán para &lt;a href=&#34;http://www.debian.org/&#34;&gt;Debian&lt;/a&gt; u otros derivados de ella (tal como lo es Ubuntu).&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://openvpn.net/&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://3.bp.blogspot.com/_nDZ247g0qSM/SH3YX_Eo8HI/AAAAAAAABFo/nFrxsPPEUPg/s400/openvpn_logo.png&#34;&gt;&lt;/a&gt; Instalación
+La instalación, como sucede con la mayoría del software ya disponible en los repositorios de Ubuntu, es sencilla: una vez en la consola, tipear:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>D-Link DWA-510 en Ubuntu 8.04</title>
+      <link>http://localhost:1313/2008/05/d-link-dwa-510-en-ubuntu-804/</link>
+      <pubDate>Thu, 29 May 2008 01:42:00 +0000</pubDate>
+      <guid>http://localhost:1313/2008/05/d-link-dwa-510-en-ubuntu-804/</guid>
+      <description>&lt;p&gt;Hola!&lt;/p&gt;
+&lt;p&gt;Si andan buscando una placa WirelessPCI &lt;a href=&#34;http://es.wikipedia.org/wiki/802.11&#34;&gt;802.11b/g&lt;/a&gt; que funcione perfectamente en Linux (y Ubuntu 8.04 para AMD64 para ser más precisos), la &lt;a href=&#34;http://www.dlinkla.com/home/productos/producto.jsp?idp=1009&#34;&gt;D-Link DWA-510&lt;/a&gt; funciona perfectamente.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://1.bp.blogspot.com/_nDZ247g0qSM/SD4V3RZredI/AAAAAAAABD4/Zny3blkRH-c/s1600-h/D-Link_caja.jpg&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://1.bp.blogspot.com/_nDZ247g0qSM/SD4V3RZredI/AAAAAAAABD4/Zny3blkRH-c/s400/D-Link_caja.jpg&#34;&gt;&lt;/a&gt; Esta es la caja en la que vino&amp;hellip;.&lt;/p&gt;
+&lt;p&gt;Abrí mi PC, enchufé la placa en un slot PCI libre, arranqué mi Ubuntu, y ya estaba la dichosa barra de calidad de señal. No tuve que instalar drivers ni nada!&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://2.bp.blogspot.com/_nDZ247g0qSM/SD4XihZreeI/AAAAAAAABEA/_StJ_bH3RC4/s1600-h/Wireless_sshot.png&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://2.bp.blogspot.com/_nDZ247g0qSM/SD4XihZreeI/AAAAAAAABEA/_StJ_bH3RC4/s400/Wireless_sshot.png&#34;&gt;&lt;/a&gt; Pude configurarle una conexión WPA2 sin problemas, así que si bien leí por ahí que en modo AP todavía no está soportado (tengo que corroborarlo), al menos como uso &amp;ldquo;normal&amp;rdquo;, sirve perfectamente. De más está decir que también soporta WAP, WEP y sin encriptación :-P&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Ubuntu 8.04</title>
+      <link>http://localhost:1313/2008/04/ubuntu-804/</link>
+      <pubDate>Mon, 28 Apr 2008 00:57:00 +0000</pubDate>
+      <guid>http://localhost:1313/2008/04/ubuntu-804/</guid>
+      <description>&lt;p&gt;Bueno, hace bastante que no posteo nada, simplemente porque estoy en etapa final de mi Trabajo Final de Licenciatura, y estoy a full!. Por lo tanto, brevemente comento que actualicé a Ubuntu Hardy 8.04, y todo fue muy bien!&lt;/p&gt;
+&lt;p&gt;Comentarios:&lt;br&gt;
+1 - Por primera vez me anduvo 10 puntos el &amp;ldquo;actualizador&amp;rdquo; gráfico, lo que creo que es un golazo a nivel de facilidad de uso y experiencia al usuario.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://2.bp.blogspot.com/_nDZ247g0qSM/SBUiTwMv37I/AAAAAAAAA_M/klNC49n0xkc/s1600-h/Actualizador.png&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://2.bp.blogspot.com/_nDZ247g0qSM/SBUiTwMv37I/AAAAAAAAA_M/klNC49n0xkc/s400/Actualizador.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>PortBunny: Escáner de Puertos Rápido!</title>
+      <link>http://localhost:1313/2008/01/portbunny-escaner-de-puertos-rapido/</link>
+      <pubDate>Tue, 15 Jan 2008 02:22:00 +0000</pubDate>
+      <guid>http://localhost:1313/2008/01/portbunny-escaner-de-puertos-rapido/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://www.recurity-labs.com/portbunny/portbunny.html&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://4.bp.blogspot.com/_nDZ247g0qSM/R4wZ_L79vkI/AAAAAAAAAQM/wp3B_zrIbgI/s400/logoS.png&#34;&gt;&lt;/a&gt;&lt;a href=&#34;http://www.recurity-labs.com/portbunny/portbunny.html&#34;&gt;Port Bunny&lt;/a&gt; es un &lt;a href=&#34;http://es.wikipedia.org/wiki/Esc%C3%A1ner_de_puertos&#34;&gt;escáner de puertos&lt;/a&gt;, que si bien al principio (nobleza obliga) mucho crédito no le dí (¿cómo un port scanner en kernel mode??), luego de ver atentamente el &lt;a href=&#34;http://dewy.fem.tu-ilmenau.de/CCC/24C3/matroska/24c3-2131-en-port_scanning_improved.mkv&#34;&gt;video de su presentación&lt;/a&gt; (sí, son 44 minutos 100% interesantes!), más &lt;a href=&#34;http://www.recurity-labs.com/portbunny/24c3PortBunnySlides.pdf&#34;&gt;los slides&lt;/a&gt;, sinceramente aprendí un montón de &lt;a href=&#34;http://es.wikipedia.org/wiki/TCP&#34;&gt;TCP&lt;/a&gt;, &lt;a href=&#34;http://insecure.org/nmap/&#34;&gt;NMap&lt;/a&gt; (el escáner de referencia), cómo funciona un port scanner por dentro, y por supuesto, de Port Bunny mismo, je.&lt;/p&gt;
+&lt;p&gt;Y qué tiene Port Bunny de nuevo con respecto al todopoderoso NMap? Bueno (miren el video), esta gente hace un estudio pormenorizado de cómo circula el tráfico por la red, cuál es la medida de óptima (más rápida) de llevar a cabo el escaneo de puertos (sin perder paquetes), y por último el problema de falta de timing que presentan los hosts que filtran o dropean paquetes apropósito (o no).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Frostwire en Ubuntu AMD64</title>
+      <link>http://localhost:1313/2007/12/frostwire-en-ubuntu-amd64/</link>
+      <pubDate>Tue, 25 Dec 2007 00:33:00 +0000</pubDate>
+      <guid>http://localhost:1313/2007/12/frostwire-en-ubuntu-amd64/</guid>
+      <description>&lt;p&gt;Hola!&lt;/p&gt;
+&lt;p&gt;Este post en realidad es casi una &amp;ldquo;copia&amp;rdquo; de un mail que envié a la lista de &lt;a href=&#34;http://ubuntu-ar.org/&#34;&gt;Ubuntu Argentina&lt;/a&gt;, para darle una mano a alguien que quería hacer correr el ( &lt;a href=&#34;http://www.frostwire.com/blog/?p=40&#34;&gt;famoso?&lt;/a&gt;) programa de &lt;a href=&#34;http://es.wikipedia.org/wiki/P2P&#34;&gt;P2P&lt;/a&gt; &lt;a href=&#34;http://www.frostwire.com/&#34;&gt;FrostWire&lt;/a&gt; en Ubuntu pero en arquitectura AMD64.&lt;/p&gt;
+&lt;p&gt;El problema se reduce a que por dependencias adjuntas al paquete de 32 bits, hay que correr el programa con una &lt;a href=&#34;http://es.wikipedia.org/wiki/JVM&#34;&gt;JVM&lt;/a&gt; de 32 bits, por lo que puede aplicarse a otros programas con problemas parecidos.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Ubuntu Live-USB Personalizada (Distro USB booteable)</title>
+      <link>http://localhost:1313/2007/12/ubuntu-live-usb-personalizada-distro-usb-booteable/</link>
+      <pubDate>Sun, 09 Dec 2007 19:13:00 +0000</pubDate>
+      <guid>http://localhost:1313/2007/12/ubuntu-live-usb-personalizada-distro-usb-booteable/</guid>
+      <description>&lt;p&gt;Hola!&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://4.bp.blogspot.com/_nDZ247g0qSM/R1w7JLd9BQI/AAAAAAAAAN4/J_DXvh19C_s/s1600-h/Memoria_USB_sony_2.0_Vaio_512_mb.JPG&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://4.bp.blogspot.com/_nDZ247g0qSM/R1w7JLd9BQI/AAAAAAAAAN4/J_DXvh19C_s/s200/Memoria_USB_sony_2.0_Vaio_512_mb.JPG&#34;&gt;&lt;/a&gt; Hace algún tiempo escribí esto y ahora lo voy a plasmar acá. Se trata de una guía para armar una distribución Linux (&amp;ldquo;customizada&amp;rdquo; o &amp;ldquo;personalizada&amp;rdquo;, si se quiere) booteable desde un dispositivo USB como por ejemplo un &lt;a href=&#34;http://es.wikipedia.org/wiki/Memoria_USB&#34;&gt;Pen Drive&lt;/a&gt;, lo que también se llama &lt;a href=&#34;http://en.wikipedia.org/wiki/Live_USB&#34;&gt;Live-USB&lt;/a&gt; (por su cercana relación con los &lt;a href=&#34;http://es.wikipedia.org/wiki/LiveCD&#34;&gt;Live-CDs&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;Mi necesidad era crear un Live-CD bien genérico, con Linux, entorno gráfico (Gnome preferentemente) más una aplicación mía (que arrancara automáticamente) a una PC que no tenía lectora (ni podía tenerla) pero sí tenía USB; con lo que no me importaba si el acceso al dispositivo era de lectura/escritura o de lectura solamente, una vez arrancado Linux. Al final resultó que el acceso era de sólo lectura, pero calculo que googleando un poco o tocando el archivo de configuración del initramfs se puede hacer de lectura/escritura. También puede servir &lt;a href=&#34;https://help.ubuntu.com/community/LiveCDPersistence&#34;&gt;este link&lt;/a&gt;, donde no se modifican las opciones &amp;ldquo;montaje&amp;rdquo; del dispositivo raíz, pero es una manera alternativa para salir del paso.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Gio en Nautilus</title>
+      <link>http://localhost:1313/2007/11/gio-en-nautilus/</link>
+      <pubDate>Fri, 23 Nov 2007 17:35:00 +0000</pubDate>
+      <guid>http://localhost:1313/2007/11/gio-en-nautilus/</guid>
+      <description>&lt;p&gt;Hola gente!&lt;/p&gt;
+&lt;p&gt;Bueno, como la mayoría de las cosas en el Mundo Libre, siempre se renuevan y reescriben, los escritorios también. En este caso, &lt;a href=&#34;http://blogs.gnome.org/alexl&#34;&gt;Alexander Larsson&lt;/a&gt;, desarrollador de &lt;a href=&#34;http://www.gnome.org/&#34;&gt;Gnome&lt;/a&gt;, está trabajando desde hace tiempo en &lt;a href=&#34;http://live.gnome.org/GioToDo&#34;&gt;Gio&lt;/a&gt;, el nuevo componente de manejo de i/o (&amp;ldquo;input/output&amp;rdquo;, entrada/salida) para Gnome. Qué características nuevas puede traer? Vean este video, donde se ve la versión de Nautilus utilizando Gio:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.gnome.org/%7Ealexl/nautilus-gio-copy.ogg&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://3.bp.blogspot.com/_nDZ247g0qSM/R0cSewbKl9I/AAAAAAAAANo/HfH7NNimaQY/s400/nautilus-gio-copy.png&#34;&gt;&lt;/a&gt; El post original &lt;a href=&#34;http://blogs.gnome.org/alexl/2007/11/23/file-operations-in-nautilus-gio-and-adventures-in-the-land-of-policykit/&#34;&gt;es éste&lt;/a&gt;, y me encanta ver que por fin las operaciones de copiado, eliminación, etc. de archivos se ven reflejadas en el entorno de trabajo (aka el &amp;ldquo;desktop&amp;rdquo;) en sí. Usualmente los usuarios se pierden o se confunden haciendo cosas con archivos, y éste IMHO es un muy buen primer paso.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Adobe Reader 8.1 para Linux</title>
+      <link>http://localhost:1313/2007/11/adobe-reader-81-para-linux/</link>
+      <pubDate>Thu, 08 Nov 2007 03:10:00 +0000</pubDate>
+      <guid>http://localhost:1313/2007/11/adobe-reader-81-para-linux/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://2.bp.blogspot.com/_nDZ247g0qSM/RzKPGrJ7VLI/AAAAAAAAANU/vrdh-MgAvOo/s1600-h/AdobeReader8.png&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://2.bp.blogspot.com/_nDZ247g0qSM/RzKPGrJ7VLI/AAAAAAAAANU/vrdh-MgAvOo/s400/AdobeReader8.png&#34;&gt;&lt;/a&gt; Si, si, ya sé que para leer simplemente un &lt;a href=&#34;http://es.wikipedia.org/wiki/Pdf&#34;&gt;archivo pdf&lt;/a&gt; &lt;a href=&#34;http://www.gnome.org/projects/evince/&#34;&gt;Evince&lt;/a&gt; y/o &lt;a href=&#34;http://kpdf.kde.org/&#34;&gt;Kpdf&lt;/a&gt; funcionan bien&amp;hellip; pero&amp;hellip; y si me llega algún pdf &amp;ldquo;raro&amp;rdquo;, que aprovecha las características nuevas del formato? (uso de formularios, anotaciones, encriptación, etc.)[1]&lt;/p&gt;
+&lt;p&gt;En fin&amp;hellip; me enteré hace poquito que &lt;a href=&#34;http://www.adobe.com/&#34;&gt;Adobe&lt;/a&gt; (muy silenciosamente) lanzó su versión 8.1 del &amp;ldquo;acroread&amp;rdquo;, es decir, del &lt;a href=&#34;http://www.adobe.com/products/reader/&#34;&gt;Adobe Reader&lt;/a&gt; para Solaris/Sparc y GNU/Linux/i386. Con este programa tenemos máxima compatibilidad al leer y trabajar con estos archivos.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Un buen ejemplo de código PyGTK: Decibel</title>
+      <link>http://localhost:1313/2007/10/un-buen-ejemplo-de-codigo-pygtk-decibel/</link>
+      <pubDate>Sun, 14 Oct 2007 15:05:00 +0000</pubDate>
+      <guid>http://localhost:1313/2007/10/un-buen-ejemplo-de-codigo-pygtk-decibel/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://decibel.silent-blade.org/index.php?n=Main.HomePage&#34;&gt;Decibel Audio Player&lt;/a&gt; es un programa liviano, sencillo, no orientado a tener miles de funciones ( &lt;a href=&#34;http://amarok.kde.org/&#34;&gt;Amarok&lt;/a&gt;, les suena? :-D ), sino sólo a reproducir música de una lista. La verdad que las &lt;a href=&#34;http://decibel.silent-blade.org/index.php?n=Main.Screenshots&#34;&gt;capturas de pantalla&lt;/a&gt; (&amp;ldquo;everybody loves screenshots!&amp;rdquo;) pintaban prometedoras, y cuando leí que estaba hecho en Python + GTK, bajé el fuente a ver qué onda[1]&amp;hellip;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://1.bp.blogspot.com/_nDZ247g0qSM/RxIyXn7y13I/AAAAAAAAAL4/OcdQYNW4qxw/s1600-h/main-file-explorer.png&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://1.bp.blogspot.com/_nDZ247g0qSM/RxIyXn7y13I/AAAAAAAAAL4/OcdQYNW4qxw/s400/main-file-explorer.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Y la verdad que me está gustando lo que estoy leyendo. La parte de módulos me parece bárbara, da gusto leerla: para hacer un módulo propio (aka &amp;lsquo;plugin&amp;rsquo;), uno hereda de una clase &amp;ldquo;Modulo&amp;rdquo; (también hay un ThreadedModule) y se registra a los eventos que quiere recibir, puede emitir eventos a los demás, etc. Las pantallas están hechas con &lt;a href=&#34;http://glade.gnome.org/&#34;&gt;Glade&lt;/a&gt;, el código está bien comentado (y bien identado, es Python! :-D ), el tamaño del proyecto y del fuente es manejable (al usar Glade, casi no se ve código de manejo de ventanas), usa semáforos, locks, está bien modularizado y orientado a objetos, etc.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Jornadas en el LugFi 2007</title>
+      <link>http://localhost:1313/2007/09/jornadas-en-el-lugfi-2007/</link>
+      <pubDate>Sat, 15 Sep 2007 13:54:00 +0000</pubDate>
+      <guid>http://localhost:1313/2007/09/jornadas-en-el-lugfi-2007/</guid>
+      <description>&lt;p&gt;Hola!&lt;/p&gt;
+&lt;p&gt;Este viernes tuve la oportunidad de ir a las &lt;a href=&#34;http://lug.fi.uba.ar/eventos/2007-jornadas/&#34;&gt;Jornadas 2007&lt;/a&gt; del &lt;a href=&#34;http://lug.fi.uba.ar/&#34;&gt;LugFI&lt;/a&gt;, donde me encontré con amigos del UnluX, gente de &amp;ldquo;la comunidad&amp;rdquo;, y pasé un muy buen rato escuchando y aprendiendo cosas interesantísimas.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://lug.fi.uba.ar/&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://4.bp.blogspot.com/_nDZ247g0qSM/Ru1uywtdAlI/AAAAAAAAALI/_9eQTPhjMnE/s400/logo.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Resumen de las charlas a las que fui (espero no hacer sentir mal a nadie, los comentarios van con onda y tienden a mejorar, eh):&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;14 - 15 hs.: Llegamos tarde a la charla de &lt;a href=&#34;http://www.mozilla.org/projects/xul/&#34;&gt;XUL&lt;/a&gt;!!! (ufa). Me gustaría que alguien me pasara las diapositivas al menos (vi que &lt;a href=&#34;http://damianv.com.ar/&#34;&gt;Damián Viano&lt;/a&gt; estuvo grabando el audio de las charlas&amp;hellip;)&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Youtube usa Python</title>
+      <link>http://localhost:1313/2007/08/youtube-usa-python/</link>
+      <pubDate>Tue, 14 Aug 2007 13:23:00 +0000</pubDate>
+      <guid>http://localhost:1313/2007/08/youtube-usa-python/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://2.bp.blogspot.com/_nDZ247g0qSM/RsGsm09PgGI/AAAAAAAAAJ4/7k6yg0v_PqA/s1600-h/pic_youtubelogo_123x63.gif&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://2.bp.blogspot.com/_nDZ247g0qSM/RsGsm09PgGI/AAAAAAAAAJ4/7k6yg0v_PqA/s400/pic_youtubelogo_123x63.gif&#34;&gt;&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;http://highscalability.com/youtube-architecture&#34;&gt;En esta página&lt;/a&gt; hay un poquito de detalle sobre la arquitectura que utiliza YouTube, que sirve alrededor de 100.000.000 (sí, cien millones) de videos por día.&lt;/p&gt;
+&lt;p&gt;Adivinen qué? Usa Linux + un Application Server escrito en Python. :-D&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://psyco.sourceforge.net/&#34;&gt;Psyco&lt;/a&gt; es un &amp;ldquo;acelerador&amp;rdquo; de python, digamos que compila &amp;ldquo;al vuelo&amp;rdquo; el código que interpreta python y lo convierte a código nativo de la plataforma (como si se hubiera escrito en C, digamos). Si a ellos les da resultados, se podría probar para casos donde se necesite performance.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Krita: Mezcla de Colores</title>
+      <link>http://localhost:1313/2007/08/krita-mezcla-de-colores/</link>
+      <pubDate>Tue, 14 Aug 2007 13:10:00 +0000</pubDate>
+      <guid>http://localhost:1313/2007/08/krita-mezcla-de-colores/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://1.bp.blogspot.com/_nDZ247g0qSM/RsGq8k9PgFI/AAAAAAAAAJw/b5y5DCqoym4/s1600-h/hi48-app-krita.png&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://1.bp.blogspot.com/_nDZ247g0qSM/RsGq8k9PgFI/AAAAAAAAAJw/b5y5DCqoym4/s400/hi48-app-krita.png&#34;&gt;&lt;/a&gt;&lt;a href=&#34;http://koffice.kde.org/krita/&#34;&gt;Krita&lt;/a&gt; es una aplicación para edición fotográfica/bitmaps al estilo Photoshop/Gimp/etc.&lt;/p&gt;
+&lt;p&gt;El video muestra la implementación de la &amp;ldquo;mezcla de colores&amp;rdquo; (yo no entendía qué era hasta que lo ví). Muy bueno, Krita pinta como alternativa a &lt;a href=&#34;http://www.gimp.org/&#34;&gt;Gimp&lt;/a&gt; desde hace rato y ojalá sigan poniéndole pilas los desarrolladores.&lt;/p&gt;
+&lt;p&gt;Además de eso, calculo que a fines de año (gracias a &lt;a href=&#34;http://trolltech.com/products/qt&#34;&gt;QT&lt;/a&gt; 4.x GPL para todas las plataformas) va a estar disponible para Windows y Mac.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Muerte al top. Usá htop!</title>
+      <link>http://localhost:1313/2007/07/muerte-al-top-usa-htop/</link>
+      <pubDate>Sun, 15 Jul 2007 23:44:00 +0000</pubDate>
+      <guid>http://localhost:1313/2007/07/muerte-al-top-usa-htop/</guid>
+      <description>&lt;p&gt;A &lt;a href=&#34;http://ubuntu-tutorials.com/2007/07/15/forget-top-check-out-htop/&#34;&gt;éste post&lt;/a&gt;, sólo le agrego la captura obligada:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://3.bp.blogspot.com/_nDZ247g0qSM/RpqyDR9dfmI/AAAAAAAAAJA/F0JzklyZg84/s1600-h/htop.png&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://3.bp.blogspot.com/_nDZ247g0qSM/RpqyDR9dfmI/AAAAAAAAAJA/F0JzklyZg84/s400/htop.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Y cómo instalarlo:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo apt-get install htop
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Htop es un reemplazo más amigable del viejo y querido top de consola, permitiéndote matar y hacer scroll entre los procesos (era hora!).&lt;/p&gt;
+&lt;p&gt;Saludos
+Marcelo&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>MPX: Multi-Point X Server</title>
+      <link>http://localhost:1313/2007/07/mpx-multi-point-x-server/</link>
+      <pubDate>Sun, 15 Jul 2007 18:07:00 +0000</pubDate>
+      <guid>http://localhost:1313/2007/07/mpx-multi-point-x-server/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://4.bp.blogspot.com/_nDZ247g0qSM/RpwuiB9dfoI/AAAAAAAAAJQ/xskDwhvu9WA/s1600-h/multitouch.jpeg&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://4.bp.blogspot.com/_nDZ247g0qSM/RpwuiB9dfoI/AAAAAAAAAJQ/xskDwhvu9WA/s320/multitouch.jpeg&#34;&gt;&lt;/a&gt; Buenas&amp;hellip;&lt;/p&gt;
+&lt;p&gt;Hace unos meses había salido la noticia de la presentación de &lt;a href=&#34;http://www.microsoft.com/surface/&#34;&gt;Microsoft Surface&lt;/a&gt;, que aunque no va a estar disponible hasta fines de 2007, sus videos permiten apreciar una nueva manera de interactuar con una computadora, ya que el &lt;a href=&#34;http://en.wikipedia.org/wiki/Touch_screen&#34;&gt;Touch Screen&lt;/a&gt; horizontal posee un sensor &lt;a href=&#34;http://en.wikipedia.org/wiki/Multi-touch&#34;&gt;Multi-touch&lt;/a&gt;. Una combinación de hardware y software donde una o varias personas interactuaban en una &amp;ldquo;mesa digital&amp;rdquo;, al mismo tiempo&amp;hellip; realmente es muy interesante! (más alla de que Microsoft lo sepa vender bien).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Samsung Syncmaster 206/226 NW en Ubuntu</title>
+      <link>http://localhost:1313/2007/07/samsung-syncmaster-206226-nw-en-ubuntu/</link>
+      <pubDate>Sat, 14 Jul 2007 20:58:00 +0000</pubDate>
+      <guid>http://localhost:1313/2007/07/samsung-syncmaster-206226-nw-en-ubuntu/</guid>
+      <description>&lt;p&gt;Tengo chiche nuevo!&lt;/p&gt;
+&lt;p&gt;Después de algún tiempo de sacrificado laburo, me dí uno de los mayores gustos &amp;ldquo;informáticos&amp;rdquo; hasta ahora: comprarme un monitor LCD de 22&amp;quot; wide&amp;hellip; más precisamente el &lt;a href=&#34;http://www.samsung.com/ar/products/monitor/lcd2040/226nw.asp&#34;&gt;Samsung Syncmaster 226 NW&lt;/a&gt;. :-D&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://2.bp.blogspot.com/_nDZ247g0qSM/Rpk6xR9dfhI/AAAAAAAAAII/7nxBv1XKBbs/s1600-h/IMG_2058.JPG&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://2.bp.blogspot.com/_nDZ247g0qSM/Rpk6xR9dfhI/AAAAAAAAAII/7nxBv1XKBbs/s400/IMG_2058.JPG&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;De más está decir que es fantabuloso cómo se ve cualquier cosa que uno quiera ver. No hay &amp;ldquo;efecto arrastre&amp;rdquo; al hacer scroll, excelente contraste, excelente resolución y nitidez&amp;hellip; Lo único &amp;ldquo;malo&amp;rdquo; técnicamente es que no viene con conexión &lt;a href=&#34;http://es.wikipedia.org/wiki/Digital_Visual_Interface&#34;&gt;DVI&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Sufrís &#34;versionitis&#34;?</title>
+      <link>http://localhost:1313/2007/07/sufris-versionitis/</link>
+      <pubDate>Sun, 01 Jul 2007 15:38:00 +0000</pubDate>
+      <guid>http://localhost:1313/2007/07/sufris-versionitis/</guid>
+      <description>&lt;p&gt;Una de las cosas que hacen estable y previsible a una distribución como Ubuntu es que una vez que fue lanzada una versión definitiva, las actualizaciones de los programas que contiene &lt;a href=&#34;https://wiki.ubuntu.com/StableReleaseUpdates&#34;&gt;sólo se limitan a correcciones de seguridad o errores críticos&lt;/a&gt;. Esto está bueno, si uno quiere que todo &amp;ldquo;sólo funcione&amp;rdquo; una vez se configuró y la PC se comenzó a usar diariamente; lo mismo pasa si se usa la PC para laburar y necesita que todo ande de forma ordenada y sin sobresaltos.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Tipeando Caracteres Unicode en Gnome (II)</title>
+      <link>http://localhost:1313/2007/06/tipeando-caracteres-unicode-en-gnome-ii/</link>
+      <pubDate>Mon, 25 Jun 2007 16:16:00 +0000</pubDate>
+      <guid>http://localhost:1313/2007/06/tipeando-caracteres-unicode-en-gnome-ii/</guid>
+      <description>&lt;p&gt;Tratando de probar el &amp;ldquo;truquito&amp;rdquo; que &lt;a href=&#34;http://localhost:1313/2006/12/tipeando-caracteres-especiales-en-gnome/&#34;&gt;postié hace bastante&lt;/a&gt; pero ahora en Ubuntu Feisty, veo que si le doy al Ctrl+Alt+40 no me genera la @&amp;hellip;.&lt;/p&gt;
+&lt;p&gt;Buscando, buscando por qué, encontré esto:
+&lt;a href=&#34;http://live.gnome.org/TwoPointFifteen/ReleaseNotes&#34;&gt;http://live.gnome.org/TwoPointFifteen/ReleaseNotes&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;que dice:
+&amp;ldquo;Use CTRL-SHIFT-u instead of CTRL_SHIFT- to generate unicode keys &amp;ndash; This is a change in behaviour so important to note ( &lt;a href=&#34;http://live.gnome.org/OlavVitters&#34;&gt;OlavVitters&lt;/a&gt;)&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;O sea, que a partir de Gnome 2.16 no es más Ctrl+Shift+Código_Unicode, sino que es Ctrl+Shift+u+Código_Unicode.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Cafelug: Primer Charla Técnica Trimestral de 2007</title>
+      <link>http://localhost:1313/2007/06/cafelug-primer-charla-tecnica-trimestral-de-2007/</link>
+      <pubDate>Fri, 15 Jun 2007 15:21:00 +0000</pubDate>
+      <guid>http://localhost:1313/2007/06/cafelug-primer-charla-tecnica-trimestral-de-2007/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://3.bp.blogspot.com/_nDZ247g0qSM/RnKvoac5XCI/AAAAAAAAAHI/fwBfNgKWt9c/s1600-h/gardetux.png&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://3.bp.blogspot.com/_nDZ247g0qSM/RnKvoac5XCI/AAAAAAAAAHI/fwBfNgKWt9c/s320/gardetux.png&#34;&gt;&lt;/a&gt; Buenas&amp;hellip; Sólo paso a reproducir el aviso de las próximas CTT de Cafelug&amp;hellip;. y es muy probable que vaya, las charlas de alta disponibilidad, asterisk y la de videos parecen interesantes (más que nada porque no investigué nada en profundidad al respecto). Ya he ido a una el año pasado y los flacos son muy copados, uno se siente muy a gusto con &amp;ldquo;gente como uno&amp;rdquo; asistiendo, debatiendo y aprendiendo cosas.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Ubuntu GNU/Linux &#43; Python en Rio Negro</title>
+      <link>http://localhost:1313/2007/05/ubuntu-gnulinux-python-en-rio-negro/</link>
+      <pubDate>Wed, 30 May 2007 01:31:00 +0000</pubDate>
+      <guid>http://localhost:1313/2007/05/ubuntu-gnulinux-python-en-rio-negro/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://2.bp.blogspot.com/_nDZ247g0qSM/RlzaW6BURVI/AAAAAAAAAGI/zNc6p1s28C4/s1600-h/Escudo_COA_Rio_Negro_province_argentina.gif&#34;&gt;&lt;img alt=&#34;Escudo de Río Negro&#34; loading=&#34;lazy&#34; src=&#34;http://2.bp.blogspot.com/_nDZ247g0qSM/RlzaW6BURVI/AAAAAAAAAGI/zNc6p1s28C4/s400/Escudo_COA_Rio_Negro_province_argentina.gif&#34;&gt;&lt;/a&gt; Holas&amp;hellip;&lt;/p&gt;
+&lt;p&gt;Bueh, por fin puedo bloguear algo al respecto (tengo un ratito como para comentar algo), y además mi compañero de laburo &lt;a href=&#34;https://launchpad.net/%7Egepatino&#34;&gt;Gabriel Patiño&lt;/a&gt; pudo escribir algo el fin de semana al respecto y &lt;a href=&#34;http://www.solar.org.ar/spip.php?article447&#34;&gt;yo puedo linkearlo&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Fue un mes estresante, cansador&amp;hellip; pero contentos por el deber cumplido de tener que realizar el software para el escrutinio provisorio de una provincia argentina, &lt;a href=&#34;http://es.wikipedia.org/wiki/Provincia_de_R%C3%ADo_Negro&#34;&gt;Río Negro&lt;/a&gt;. Fueron varios componentes desarrollados, en distintos entornos ( &lt;a href=&#34;http://www.apache.org/&#34;&gt;Apache&lt;/a&gt;/ &lt;a href=&#34;http://es.wikipedia.org/wiki/Common_Gateway_Interface&#34;&gt;CGI&lt;/a&gt;, &lt;a href=&#34;http://www.python.org/&#34;&gt;Python&lt;/a&gt; + &lt;a href=&#34;http://www.blogger.com/www.pygtk.org&#34;&gt;PyGTK&lt;/a&gt; + &lt;a href=&#34;http://www.gtk.org/&#34;&gt;GTK&lt;/a&gt;, &lt;a href=&#34;http://www.postgresql.org/&#34;&gt;PostgreSQL&lt;/a&gt;, etc.), pero siempre sobre &lt;a href=&#34;http://www.ubuntu.com/&#34;&gt;Ubuntu&lt;/a&gt; GNU/Linux.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Un Pequeño paso para Dell...</title>
+      <link>http://localhost:1313/2007/05/un-pequeno-paso-para-dell/</link>
+      <pubDate>Fri, 25 May 2007 22:03:00 +0000</pubDate>
+      <guid>http://localhost:1313/2007/05/un-pequeno-paso-para-dell/</guid>
+      <description>&lt;p&gt;Un gran paso para la humanidad del Código Abierto. :-D&lt;/p&gt;
+&lt;p&gt;Sinceramente, noticias como ésta me ponen muy contento. Espero que llegue &amp;ldquo;rápido&amp;rdquo; a la Argentina (por ahora sólo se venden en EEUU)&amp;hellip;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://4.bp.blogspot.com/_nDZ247g0qSM/RldgHqBURUI/AAAAAAAAAF8/qcPObM2Ke9M/s1600-h/hp_linux_728x228.jpg&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://4.bp.blogspot.com/_nDZ247g0qSM/RldgHqBURUI/AAAAAAAAAF8/qcPObM2Ke9M/s400/hp_linux_728x228.jpg&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Si van a &lt;a href=&#34;https://www.dell.com&#34;&gt;www.dell.com&lt;/a&gt; -&amp;gt; Menú -&amp;gt; Desktops -&amp;gt; Open Source PCs pueden encontrarse con las ofertas de PCs y Notebooks con Ubuntu preinstalado. Y ofrecen soporte de hasta un año en el mismo &amp;ldquo;carrito&amp;rdquo; donde uno personaliza lo que va a comprar. Impresionante.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Para los que no conocen un Linux modelo 2007...</title>
+      <link>http://localhost:1313/2007/05/para-los-que-no-conocen-un-linux-modelo-2007/</link>
+      <pubDate>Sat, 05 May 2007 16:55:00 +0000</pubDate>
+      <guid>http://localhost:1313/2007/05/para-los-que-no-conocen-un-linux-modelo-2007/</guid>
+      <description>&lt;p&gt;Quizás sólo les interesa un poco, pero no tienen tiempo de probarlo, ganas, etc&amp;hellip;. y sin embargo, les gustaría saber cómo se ve y se &amp;ldquo;siente&amp;rdquo;&amp;hellip; vean este video, está hecho por un español, dueño de &lt;a href=&#34;http://www.fon.com/es/&#34;&gt;Fon&lt;/a&gt; (un ISP de WiFi en España -creo-), que instaló por primera vez Ubuntu, y lo analiza según su forma de pensar y trabajar.&lt;/p&gt;
+&lt;p&gt;Creo que es una opinión imparcial (y actualizada), comentando las cosas buenas y malas de Ubuntu, pero muy valiosa.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Los CDs de Ubuntu 7.04 van a llegar a tu casa</title>
+      <link>http://localhost:1313/2007/04/los-cds-de-ubuntu-704-van-a-llegar-a-tu-casa/</link>
+      <pubDate>Wed, 11 Apr 2007 19:17:00 +0000</pubDate>
+      <guid>http://localhost:1313/2007/04/los-cds-de-ubuntu-704-van-a-llegar-a-tu-casa/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://2.bp.blogspot.com/_nDZ247g0qSM/RhT29a42MMI/AAAAAAAAAFQ/_Ivp0Pu5D0E/s1600-h/ubuntulogo.png&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://2.bp.blogspot.com/_nDZ247g0qSM/RhT29a42MMI/AAAAAAAAAFQ/_Ivp0Pu5D0E/s400/ubuntulogo.png&#34;&gt;&lt;/a&gt; Tal como pasó con Ubuntu 6.06 LTS (pero no con Ubuntu 6.10), los CDs de Ubuntu 7.04 &amp;ldquo;Feisty&amp;rdquo; van a estar disponibles gratuitamente para pedido a través de &lt;a href=&#34;http://shipit.ubuntu.com/&#34;&gt;http://shipit.ubuntu.com&lt;/a&gt; en unos días.&lt;/p&gt;
+&lt;p&gt;Esperemos que sea una excelente release, tal como lo fue Ubuntu 6.06.&lt;/p&gt;
+&lt;p&gt;(Visto en &lt;a href=&#34;http://ubuntu.wordpress.com/2007/04/04/feisty-cds-to-be-available-through-shipit/&#34;&gt;Ubuntu Planet&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;Actualización (11/04/2007): &lt;a href=&#34;http://ubuntu.wordpress.com/2007/04/11/request-feisty-704-cds-now/&#34;&gt;Ya se pueden pedir&lt;/a&gt;!!! :-D&lt;/p&gt;
+&lt;p&gt;Saludos!&lt;br&gt;
+Marcelo&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Nuevo Scheduler para el Kernel</title>
+      <link>http://localhost:1313/2007/03/nuevo-scheduler-para-el-kernel/</link>
+      <pubDate>Wed, 14 Mar 2007 16:53:00 +0000</pubDate>
+      <guid>http://localhost:1313/2007/03/nuevo-scheduler-para-el-kernel/</guid>
+      <description>&lt;p&gt;Brevemente, me hago eco de &lt;a href=&#34;http://mnm.uib.es/gallir/posts/2007/03/10/1001/&#34;&gt;este post&lt;/a&gt; bastante interesante sobre el probable nuevo algoritmo de &lt;a href=&#34;http://en.wikipedia.org/wiki/Scheduling_algorithm&#34;&gt;Planificación de Procesos&lt;/a&gt; del kernel de Linux 2.6.22&amp;hellip;.&lt;/p&gt;
+&lt;p&gt;La explicación es bastante sencilla, y &lt;a href=&#34;http://lwn.net/SubscriberLink/224865/40cc0ac5688a614b/&#34;&gt;acá está el artículo&lt;/a&gt; de Linux Weekly News que lo comenta.&lt;/p&gt;
+&lt;p&gt;Imprescindible para todo estudiante de Sistemas Operativos. :-D&lt;/p&gt;
+&lt;p&gt;Saludos&lt;br&gt;
+Marcelo&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Agujereando Pingüinitos - Aprendiendo sobre (in)Seguridad</title>
+      <link>http://localhost:1313/2007/03/agujereando-pinguinitos-aprendiendo-sobre-inseguridad/</link>
+      <pubDate>Tue, 06 Mar 2007 12:37:00 +0000</pubDate>
+      <guid>http://localhost:1313/2007/03/agujereando-pinguinitos-aprendiendo-sobre-inseguridad/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://1.bp.blogspot.com/_nDZ247g0qSM/RepEwKvI69I/AAAAAAAAAEg/V5S58YhaIc4/s1600-h/tux_picrate_touko_tux2.png&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://1.bp.blogspot.com/_nDZ247g0qSM/RepEwKvI69I/AAAAAAAAAEg/V5S58YhaIc4/s400/tux_picrate_touko_tux2.png&#34;&gt;&lt;/a&gt; Disclaimer:&lt;br&gt;
+Esto lo escribí hace tiempo y ahora lo &amp;ldquo;hago público&amp;rdquo;, ya que me costó algunas horas de laburo hacerlo. Sin embargo, &lt;a href=&#34;http://www.linux.com/article.pl?sid=07/02/15/1747220&#34;&gt;en esta semana leo&lt;/a&gt; con alegría que alguien va a hacerme ahorrar laburo: la nota sobre la distro &lt;a href=&#34;http://www.damnvulnerablelinux.org/&#34;&gt;Damn Vulnerable Linux&lt;/a&gt;. Básicamente es un &lt;a href=&#34;http://es.wikipedia.org/wiki/Live_CD&#34;&gt;LiveCD&lt;/a&gt; que trae un Kernel Linux + herramientas GNU altamente vulnerables, con el objetivo de hackearlas, de diversas maneras. Hasta trae documentación con ejemplos de hacking!&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Excelente Documentación de Linux en Castellano</title>
+      <link>http://localhost:1313/2007/03/excelente-documentacion-de-linux-en-castellano/</link>
+      <pubDate>Sun, 04 Mar 2007 02:32:00 +0000</pubDate>
+      <guid>http://localhost:1313/2007/03/excelente-documentacion-de-linux-en-castellano/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://3.bp.blogspot.com/_nDZ247g0qSM/Reo1JqvI66I/AAAAAAAAAD0/2OuZJ_oSQHY/s1600-h/logo_molinux.png&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://3.bp.blogspot.com/_nDZ247g0qSM/Reo1JqvI66I/AAAAAAAAAD0/2OuZJ_oSQHY/s400/logo_molinux.png&#34;&gt;&lt;/a&gt;&lt;a href=&#34;http://www.molinux.info/&#34;&gt;Molinux&lt;/a&gt; es la distro de Linux de la &lt;a href=&#34;http://www.jccm.es/&#34;&gt;Junta Comunitaria de Castilla-La Mancha&lt;/a&gt;. Está basada en Ubuntu; en realidad es muy parecida y esta documentación es 100% aplicable a Ubuntu también. Vía &lt;a href=&#34;http://www.meneame.net/&#34;&gt;Meneame&lt;/a&gt; encuentro &lt;a href=&#34;http://meneame.net/story/uno-mejores-manuales-linux-todo-internet&#34;&gt;un post&lt;/a&gt; sobre su excelente documentación.&lt;/p&gt;
+&lt;p&gt;De curioso la bajé, y está muy buena, más que nada al nivel del famoso &amp;ldquo;Usuario Final&amp;rdquo; y en español, además de ser extensa: tiene 334 páginas. Documenta la mayoría de los programas Linux de uso general*: Entorno Gnome y sus aplicaciones, &lt;a href=&#34;http://www.openoffice.org/&#34;&gt;OpenOffice.org&lt;/a&gt;, &lt;a href=&#34;http://www.mozilla.com/&#34;&gt;Firefox&lt;/a&gt;, &lt;a href=&#34;http://www.gnome.org/projects/evolution/&#34;&gt;Evolution&lt;/a&gt;, &lt;a href=&#34;http://gaim.sf.net/&#34;&gt;Gaim&lt;/a&gt;, &lt;a href=&#34;http://www.ekiga.org/&#34;&gt;Ekiga&lt;/a&gt;, &lt;a href=&#34;http://www.nvu.com/&#34;&gt;Nvu&lt;/a&gt;, &lt;a href=&#34;http://gthumb.sourceforge.net/&#34;&gt;Gthumb&lt;/a&gt;, &lt;a href=&#34;http://www.inkscape.org/&#34;&gt;Inkscape&lt;/a&gt;, &lt;a href=&#34;http://www.gimp.org/&#34;&gt;Gimp&lt;/a&gt;, &lt;a href=&#34;http://www.gnome.org/projects/totem/&#34;&gt;Totem&lt;/a&gt;, la Configuración del Sistema y sus Herramientas de Administración.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Samsung SCX-4200 en Ubuntu 6.10</title>
+      <link>http://localhost:1313/2007/02/samsung-scx-4200-en-ubuntu-610/</link>
+      <pubDate>Tue, 27 Feb 2007 03:35:00 +0000</pubDate>
+      <guid>http://localhost:1313/2007/02/samsung-scx-4200-en-ubuntu-610/</guid>
+      <description>&lt;p&gt;Hola!&lt;/p&gt;
+&lt;p&gt;Fue un laargo tiempo sin postear, entre vacaciones, laburo y asuntos personales, el blogueo quedó a un lado. Ahora ya casi que &amp;ldquo;volví&amp;rdquo; y espero seguir escribiendo&amp;hellip;
+&lt;a href=&#34;http://1.bp.blogspot.com/_nDZ247g0qSM/ReOWgIVHRuI/AAAAAAAAADA/504D5SV2X10/s1600-h/h983.jpg&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://1.bp.blogspot.com/_nDZ247g0qSM/ReOWgIVHRuI/AAAAAAAAADA/504D5SV2X10/s200/h983.jpg&#34;&gt;&lt;/a&gt;
+En esta oportunidad les comento que compré una Impresora &lt;a href=&#34;http://www.samsung.com/ar/products/printers/multifunction/scx_4200.asp&#34;&gt;Multifunción Samsung SCX-4200&lt;/a&gt;, dado que tiene un costo relativamente bajo, soporta Linux (al menos x86 y x86-64, y tiene el pingüinito en la caja!), y además de imprimir con calidad láser, también fotocopia y escanea. Las &lt;a href=&#34;http://www.vnunet.com/computeractive/hardware/2161916/review-samsung-scx-4200-multi&#34;&gt;reviews&lt;/a&gt; &lt;a href=&#34;http://reviews.cnet.com/Samsung_SCX_4200/4505-3181_7-31628074.html&#34;&gt;que&lt;/a&gt; &lt;a href=&#34;http://www.neoseeker.com/resourcelink.html?rlid=137144&#34;&gt;encontré&lt;/a&gt; en mi opinión eran bastante alentadoras (digamos que sus &amp;ldquo;desventajas&amp;rdquo; para mí no eran problema), así que la traje a mi casa.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Parseo de Archivos Binarios y Bugs</title>
+      <link>http://localhost:1313/2007/01/parseo-de-archivos-binarios-y-bugs/</link>
+      <pubDate>Mon, 22 Jan 2007 18:17:00 +0000</pubDate>
+      <guid>http://localhost:1313/2007/01/parseo-de-archivos-binarios-y-bugs/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://sam.zoy.org/zzuf/zzuf-logo.png&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://sam.zoy.org/zzuf/zzuf-logo.png&#34;&gt;&lt;/a&gt; Me parece interesante este post sobre la herramienta &lt;a href=&#34;http://sam.zoy.org/zzuf/&#34;&gt;zzuf&lt;/a&gt;, ya que según esta pequeña muestra es muy común que el parseo de archivos binarios falle (cuelgue de la aplicación o error fatal) ante el menor cambio de algún byte. Me hace acordar &lt;a href=&#34;http://internet.newsforge.com/article.pl?sid=04/11/01/1558216&amp;amp;tid=142&amp;amp;tid=143&amp;amp;tid=144&#34;&gt;cuando se hacían tests de la robustez&lt;/a&gt; de los navegadores web &lt;a href=&#34;http://lwn.net/Articles/107087/&#34;&gt;al hacer leer HTMLs &amp;ldquo;malos&amp;rdquo;&lt;/a&gt; a los navegadores.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://sam.zoy.org/blog/2007-01-16-exposing-file-parsing-vulnerabilities&#34;&gt;Exposing File Parsing Vulnerabilites&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Como reflexión, estaría bueno que haya algún equipo de Q&amp;amp;A dentro del mundo Open Source que tome aplicaciones y haga más &amp;ldquo;reportes&amp;rdquo; de este tipo.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Sobre el Manejo de Contraseñas - S/KEY y OPIE</title>
+      <link>http://localhost:1313/2007/01/sobre-el-manejo-de-contrasenas-skey-y-opie/</link>
+      <pubDate>Thu, 18 Jan 2007 18:29:00 +0000</pubDate>
+      <guid>http://localhost:1313/2007/01/sobre-el-manejo-de-contrasenas-skey-y-opie/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://2.bp.blogspot.com/_nDZ247g0qSM/Ra_ARe9nfUI/AAAAAAAAACY/Y4qacJVCoM4/s1600-h/283183186_357a560fbc.jpg&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://2.bp.blogspot.com/_nDZ247g0qSM/Ra_ARe9nfUI/AAAAAAAAACY/Y4qacJVCoM4/s200/283183186_357a560fbc.jpg&#34;&gt;&lt;/a&gt; Esta es una buena práctica del uso de contraseñas.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://wiki.linuxquestions.org/wiki/Opie&#34;&gt;Opie&lt;/a&gt; es un programa para generar contraseñas de uso &amp;ldquo;por única vez&amp;rdquo;. Buenísimo, juro que no lo conocía (y me pasa lo mismo que al tipo del blog, cuando tengo que tipear mi pass en máquinas que no conozco).&lt;/p&gt;
+&lt;p&gt;Links:&lt;br&gt;
+&lt;a href=&#34;http://warma.dk/blog/article/62/&#34;&gt;Søren Hansen Blog&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;http://en.wikipedia.org/wiki/One-time_password&#34;&gt;One-time password en la Wikipedia&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;http://en.wikipedia.org/wiki/S/KEY&#34;&gt;S-Key en la Wikipedia&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;No prometo ponerlo en práctica. Como es sabido, taanta seguridad va en contra de la (y mí) usabilidad. :-D&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>SysRQ remoto</title>
+      <link>http://localhost:1313/2007/01/sysrq-remoto/</link>
+      <pubDate>Wed, 03 Jan 2007 13:32:00 +0000</pubDate>
+      <guid>http://localhost:1313/2007/01/sysrq-remoto/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://upload.wikimedia.org/wikipedia/commons/6/6c/My_Opera_Server_Back.jpg&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://upload.wikimedia.org/wikipedia/commons/6/6c/My_Opera_Server_Back.jpg&#34;&gt;&lt;/a&gt;&lt;br&gt;
+Si alguien conocía las &amp;quot; &lt;a href=&#34;http://aplawrence.com/Words2005/2005_04_13.html&#34;&gt;teclas mágicas&lt;/a&gt;&amp;quot; de GNU/Linux, sabía que sólo funcionaban localmente, es decir, estando uno delante del Server. Sin embargo, si uno está lejos físicamente, se complica&amp;hellip; (sí, un amigo llamaba a la casa para que la madre le reiniciara el Servidorcito&amp;hellip; :-P ).&lt;/p&gt;
+&lt;p&gt;Para eliminar este inconveniente que han desarrollado &lt;a href=&#34;http://julien.danjou.info/sysrqd.html&#34;&gt;sysrqd&lt;/a&gt;, un software que funciona como demonio sólo para atender a &amp;ldquo;system requirements&amp;rdquo;, o sea, poder enviar remotamente esas &amp;ldquo;teclas mágicas&amp;rdquo;. Está pensado para consumir lo menos posible de CPU (calculo que es por eso que no encripta el tráfico), no inicializa ningún shell y sólo tiene autenticación del tipo usuario/contraseña.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Nueva Versión del Google Earth para Linux (4.0.2693)</title>
+      <link>http://localhost:1313/2006/12/nueva-version-del-google-earth-para-linux-402693/</link>
+      <pubDate>Sun, 31 Dec 2006 18:56:00 +0000</pubDate>
+      <guid>http://localhost:1313/2006/12/nueva-version-del-google-earth-para-linux-402693/</guid>
+      <description>&lt;p&gt;No lo leí en ningún lado, así que para mí fue una sorpresa volver a bajar el &lt;a href=&#34;http://earth.google.es/earth4.html&#34;&gt;Google Earth&lt;/a&gt; e instalarlo; tenía una versión de Junio de 2006 (creo) y ahora tengo una nueva versión!&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://1.bp.blogspot.com/_nDZ247g0qSM/RZgI5W1NSzI/AAAAAAAAACA/b92QIcVVsXI/s1600-h/earth1.jpg&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://1.bp.blogspot.com/_nDZ247g0qSM/RZgI5W1NSzI/AAAAAAAAACA/b92QIcVVsXI/s400/earth1.jpg&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Lástima que no encontré ningún changelog, sólo puedo ver que el diálogo de preferencias está renovado, con pocas opciones más (como por ejemplo, cuánta &amp;ldquo;sensibilidad&amp;rdquo; tiene la rueda del mouse), pero mejor organizadas.&lt;/p&gt;
+&lt;p&gt;Calculo que habrá muchos bugs corregidos&amp;hellip; si alguien conoce el changelog&amp;hellip; :-D&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Vistas en Miniatura para Archivos de OpenOffice.org 2</title>
+      <link>http://localhost:1313/2006/12/vistas-en-miniatura-para-archivos-de-openofficeorg-2/</link>
+      <pubDate>Thu, 28 Dec 2006 12:57:00 +0000</pubDate>
+      <guid>http://localhost:1313/2006/12/vistas-en-miniatura-para-archivos-de-openofficeorg-2/</guid>
+      <description>&lt;p&gt;Holas&amp;hellip; buceando por la web, bajé algunos libritos electrónicos. Algunos estaban en formato &lt;a href=&#34;http://en.wikipedia.org/wiki/Microsoft_Compressed_HTML_Help&#34;&gt;CHM&lt;/a&gt;, y algunos en &lt;a href=&#34;http://es.wikipedia.org/wiki/Portable_Document_Format&#34;&gt;PDF&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Si bien Ubuntu trae software para leer ambos ( &lt;a href=&#34;http://www.gnome.org/projects/evince/&#34;&gt;Evince&lt;/a&gt; para PDFs y &lt;a href=&#34;http://xchm.sourceforge.net/&#34;&gt;XChm&lt;/a&gt; para los archivos .chm), me pareció piola cómo &lt;a href=&#34;http://www.gnome.org/projects/nautilus/&#34;&gt;Nautilus&lt;/a&gt; mostraba una &amp;ldquo;Vista Previa&amp;rdquo; de los archivos PDF (así como con las fotos, videos, etc.), pero no lo mostraba de los archivos chm. Google no me contestó, pero sí encontré &lt;a href=&#34;http://doc.gwos.org/index.php/Thumbnails_Ooo2&#34;&gt;ésta página&lt;/a&gt;, donde se explica cómo hacer que Nautilus muestre las miniaturas de los archivos de OpenOffice (formato &lt;a href=&#34;http://es.wikipedia.org/wiki/OpenDocument&#34;&gt;OpenDocument&lt;/a&gt;):&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Agave - Tirale menos laburo a los diseñadores!</title>
+      <link>http://localhost:1313/2006/12/agave-tirale-menos-laburo-a-los-disenadores/</link>
+      <pubDate>Fri, 15 Dec 2006 18:09:00 +0000</pubDate>
+      <guid>http://localhost:1313/2006/12/agave-tirale-menos-laburo-a-los-disenadores/</guid>
+      <description>&lt;p&gt;Y sí, suele pasar que uno como programador puede ser regular, bueno, o excelente, pero una regla general que se repite es que &amp;ldquo;todo aquel quien gusta programar no gusta del buen gusto de la gente&amp;rdquo;, traducido: &amp;ldquo;si programás, no diseñés&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;Y sí, esos tipos que con el &lt;a href=&#34;http://es.wikipedia.org/wiki/Editor_de_gr%C3%A1ficos_de_mapa_de_bits&#34;&gt;programa de edición de imágenes&lt;/a&gt; hacen cosas increíbles, &amp;ldquo;levantan&amp;rdquo; cosas, borran otras, y demás, tienen otra habilidad que admiro mucho: la de elegir colores.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Tipeando Caracteres Especiales en Gnome</title>
+      <link>http://localhost:1313/2006/12/tipeando-caracteres-especiales-en-gnome/</link>
+      <pubDate>Thu, 07 Dec 2006 13:15:00 +0000</pubDate>
+      <guid>http://localhost:1313/2006/12/tipeando-caracteres-especiales-en-gnome/</guid>
+      <description>&lt;p&gt;Hola muchachios. Ultimamente no tuve nada importante que bloguear, así que para no hacer sapo esta semana, les regalo un mail que escribí a mediados del 2006 a la lista del &lt;a href=&#34;http://www.unlux.com.ar/&#34;&gt;UnluX&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Si bien son algo viejos, del grueso listado de hacks que hay para gnome [1], me
+gustó encontrar este:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://gnome-hacks.jodrell.net/hacks.html?id=76&#34;&gt;http://gnome-hacks.jodrell.net/hacks.html?id=76&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Que alegremente cuenta cómo ingresar caracteres ésos Unicode que no
+encontramos en el teclado (saber que Alt+64 en Windows sirve para tipear
+la arroba es la primera pregunta que sabe responder todo dueño de
+cibercafé) :-D&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Una distro distinta - GoboLinux</title>
+      <link>http://localhost:1313/2006/11/una-distro-distinta-gobolinux/</link>
+      <pubDate>Thu, 30 Nov 2006 13:26:00 +0000</pubDate>
+      <guid>http://localhost:1313/2006/11/una-distro-distinta-gobolinux/</guid>
+      <description>&lt;p&gt;Por fin algo muy novedoso bajo el sol!&lt;/p&gt;
+&lt;p&gt;Estuve leyendo sobre una nueva distro, &lt;a href=&#34;http://www.gobolinux.org/&#34;&gt;GoboLinux,&lt;/a&gt; que innova en el campo de las distros linux, no implementando &amp;lsquo;un nuevo sistema de paquetes&amp;rsquo;. Simplemente se replantearon la vieja estructura de directorios Unix que existe en Linux y se propusieron cambiarlo, para que cualquiera (&amp;ldquo;hasta mi vieja&amp;rdquo;) lo entendiera, &amp;ldquo;a la Mac OSX&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;Básicamente tienen un esquema de directorios:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;gt;~]cd /
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;ls
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Programs
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Users
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;System
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Files
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Mount
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Depot
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;y es compatible hacia atrás con todos los programas, ya que la &amp;ldquo;vieja&amp;rdquo; estructura de directorios (/bin, /usr, /var, etc.) están ocultas con un módulo del kernel que ellos mismos desarrollaron, llamado &lt;a href=&#34;http://www.gobolinux.org/index.php?page=doc/articles/gobohide&#34;&gt;gobohide&lt;/a&gt;. Sin embargo, siguen existiendo, y el resto del cuento lo manejan con enlaces simbólicos.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Gnome se Compra Fibras para Colorear</title>
+      <link>http://localhost:1313/2006/11/gnome-se-compra-fibras-para-colorear/</link>
+      <pubDate>Tue, 28 Nov 2006 12:41:00 +0000</pubDate>
+      <guid>http://localhost:1313/2006/11/gnome-se-compra-fibras-para-colorear/</guid>
+      <description>&lt;p&gt;Parece que un &lt;a href=&#34;http://blogs.gnome.org/view/thos&#34;&gt;desarrollador de Gnome&lt;/a&gt; se puso las pilas y está agregando más &amp;ldquo;control&amp;rdquo; y configuración a los benditos themes:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://photos1.blogger.com/blogger2/448/981953459584652/1600/GnomeThemeManagerColoursTab.jpg&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://photos1.blogger.com/blogger2/448/981953459584652/400/GnomeThemeManagerColoursTab.jpg&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Esperemos que llegue a integrarse a Gnome 2.18 (asumiendo que se va a integrar, :-D ).&lt;/p&gt;
+&lt;p&gt;Links:&lt;br&gt;
+&lt;a href=&#34;http://blogs.gnome.org/view/thos/2006/11/20/0&#34;&gt;http://blogs.gnome.org/view/thos/2006/11/20/0&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;http://blogs.gnome.org/view/thos/2006/10/28/0&#34;&gt;http://blogs.gnome.org/view/thos/2006/10/28/0&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Marcelo&lt;br&gt;
+PD: Y para mi vieja, que no me está leyendo pero está siempre en mi cuore, FELIZ CUMPLE, MA!&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>KDE 4 en Windows: Cuánto falta?</title>
+      <link>http://localhost:1313/2006/11/kde-4-en-windows-cuanto-falta/</link>
+      <pubDate>Wed, 22 Nov 2006 23:11:00 +0000</pubDate>
+      <guid>http://localhost:1313/2006/11/kde-4-en-windows-cuanto-falta/</guid>
+      <description>&lt;p&gt;Hace unos días me topé con &lt;a href=&#34;http://people.mandriva.com/%7Elmontel/screenshot-kde4/images.html&#34;&gt;estas capturas&lt;/a&gt; de &lt;a href=&#34;http://www.kde.org&#34;&gt;KDE&lt;/a&gt; y quiero reproducirlas acá&amp;hellip; y sí, estoy ansioso por probarlo&amp;hellip; no porque use Windows (hace muuuuucho que no lo uso), sino porque soy de los que creen que para migrar a Linux hay que convencer primero con instalar aplicaciones disponibles en Linux en Windows. Después, cambiar el SO entero que hay &amp;ldquo;por debajo&amp;rdquo; es muchísimo menos traumático para el usuario.&lt;/p&gt;
+&lt;p&gt;Disfruten!&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://photos1.blogger.com/x/blogger2/448/981953459584652/1600/920196/khelpcenter.png&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://photos1.blogger.com/x/blogger2/448/981953459584652/400/821998/khelpcenter.png&#34;&gt;&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;http://photos1.blogger.com/x/blogger2/448/981953459584652/1600/936730/kate-windows.png&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://photos1.blogger.com/x/blogger2/448/981953459584652/400/76597/kate-windows.png&#34;&gt;&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;http://photos1.blogger.com/x/blogger2/448/981953459584652/1600/626826/keditbookmark.png&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://photos1.blogger.com/x/blogger2/448/981953459584652/400/542532/keditbookmark.png&#34;&gt;&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;http://photos1.blogger.com/x/blogger2/448/981953459584652/1600/612653/kfind-windows.png&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://photos1.blogger.com/x/blogger2/448/981953459584652/400/21333/kfind-windows.png&#34;&gt;&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;http://photos1.blogger.com/x/blogger2/448/981953459584652/1600/377338/kdeprinter-windows.png&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://photos1.blogger.com/x/blogger2/448/981953459584652/400/468835/kdeprinter-windows.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Glxgears ahora sirve!</title>
+      <link>http://localhost:1313/2006/11/glxgears-ahora-sirve/</link>
+      <pubDate>Tue, 21 Nov 2006 20:28:00 +0000</pubDate>
+      <guid>http://localhost:1313/2006/11/glxgears-ahora-sirve/</guid>
+      <description>&lt;p&gt;Una huevada que hace tiempo que no sabía qué lo estaba causando (sólo en los Ubuntu), era que el glxgears no me escupía por consola los Frames por Segundo (FPS) que lograba renderizar en 3D. Antes yo podía ver que si tiraba unos 40 o 50 FPS, algo con mi 3D andaba mal&amp;hellip; cuando cambiaba de placa de video, veía cúantos FPS tiraba el glxgears y comparaba la diferencia relativa de placas&amp;hellip; etc.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Lo que viene, lo que viene....</title>
+      <link>http://localhost:1313/2006/11/lo-que-viene-lo-que-viene/</link>
+      <pubDate>Fri, 17 Nov 2006 12:43:00 +0000</pubDate>
+      <guid>http://localhost:1313/2006/11/lo-que-viene-lo-que-viene/</guid>
+      <description>&lt;p&gt;Hay cositas interesantes en la manga para Ubuntu Feisty 7.04, como esta:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://photos1.blogger.com/x/blogger2/448/981953459584652/1600/559604/face-browser-mockup.png&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://photos1.blogger.com/x/blogger2/448/981953459584652/400/370878/face-browser-mockup.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Ta bueno, no? :-D&lt;/p&gt;
+&lt;p&gt;También se prevee que AIGLX esté habilitado por defecto (efectos 3D, ya sea de la mano de Beryl o de Compiz). Se piensan incluir los drivers propietarios de NVidia/ATI o al menos dar a elegir en la instalación, para tener un escritorio 3D de movida. Esto es motivo de discusión por muchos defensores a ultranza del soft libre.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Cafeconf 2006</title>
+      <link>http://localhost:1313/2006/11/cafeconf-2006/</link>
+      <pubDate>Wed, 15 Nov 2006 03:47:00 +0000</pubDate>
+      <guid>http://localhost:1313/2006/11/cafeconf-2006/</guid>
+      <description>&lt;p&gt;Al fin llegó la &lt;a href=&#34;http://www.cafeconf.org/modules/edito/content.php?id=1&#34;&gt;Cafeconf 2006&lt;/a&gt;! :-D&lt;/p&gt;
+&lt;p&gt;Estuvo buena, lástima que este año pude ir sólo un día.&lt;/p&gt;
+&lt;p&gt;Lo destacable fue encontrarse con toda esa &amp;ldquo;gente como uno&amp;rdquo; que me hace sentir que no estoy &amp;ldquo;solo&amp;rdquo; en el mundo. :-D&lt;/p&gt;
+&lt;p&gt;Sobre las charlas a las que asistí, les puedo comentar lo siguiente:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&amp;quot; &lt;a href=&#34;http://www.gabriel-arellano.com.ar/charlas/&#34;&gt;Collition Course with Ruby&lt;/a&gt;&amp;quot;: Excelente charla, muuuy entretenida e interesante; el disertante ( &lt;a href=&#34;http://www.gabriel-arellano.com.ar/&#34;&gt;Gabriel Arellano&lt;/a&gt;), un capo, muy didáctico y llevadero, no aburrió para nada. Aprendí muchas cosas de Ruby. Lástima que el tiempo (como en la TV) es tirano.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Drivers Nvidia 9629 &#43; Beryl - XGL = Más mejoras</title>
+      <link>http://localhost:1313/2006/11/drivers-nvidia-9629-beryl-xgl-mas-mejoras/</link>
+      <pubDate>Thu, 09 Nov 2006 01:44:00 +0000</pubDate>
+      <guid>http://localhost:1313/2006/11/drivers-nvidia-9629-beryl-xgl-mas-mejoras/</guid>
+      <description>&lt;p&gt;Hola gente, por fin salieron nuevos &lt;a href=&#34;http://www.nvidia.com/object/linux_display_amd64_1.0-9629.html&#34;&gt;drivers de Nvidia&lt;/a&gt; para Linux/BSD/Solaris!!! (en su versión estable, claro).&lt;/p&gt;
+&lt;p&gt;Son los primeros de la serie 9xxx, los cuales permiten que en mi &lt;a href=&#34;http://www.ubuntu.com/&#34;&gt;Edgy&lt;/a&gt; vuele de un plumazo a &lt;a href=&#34;http://en.wikipedia.org/wiki/Xgl&#34;&gt;XGL&lt;/a&gt; con el fin de ejecutar &lt;a href=&#34;http://www.beryl-project.org/&#34;&gt;Beryl&lt;/a&gt;&amp;hellip; Ahora sólo ejecuto &lt;a href=&#34;http://x.org/&#34;&gt;X.org 7.1.1&lt;/a&gt; + Beryl.&lt;/p&gt;
+&lt;p&gt;Es decir, antes: X.org + XGL + Beryl. (Drivers Nvidia 8xxx)&lt;/p&gt;
+&lt;p&gt;Problema Principal: OpenGL, XVideo y otras extensiones que renderizaban directamente en la memoria de video (por decirlo sencillo, alguien que aclare acá!) no era directo, sí o sí pasaba por el server XGL.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Tu /dev/parport0 no existe? (Ubuntu 6.10)</title>
+      <link>http://localhost:1313/2006/11/tu-devparport0-no-existe-ubuntu-610/</link>
+      <pubDate>Mon, 06 Nov 2006 19:11:00 +0000</pubDate>
+      <guid>http://localhost:1313/2006/11/tu-devparport0-no-existe-ubuntu-610/</guid>
+      <description>&lt;p&gt;Buiinas&amp;hellip;&lt;/p&gt;
+&lt;p&gt;Hoy, queriendo imprimir dentro de una máquina virtual de &lt;a href=&#34;http://www.vmware.com/products/home.html&#34;&gt;VMWare&lt;/a&gt; con un Windows XP (no pregunten por qué semejante masoquismo! [1]), sobre mi flamante Ubuntu 6.10 Edgy, me encuentro que VMWare no puede usar&amp;quot;/dev/parport0&amp;quot;.&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;Ja!&amp;rdquo; Pensé, porque sabía que VMWare no puede utilizar el puerto paralelo mientras &lt;a href=&#34;http://www.cups.org/&#34;&gt;CUPS&lt;/a&gt; está corriendo y mientras el módulo &amp;rsquo;lp&amp;rsquo; está cargado. Entonces hice &amp;ldquo;sudo /etc/init.d/cupsys stop&amp;rdquo; y &amp;ldquo;sudo rmmod lp&amp;rdquo; para detener el servicio de impresión y el módulo de impresión respectivamente. Después de eso, volví a arrancar el VMWare. Pero ahora el mensaje cambió, y ahora VMWare decía que &amp;ldquo;/dev/parport0 no existe&amp;rdquo;&amp;hellip; &amp;ldquo;Eh? - Ahora sí que no sé qué pasa&amp;rdquo;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Ojo con los Proxys Transparentes de los ISPs</title>
+      <link>http://localhost:1313/2006/11/ojo-con-los-proxys-transparentes-de-los-isps/</link>
+      <pubDate>Sat, 04 Nov 2006 01:22:00 +0000</pubDate>
+      <guid>http://localhost:1313/2006/11/ojo-con-los-proxys-transparentes-de-los-isps/</guid>
+      <description>&lt;p&gt;Actualización (21/11/2007): Buanzo en &lt;a href=&#34;http://blogs.buanzo.com.ar/&#34;&gt;su blog&lt;/a&gt; &lt;a href=&#34;http://blogs.buanzo.com.ar/2007/11/aptconf-para-fibertel-speedy-y-otros.html&#34;&gt;aporta un método mejor&lt;/a&gt; para evitar esto que describo en este post, cambiando la configuración del apt.&lt;/p&gt;
+&lt;p&gt;Holas, este post es para comentar algo que me pasa de vez en cuando y que me pone los pelos de punta: los &lt;a href=&#34;http://es.wikipedia.org/wiki/Proxy&#34;&gt;proxys transparentes&lt;/a&gt; de los ISPs ( &lt;a href=&#34;http://www.speedy.com.ar/&#34;&gt;Speedy&lt;/a&gt; en mi caso). Resulta que como comenté anteriormente, hace poco me actualicé a &lt;a href=&#34;http://www.ubuntulinux.com/&#34;&gt;Ubuntu&lt;/a&gt; 6.10 y en estos últimos días salieron algunos parches de seguridad (estoy suscripto a la &lt;a href=&#34;https://lists.ubuntu.com/mailman/listinfo/ubuntu-security-announce&#34;&gt;lista de USN&lt;/a&gt; - Ubuntu Security News).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Migré a Ubuntu Edgy!</title>
+      <link>http://localhost:1313/2006/10/migre-a-ubuntu-edgy/</link>
+      <pubDate>Sun, 29 Oct 2006 15:22:00 +0000</pubDate>
+      <guid>http://localhost:1313/2006/10/migre-a-ubuntu-edgy/</guid>
+      <description>&lt;p&gt;Impresionante, la verdad es que estoy disfrutando de la última actualización a &lt;a href=&#34;http://www.ubuntu.com/&#34;&gt;Edgy.&lt;/a&gt; Cambié todo lo que decía &amp;lsquo;dapper&amp;rsquo; por &amp;rsquo;edgy&amp;rsquo; en el archivo /etc/apt/sources.list, y ejecuté &amp;lsquo;apt-get update&amp;rsquo;, &amp;lsquo;apt-get dist-upgrade&amp;rsquo; y varias horas después tenía Edgy instalado. Me quedaron algunos meta-paquetes de python retenidos, pero no son problema, después lo soluciono.&lt;/p&gt;
+&lt;p&gt;Mi instalación de &lt;a href=&#34;http://en.wikipedia.org/wiki/Xgl&#34;&gt;XGL&lt;/a&gt; + &lt;a href=&#34;http://en.wikipedia.org/wiki/Compiz&#34;&gt;Compiz&lt;/a&gt; anduvo sin romperse, aunque no lo probé mucho porque el Compiz ese (de Quinnstorm, antes de &lt;a href=&#34;http://www.osnews.com/story.php/15888/Compiz-Forked-Beryl&#34;&gt;convertirse&lt;/a&gt; en Beryl) era para Dapper&amp;hellip; ya cambié el repo a Edgy y estoy usando &lt;a href=&#34;http://www.beryl-project.org/&#34;&gt;Beryl&lt;/a&gt; 0.1.1 para Edgy. Tiene bastantes mejoras, aunque molesta un poco que tenga taaantas opciones yque siempre haya que estar configurando algo porque se actualizó/cambió. Ojo, son paquetes que están en puro desarrollo, así que si te gusta el durazno&amp;hellip; bancate la pelusa. :-P&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Servidor de Logs Remotos - Syslog-ng</title>
+      <link>http://localhost:1313/2006/10/servidor-de-logs-remotos-syslog-ng/</link>
+      <pubDate>Wed, 11 Oct 2006 12:31:00 +0000</pubDate>
+      <guid>http://localhost:1313/2006/10/servidor-de-logs-remotos-syslog-ng/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://www.balabit.com/products/syslog-ng/&#34;&gt;Syslog-ng&lt;/a&gt; es un demonio de syslog infinitamente más flexible que el syslog &amp;ldquo;común&amp;rdquo; (tomado de BSD). Permite aplicar filtros, clasificar de acuerdo a distintos orígenes y enviar a diferentes destinos los logs. Para gestionar un servidor de logs, es muy fácil.&lt;/p&gt;
+&lt;p&gt;Sólo fue cuestión de leer &lt;a href=&#34;http://www.debian-administration.org/articles/24&#34;&gt;esta guia&lt;/a&gt; y darle &amp;ldquo;apt-get install syslog-ng&amp;rdquo; y listo. Esto reemplaza al syslog anterior, pero la configuración del syslog-ng es la misma (en cuanto a funcionalidad, no en cuanto a sintaxis) que la de un debian recién instalado.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Escupiendo hojas en Linux</title>
+      <link>http://localhost:1313/2006/09/escupiendo-hojas-en-linux/</link>
+      <pubDate>Sun, 17 Sep 2006 18:29:00 +0000</pubDate>
+      <guid>http://localhost:1313/2006/09/escupiendo-hojas-en-linux/</guid>
+      <description>&lt;p&gt;Holaaa!&lt;/p&gt;
+&lt;p&gt;En estos últimos días de silencio bloguero me enganché en unos proyectos de desarrollo en &lt;a href=&#34;http://www.python.org/&#34;&gt;Python&lt;/a&gt; (primero y por ahora) y el segundo (todavía no lo ví) en &lt;a href=&#34;http://www.php.net/&#34;&gt;PHP&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Lo primero que tuve que resolver fue hacer que una impresora &lt;a href=&#34;http://www.epson.com.ar/asp/muestraProducto.asp?idProducto=C11C616031&#34;&gt;Epson C67&lt;/a&gt; imprimiese lo más rápido posible, y en modo gráfico (como para ponerlo en modo draft, mínimo). La gente había investigado dos opciones, una era abriendo el puerto /dev/usblp0 directamente, tratando de enviar la inicialización&amp;hellip; miraron (y miré yo también) bastante código de CUPS, de sus filtros (en C)&amp;hellip; tratando de entender el lenguaje EJL, cambiarlo a &lt;a href=&#34;http://en.wikipedia.org/wiki/IEEE_1284&#34;&gt;IEEE 1284.4&lt;/a&gt; y después a ESCP/2&amp;hellip; fue imposible. Hay muy poca documentación y lo máximo que se logró fue que tomara la hoja, pero nada más. Si alguien quiere documentación, &lt;a href=&#34;http://undocprint.printassociates.com/formats/printer_control_languages/ejl&#34;&gt;acá&lt;/a&gt; tiene algo más.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Leyendo....</title>
+      <link>http://localhost:1313/2006/08/leyendo/</link>
+      <pubDate>Thu, 31 Aug 2006 01:35:00 +0000</pubDate>
+      <guid>http://localhost:1313/2006/08/leyendo/</guid>
+      <description>&lt;p&gt;Bueh, acá estoy, leyendo algo de lo que saqué de la Biblioteca&amp;hellip; Sistemas Operativos, Redes, etc. Todos fundamentos para rescatar algo para mi Tesis: &amp;ldquo;Edición Colaborativa&amp;rdquo;. Es lo que hace software como &lt;a href=&#34;http://gobby.0x539.de/index.html&#34;&gt;Gobby&lt;/a&gt; y &lt;a href=&#34;http://www.codingmonkeys.de/subethaedit/&#34;&gt;SubEthaEdit&lt;/a&gt;. Otra cosa piola que vi es el &lt;a href=&#34;http://uwog.net/blog/?p=29&#34;&gt;plugin para Abiword&lt;/a&gt;, impresionante!&lt;/p&gt;
+&lt;p&gt;Otra cosa que vi en un &lt;a href=&#34;http://www.imbrandon.com/2006/08/28/kde4-on-osx-no-x11/&#34;&gt;Blog&lt;/a&gt; es el &lt;a href=&#34;http://www.racoonfink.com/archives/000700.html&#34;&gt;port&lt;/a&gt; (muy prematuro) de &lt;a href=&#34;http://www.kde.org/&#34;&gt;KDE&lt;/a&gt; 4 a &lt;a href=&#34;http://www.apple.com/&#34;&gt;Mac&lt;/a&gt; OSX!!&lt;/p&gt;
+&lt;p&gt;Acá hay una captura:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://photos1.blogger.com/blogger2/448/981953459584652/1600/kde4-osx.png&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://photos1.blogger.com/blogger2/448/981953459584652/320/kde4-osx.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Creo que con &lt;a href=&#34;http://www.trolltech.com/products/qt&#34;&gt;QT4.x&lt;/a&gt; GPL para Win/Lin/Mac KDE y sus aplicaciones como &lt;a href=&#34;http://koffice.kde.org/&#34;&gt;KOffice&lt;/a&gt; se van a volver mainstream, evidentemente es una arquitectura muy buena&amp;hellip;. lástima la licencia de las QT ( &lt;a href=&#34;http://www.gnu.org/copyleft/gpl.es.html&#34;&gt;GPL&lt;/a&gt;)&amp;hellip; por eso cada vez que leo algo sobre QT me embalo, pero nunca hago ni aprendo nada, no porque piense en hacer algo cerrado (&amp;ldquo;privativo&amp;rdquo;) de forma inmediata, sino porque me quita la posibilidad de hacer algo comercial en el futuro. Entonces lo veo como una pérdida de tiempo&amp;hellip;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Charlas Técnicas Trimestrales CaFeLug</title>
+      <link>http://localhost:1313/2006/08/charlas-tecnicas-trimestrales-cafelug/</link>
+      <pubDate>Sat, 26 Aug 2006 23:34:00 +0000</pubDate>
+      <guid>http://localhost:1313/2006/08/charlas-tecnicas-trimestrales-cafelug/</guid>
+      <description>&lt;p&gt;Puff&amp;hellip; recién llego de las &lt;a href=&#34;http://www.cafelug.org.ar/modules/news/article.php?storyid=111&#34;&gt;charlas técnicas timestrales&lt;/a&gt; del &lt;a href=&#34;http://www.cafelug.org.ar/&#34;&gt;CafeLug&lt;/a&gt; y me pareció muy copado (como siempre) el nivel de las mismas. Lo bueno es que uno en esas reuniones se encuentra con gente &amp;ldquo;como uno&amp;rdquo;, y se siente muy a gusto, compartiendo las cosas particulares que nos pasan en nuestra &amp;ldquo;vida linuxera&amp;rdquo;&amp;hellip;&lt;/p&gt;
+&lt;p&gt;Más allá de eso, fui con dos amigos para evaluar bien el desarrollo de un proyecto con &lt;a href=&#34;http://rubyonrails.org/&#34;&gt;Ruby on Rails&lt;/a&gt;, cosa que está muy de moda (y que ya instalé en mi &lt;a href=&#34;http://www.ubuntu.com/&#34;&gt;Ubuntu&lt;/a&gt;, antes de ir a la charla para ir chusmeando)&amp;hellip;. me pareció fantabuloso y revolucionario!! (espero confirmarlo después en el desarrollo). La &lt;a href=&#34;http://blogs.onrails.com.ar/&#34;&gt;gente&lt;/a&gt; &lt;a href=&#34;http://wiki.onrails.com.ar/&#34;&gt;muuuuy&lt;/a&gt; &lt;a href=&#34;http://rubyargentina.soveran.com/&#34;&gt;copada,&lt;/a&gt; como siempre, terminé hablando de cosas particulares personalmente con ellos y comiendo un pancho a las apuradas, je. Ya me estoy inscribiendo en su lista para aprender más. :-D&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

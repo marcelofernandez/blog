@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Tests on El Blog de Marcelo!</title>
+    <link>http://localhost:1313/category/tests/</link>
+    <description>Recent content in Tests on El Blog de Marcelo!</description>
+    <generator>Hugo -- 0.147.0</generator>
+    <language>es</language>
+    <lastBuildDate>Mon, 14 Jun 2010 02:52:03 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/category/tests/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Discos Rígidos con Sectores de 4KB en Linux</title>
+      <link>http://localhost:1313/2010/06/discos-rigidos-con-sectores-de-4kb-en-linux/</link>
+      <pubDate>Mon, 14 Jun 2010 02:52:03 +0000</pubDate>
+      <guid>http://localhost:1313/2010/06/discos-rigidos-con-sectores-de-4kb-en-linux/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Actualización (Julio 2010)&lt;/strong&gt;: Armé y redacté no tan informalmente este post en forma de artículo; el mismo está disponible para su consulta, crítica y mejoras en la sección de &lt;a href=&#34;http://localhost:1313/publicaciones/&#34;&gt;Publicaciones&lt;/a&gt; del sitio.&lt;/p&gt;
+&lt;h2 id=&#34;los-nuevos-discos-de-western-digital&#34;&gt;Los nuevos discos de Western Digital &lt;a href=&#34;http://www.wdc.com/en/products/products.asp?driveid=772&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/wp-content/uploads/2010/06/wdfDesktop_CaviarGreen_SATA64.jpg&#34;&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;En estos días tuve la oportunidad de comprar y configurar una máquina Ubuntu con un disco rígido Western Digital de 1,5 Terabytes (1500 Gigabytes aprox.); más precisamente el modelo &lt;a href=&#34;http://www.wdc.com/en/products/products.asp?driveid=772&#34;&gt;WD15EARS&lt;/a&gt;, con 64 MB de caché, velocidad de rotación que varía entre 5400 y 7200 RPMs (llamado &amp;quot; &lt;a href=&#34;http://www.wdc.com/en/flash/index.asp?family=intelliseek&#34;&gt;IntelliSeek&lt;/a&gt;&amp;quot;), interfaz SATA II (3 Gb/seg), y que incluye una nueva tecnología de la marca conocida como &amp;quot; &lt;a href=&#34;http://www.wdc.com/en/products/advancedformat/&#34;&gt;Advanced Format Drive&lt;/a&gt;&amp;quot; (paper &lt;a href=&#34;http://www.wdc.com/wdproducts/library/?id=216&amp;amp;type=87&#34;&gt;aquí&lt;/a&gt;).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>D-Link DWA-510 en Ubuntu 8.04</title>
+      <link>http://localhost:1313/2008/05/d-link-dwa-510-en-ubuntu-804/</link>
+      <pubDate>Thu, 29 May 2008 01:42:00 +0000</pubDate>
+      <guid>http://localhost:1313/2008/05/d-link-dwa-510-en-ubuntu-804/</guid>
+      <description>&lt;p&gt;Hola!&lt;/p&gt;
+&lt;p&gt;Si andan buscando una placa WirelessPCI &lt;a href=&#34;http://es.wikipedia.org/wiki/802.11&#34;&gt;802.11b/g&lt;/a&gt; que funcione perfectamente en Linux (y Ubuntu 8.04 para AMD64 para ser más precisos), la &lt;a href=&#34;http://www.dlinkla.com/home/productos/producto.jsp?idp=1009&#34;&gt;D-Link DWA-510&lt;/a&gt; funciona perfectamente.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://1.bp.blogspot.com/_nDZ247g0qSM/SD4V3RZredI/AAAAAAAABD4/Zny3blkRH-c/s1600-h/D-Link_caja.jpg&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://1.bp.blogspot.com/_nDZ247g0qSM/SD4V3RZredI/AAAAAAAABD4/Zny3blkRH-c/s400/D-Link_caja.jpg&#34;&gt;&lt;/a&gt; Esta es la caja en la que vino&amp;hellip;.&lt;/p&gt;
+&lt;p&gt;Abrí mi PC, enchufé la placa en un slot PCI libre, arranqué mi Ubuntu, y ya estaba la dichosa barra de calidad de señal. No tuve que instalar drivers ni nada!&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://2.bp.blogspot.com/_nDZ247g0qSM/SD4XihZreeI/AAAAAAAABEA/_StJ_bH3RC4/s1600-h/Wireless_sshot.png&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://2.bp.blogspot.com/_nDZ247g0qSM/SD4XihZreeI/AAAAAAAABEA/_StJ_bH3RC4/s400/Wireless_sshot.png&#34;&gt;&lt;/a&gt; Pude configurarle una conexión WPA2 sin problemas, así que si bien leí por ahí que en modo AP todavía no está soportado (tengo que corroborarlo), al menos como uso &amp;ldquo;normal&amp;rdquo;, sirve perfectamente. De más está decir que también soporta WAP, WEP y sin encriptación :-P&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Simpatía por el Demonio: BSDs</title>
+      <link>http://localhost:1313/2007/12/simpatia-por-el-demonio-bsds/</link>
+      <pubDate>Mon, 31 Dec 2007 16:20:00 +0000</pubDate>
+      <guid>http://localhost:1313/2007/12/simpatia-por-el-demonio-bsds/</guid>
+      <description>&lt;p&gt;Hola gente!&lt;/p&gt;
+&lt;p&gt;Aprovechando ayer que tuve &amp;ldquo;libre&amp;rdquo; mi día, me puse a instalar los dos SOs &lt;a href=&#34;http://en.wikipedia.org/wiki/Bsd#Significant_BSD_descendants&#34;&gt;BSDs&lt;/a&gt; libres que me interesan (aunque por motivos diferentes): &lt;a href=&#34;http://www.openbsd.org/&#34;&gt;OpenBSD 4.2&lt;/a&gt; y &lt;a href=&#34;http://www.freebsd.org/&#34;&gt;FreeBSD 6.2&lt;/a&gt; (para AMD64), cada uno adentro de una máquina virtual de &lt;a href=&#34;http://www.vmware.com/&#34;&gt;VMWare&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Por si alguien no los conocía, estos sistemas operativos no solamente son &amp;ldquo;Unix-Like&amp;rdquo; (es decir, del tipo Unix) como Linux, sino que son Unix; quiero decir, que los BSD son &amp;ldquo;hijos&amp;rdquo; del &lt;a href=&#34;http://en.wikipedia.org/wiki/Unix&#34;&gt;árbol del Unix original&lt;/a&gt;, y conservan muy fuertemente sus raíces y filosofía. Además de eso, son Software Libre, están publicados con una &lt;a href=&#34;http://opensource.org/licenses/bsd-license.php&#34;&gt;licencia mucho menos restrictiva&lt;/a&gt; que &lt;a href=&#34;http://opensource.org/licenses/gpl-license.php&#34;&gt;la de Linux&lt;/a&gt;, y son gratis!&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Adobe Reader 8.1 para Linux</title>
+      <link>http://localhost:1313/2007/11/adobe-reader-81-para-linux/</link>
+      <pubDate>Thu, 08 Nov 2007 03:10:00 +0000</pubDate>
+      <guid>http://localhost:1313/2007/11/adobe-reader-81-para-linux/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://2.bp.blogspot.com/_nDZ247g0qSM/RzKPGrJ7VLI/AAAAAAAAANU/vrdh-MgAvOo/s1600-h/AdobeReader8.png&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://2.bp.blogspot.com/_nDZ247g0qSM/RzKPGrJ7VLI/AAAAAAAAANU/vrdh-MgAvOo/s400/AdobeReader8.png&#34;&gt;&lt;/a&gt; Si, si, ya sé que para leer simplemente un &lt;a href=&#34;http://es.wikipedia.org/wiki/Pdf&#34;&gt;archivo pdf&lt;/a&gt; &lt;a href=&#34;http://www.gnome.org/projects/evince/&#34;&gt;Evince&lt;/a&gt; y/o &lt;a href=&#34;http://kpdf.kde.org/&#34;&gt;Kpdf&lt;/a&gt; funcionan bien&amp;hellip; pero&amp;hellip; y si me llega algún pdf &amp;ldquo;raro&amp;rdquo;, que aprovecha las características nuevas del formato? (uso de formularios, anotaciones, encriptación, etc.)[1]&lt;/p&gt;
+&lt;p&gt;En fin&amp;hellip; me enteré hace poquito que &lt;a href=&#34;http://www.adobe.com/&#34;&gt;Adobe&lt;/a&gt; (muy silenciosamente) lanzó su versión 8.1 del &amp;ldquo;acroread&amp;rdquo;, es decir, del &lt;a href=&#34;http://www.adobe.com/products/reader/&#34;&gt;Adobe Reader&lt;/a&gt; para Solaris/Sparc y GNU/Linux/i386. Con este programa tenemos máxima compatibilidad al leer y trabajar con estos archivos.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Agujereando Pingüinitos - Aprendiendo sobre (in)Seguridad</title>
+      <link>http://localhost:1313/2007/03/agujereando-pinguinitos-aprendiendo-sobre-inseguridad/</link>
+      <pubDate>Tue, 06 Mar 2007 12:37:00 +0000</pubDate>
+      <guid>http://localhost:1313/2007/03/agujereando-pinguinitos-aprendiendo-sobre-inseguridad/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://1.bp.blogspot.com/_nDZ247g0qSM/RepEwKvI69I/AAAAAAAAAEg/V5S58YhaIc4/s1600-h/tux_picrate_touko_tux2.png&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://1.bp.blogspot.com/_nDZ247g0qSM/RepEwKvI69I/AAAAAAAAAEg/V5S58YhaIc4/s400/tux_picrate_touko_tux2.png&#34;&gt;&lt;/a&gt; Disclaimer:&lt;br&gt;
+Esto lo escribí hace tiempo y ahora lo &amp;ldquo;hago público&amp;rdquo;, ya que me costó algunas horas de laburo hacerlo. Sin embargo, &lt;a href=&#34;http://www.linux.com/article.pl?sid=07/02/15/1747220&#34;&gt;en esta semana leo&lt;/a&gt; con alegría que alguien va a hacerme ahorrar laburo: la nota sobre la distro &lt;a href=&#34;http://www.damnvulnerablelinux.org/&#34;&gt;Damn Vulnerable Linux&lt;/a&gt;. Básicamente es un &lt;a href=&#34;http://es.wikipedia.org/wiki/Live_CD&#34;&gt;LiveCD&lt;/a&gt; que trae un Kernel Linux + herramientas GNU altamente vulnerables, con el objetivo de hackearlas, de diversas maneras. Hasta trae documentación con ejemplos de hacking!&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>KDE 4 en Windows: Cuánto falta?</title>
+      <link>http://localhost:1313/2006/11/kde-4-en-windows-cuanto-falta/</link>
+      <pubDate>Wed, 22 Nov 2006 23:11:00 +0000</pubDate>
+      <guid>http://localhost:1313/2006/11/kde-4-en-windows-cuanto-falta/</guid>
+      <description>&lt;p&gt;Hace unos días me topé con &lt;a href=&#34;http://people.mandriva.com/%7Elmontel/screenshot-kde4/images.html&#34;&gt;estas capturas&lt;/a&gt; de &lt;a href=&#34;http://www.kde.org&#34;&gt;KDE&lt;/a&gt; y quiero reproducirlas acá&amp;hellip; y sí, estoy ansioso por probarlo&amp;hellip; no porque use Windows (hace muuuuucho que no lo uso), sino porque soy de los que creen que para migrar a Linux hay que convencer primero con instalar aplicaciones disponibles en Linux en Windows. Después, cambiar el SO entero que hay &amp;ldquo;por debajo&amp;rdquo; es muchísimo menos traumático para el usuario.&lt;/p&gt;
+&lt;p&gt;Disfruten!&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://photos1.blogger.com/x/blogger2/448/981953459584652/1600/920196/khelpcenter.png&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://photos1.blogger.com/x/blogger2/448/981953459584652/400/821998/khelpcenter.png&#34;&gt;&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;http://photos1.blogger.com/x/blogger2/448/981953459584652/1600/936730/kate-windows.png&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://photos1.blogger.com/x/blogger2/448/981953459584652/400/76597/kate-windows.png&#34;&gt;&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;http://photos1.blogger.com/x/blogger2/448/981953459584652/1600/626826/keditbookmark.png&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://photos1.blogger.com/x/blogger2/448/981953459584652/400/542532/keditbookmark.png&#34;&gt;&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;http://photos1.blogger.com/x/blogger2/448/981953459584652/1600/612653/kfind-windows.png&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://photos1.blogger.com/x/blogger2/448/981953459584652/400/21333/kfind-windows.png&#34;&gt;&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;http://photos1.blogger.com/x/blogger2/448/981953459584652/1600/377338/kdeprinter-windows.png&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://photos1.blogger.com/x/blogger2/448/981953459584652/400/468835/kdeprinter-windows.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Drivers Nvidia 9629 &#43; Beryl - XGL = Más mejoras</title>
+      <link>http://localhost:1313/2006/11/drivers-nvidia-9629-beryl-xgl-mas-mejoras/</link>
+      <pubDate>Thu, 09 Nov 2006 01:44:00 +0000</pubDate>
+      <guid>http://localhost:1313/2006/11/drivers-nvidia-9629-beryl-xgl-mas-mejoras/</guid>
+      <description>&lt;p&gt;Hola gente, por fin salieron nuevos &lt;a href=&#34;http://www.nvidia.com/object/linux_display_amd64_1.0-9629.html&#34;&gt;drivers de Nvidia&lt;/a&gt; para Linux/BSD/Solaris!!! (en su versión estable, claro).&lt;/p&gt;
+&lt;p&gt;Son los primeros de la serie 9xxx, los cuales permiten que en mi &lt;a href=&#34;http://www.ubuntu.com/&#34;&gt;Edgy&lt;/a&gt; vuele de un plumazo a &lt;a href=&#34;http://en.wikipedia.org/wiki/Xgl&#34;&gt;XGL&lt;/a&gt; con el fin de ejecutar &lt;a href=&#34;http://www.beryl-project.org/&#34;&gt;Beryl&lt;/a&gt;&amp;hellip; Ahora sólo ejecuto &lt;a href=&#34;http://x.org/&#34;&gt;X.org 7.1.1&lt;/a&gt; + Beryl.&lt;/p&gt;
+&lt;p&gt;Es decir, antes: X.org + XGL + Beryl. (Drivers Nvidia 8xxx)&lt;/p&gt;
+&lt;p&gt;Problema Principal: OpenGL, XVideo y otras extensiones que renderizaban directamente en la memoria de video (por decirlo sencillo, alguien que aclare acá!) no era directo, sí o sí pasaba por el server XGL.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Migré a Ubuntu Edgy!</title>
+      <link>http://localhost:1313/2006/10/migre-a-ubuntu-edgy/</link>
+      <pubDate>Sun, 29 Oct 2006 15:22:00 +0000</pubDate>
+      <guid>http://localhost:1313/2006/10/migre-a-ubuntu-edgy/</guid>
+      <description>&lt;p&gt;Impresionante, la verdad es que estoy disfrutando de la última actualización a &lt;a href=&#34;http://www.ubuntu.com/&#34;&gt;Edgy.&lt;/a&gt; Cambié todo lo que decía &amp;lsquo;dapper&amp;rsquo; por &amp;rsquo;edgy&amp;rsquo; en el archivo /etc/apt/sources.list, y ejecuté &amp;lsquo;apt-get update&amp;rsquo;, &amp;lsquo;apt-get dist-upgrade&amp;rsquo; y varias horas después tenía Edgy instalado. Me quedaron algunos meta-paquetes de python retenidos, pero no son problema, después lo soluciono.&lt;/p&gt;
+&lt;p&gt;Mi instalación de &lt;a href=&#34;http://en.wikipedia.org/wiki/Xgl&#34;&gt;XGL&lt;/a&gt; + &lt;a href=&#34;http://en.wikipedia.org/wiki/Compiz&#34;&gt;Compiz&lt;/a&gt; anduvo sin romperse, aunque no lo probé mucho porque el Compiz ese (de Quinnstorm, antes de &lt;a href=&#34;http://www.osnews.com/story.php/15888/Compiz-Forked-Beryl&#34;&gt;convertirse&lt;/a&gt; en Beryl) era para Dapper&amp;hellip; ya cambié el repo a Edgy y estoy usando &lt;a href=&#34;http://www.beryl-project.org/&#34;&gt;Beryl&lt;/a&gt; 0.1.1 para Edgy. Tiene bastantes mejoras, aunque molesta un poco que tenga taaantas opciones yque siempre haya que estar configurando algo porque se actualizó/cambió. Ojo, son paquetes que están en puro desarrollo, así que si te gusta el durazno&amp;hellip; bancate la pelusa. :-P&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Vistazos por la Ventana - Parte I</title>
+      <link>http://localhost:1313/2006/09/vistazos-por-la-ventana-parte-i/</link>
+      <pubDate>Sun, 10 Sep 2006 01:16:00 +0000</pubDate>
+      <guid>http://localhost:1313/2006/09/vistazos-por-la-ventana-parte-i/</guid>
+      <description>&lt;p&gt;Hellou&amp;hellip;. estoy testeando &lt;a href=&#34;http://www.microsoft.com/windowsvista/default.aspx&#34;&gt;Windows Vista&lt;/a&gt; RC1 5600&amp;hellip;. les cuento con que me encontre hasta ahora. (Atención: Lo que Ud. va a leer es un pequeño resumen de la impresión que me causó usarlo por primera vez, y considere que utilizo y defiendo &lt;a href=&#34;http://es.wikipedia.org/wiki/Linux&#34;&gt;GNU/Linux&lt;/a&gt; full time. Sin embargo, voy a tratar de ser justo e imparcial; puede que me olvide de algo o se me escape algún detalle).&lt;/p&gt;
+&lt;p&gt;- Para poder instalarlo es necesario aprox. 8GB de disco (muuuy aproximadamente :P )&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
