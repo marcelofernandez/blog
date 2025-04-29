@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/fernandezm
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://marcelofernandez.info
+  * I am fernandezm (https://keybase.io/fernandezm) on keybase.
+  * I have a public key ASAZu94LNmZOsIJ-d7So0XeiTdsNgJL8VbgrizbrrYvFjAo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120a6101f5b77996777c2e5437eec75c7cb85ec60c2f88289c62fda3a00dc7c2aae0a",
+      "host": "keybase.io",
+      "kid": "012019bbde0b36664eb0827e77b4a8d177a24ddb0d8092fc55b82b8b36ebad8bc58c0a",
+      "uid": "37ff0be848c464489ecec2f758440219",
+      "username": "fernandezm"
+    },
+    "merkle_root": {
+      "ctime": 1552659674,
+      "hash": "88316ce5001fc2cf88bd7dd365c01de5015f5c860a825936b8b2dedd5510a99e013d0d2ea5a927dd067fc0d10b7cced03e1b4500d779d01d5dd711e407a9aa2d",
+      "hash_meta": "ca89b377796cae8117aa103af76e974b0a4c2b5d7d9df05e17f4b67e23bd229c",
+      "seqno": 4955861
+    },
+    "service": {
+      "entropy": "UJAI6npKSEYT7jkLNADy5Lrh",
+      "hostname": "marcelofernandez.info",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "3.1.0"
+  },
+  "ctime": 1552659701,
+  "expire_in": 504576000,
+  "prev": "fbd9362b3df451e1a549d16439bad79352baf89f8606f79cb41c3c966b355f0d",
+  "seqno": 41,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgGbveCzZmTrCCfne0qNF3ok3bDYCS/FW4K4s2662LxYwKp3BheWxvYWTESpcCKcQg+9k2Kz30UeGlSdFkObrXk1K6+J+GBvectBw8lms1Xw3EIMPk4q/TE1qglrABfntyJivw2P50PpSJ7Vc/Zv57rv03AgHCo3NpZ8RAjjbQiiI8BhPDAJyVKfxa9I2sdqy0gifxCFQFigmOp9Pft5jwYzHrYeUv9hm+dnxVPkDIPl51+5GMWmYtAXSRCahzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEICDTDVO8lN41PV5IgqFSmwIPYahM06hoY2h6JDzn9C8Ro3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/fernandezm
+
+==================================================================
