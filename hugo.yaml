@@ -1,6 +1,6 @@
 baseURL: http://blog.marcelofernandez.info
 languageCode: es
-title: " "
+title: "El Blog de Marcelo!"
 theme: PaperMod
 enableRobotsTXT: true
 taxonomies:
