@@ -8,7 +8,7 @@ url: /sobre-mi/
 ---
 ## Marcelo Fidel Fernández
 
-- **Edad:** 43 años.
+- **Edad:** 45 años.
 - **Profesión:** Licenciado en Sistemas. Líder de Proyectos, Programador, Administrador de Redes y Servicios, hoy devenido en DevOps.
 - **Ubicación: [La Reja : Buenos Aires : Argentina](https://en.wikipedia.org/wiki/Moreno_Partido)**
 - **Perfil Laboral y Profesional:** [Ver en LinkedIn](https://www.linkedin.com/in/marcelofidelfernandez "Ver mi perfil profesional en LinkedIn")
