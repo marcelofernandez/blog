@@ -34,13 +34,6 @@ cd blog
 
 The generated files will be in the public directory.
 
-## Content Structure
- - posts: Blog posts
- - pages: Static pages
- - content/proyectos/: Projects information
- - static: Static assets such as images
- - PaperMod: The PaperMod theme files
-
 ## License
 The content of this blog is licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) unless otherwise specified.
 
