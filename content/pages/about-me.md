@@ -24,7 +24,7 @@ I'm very passionate about technology, free and open source software, networking,
 
 I'm very curious, so I always find myself working, playing, investigating and experimenting mostly with free software. I try to write all my experiences in this blog when my spare time allows it.
 
-I'm doing a Postgrade Course, a [Master in Data Networks](http://postgrado.info.unlp.edu.ar/Carrera/Magister/Redes%20de%20Datos/Magister%20en%20Redes%20de%20Datos.html) at [La Plata National University](http://www.unlp.edu.ar).
+I'm doing a Postgrade Course, a [Master in Data Networks](https://postgrado.info.unlp.edu.ar/redes-de-datos/) at [La Plata National University](http://www.unlp.edu.ar).
 
 ## Specialties and Habilities
 

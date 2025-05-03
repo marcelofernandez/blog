@@ -24,7 +24,7 @@ Fuertemente apasionado por la tecnología, el software libre, las comunicaciones
 
 Soy una persona curiosa por naturaleza y siempre me encuentro jugando, estudiando, trabajando y experimentando con Software Libre usualmente. Aunque la gente que me conoce diga que tengo buena memoria, trato de escribir mis experiencias y volcarlas en este blog cuando el tiempo me lo permite, para no olvidarme.
 
-Actualmente me encuentro haciendo un Curso de Postgrado, el [Magíster en Redes de Datos](http://postgrado.info.unlp.edu.ar/Carrera/Magister/Redes%20de%20Datos/Magister%20en%20Redes%20de%20Datos.html) de la [Universidad Nacional de La Plata](http://www.unlp.edu.ar).
+Actualmente me encuentro haciendo un Curso de Postgrado, el [Magíster en Redes de Datos](https://postgrado.info.unlp.edu.ar/redes-de-datos/) de la [Universidad Nacional de La Plata](http://www.unlp.edu.ar).
 
 ## Especialidades
 
