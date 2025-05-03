@@ -1,1 +1,8 @@
 .hugo_build.lock
+public/
+resources/
+.DS_Store
+Thumbs.db
+_gen/
+.env
+node_modules/

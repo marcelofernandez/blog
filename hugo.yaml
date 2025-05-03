@@ -38,42 +38,54 @@ outputFormats:
     baseName: feed
 menu:
   main:
-    - name: ""
-      url: https://x.com/fidelfernandez
+    - name: "Twitter"
+      url: "https://x.com/fidelfernandez"
+      params:
+        icon: "/Twitter_X.png"
+        social: true
       weight: 1
-    - name: ""
-      url: https://www.instagram.com/marcelo.fidel.fernandez/
+    - name: "Instagram"
+      url: "https://www.instagram.com/marcelo.fidel.fernandez/"
+      params:
+        icon: "/instagram.png"
+        social: true
       weight: 2
-    - name: ""
-      url: https://github.com/marcelofernandez
+    - name: "GitHub"
+      url: "https://github.com/marcelofernandez"
+      params:
+        icon: "/github.png"
+        social: true
       weight: 3
-    - name: ""
-      url: https://www.linkedin.com/in/marcelofidelfernandez
+    - name: "LinkedIn"
+      url: "https://www.linkedin.com/in/marcelofidelfernandez"
+      params:
+        icon: "/linkedin.png"
+        social: true
       weight: 4
-    - name: ""
-      url: marcelo.fidel.fernandez@gmail.com
+    - name: "Email"
+      url: "mailto:marcelo.fidel.fernandez@gmail.com"
+      params:
+        icon: "/gmail.png"
+        social: true
       weight: 5
-    - name: ""
-      url: ""
+    - name: "Inicio"
+      url: "/"
       weight: 6
-    - name: Inicio
-      url: /
+    - name: "Charlas"
+      url: "/charlas/"
       weight: 7
-    - name: Charlas
-      url: /charlas/
+    - name: "Proyectos"
+      url: "/proyectos/"
       weight: 8
-    - name: Proyectos
-      url: /proyectos/
+    - name: "Publicaciones"
+      url: "/publicaciones/"
       weight: 9
-    - name: Publicaciones
-      url: /publicaciones/
+    - name: "Sobre Mí"
+      url: "/sobre-mi/"
       weight: 10
-    - name: Sobre Mí
-      url: /sobre-mi/
+    - name: "About Me"
+      url: "/about-me/"
       weight: 11
-    - name: About Me
-      url: /about-me/
-      weight: 12
     - name: "\U0001F50D"
-      url: /search/
-      weight: 13
+      url: "/search/"
+      weight: 12
