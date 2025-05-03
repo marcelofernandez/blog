@@ -1,15 +1,20 @@
 baseURL: http://blog.marcelofernandez.info
 languageCode: es
-title: El Blog de Marcelo!
+title: " "
 theme: PaperMod
+enableRobotsTXT: true
 taxonomies:
   category: category
   tag: tag
 params:
+  env: production
   description: Blog Informático sobre Programación, Software Libre y/o Open Source, Linux, Python y alguna que otra cosa más...
+  keywords: [Blog, Portfolio, Python, Linux, Software Libre, Open Source]
+  author: Marcelo Fernández
   defaultTheme: auto
   disableThemeToggle: true
   showShareButtons: true
+  shareButtons: ["twitter", "facebook", "linkedin", "email"]
   showReadingTime: true
   showToc: false
   showBreadCrumbs: true
@@ -19,6 +24,20 @@ params:
   assets:
     favicon: /favicon.ico
     disableHLJS: true
+  homeInfoParams:
+    Title: El Blog de Marcelo!
+    Content: Blog Informático sobre Programación, Software Libre y/o Open Source, Linux, Python y alguna que otra cosa más...
+  socialIcons:
+    - name: x
+      url: "https://x.com/fidelfernandez"
+    - name: instagram
+      url: "https://www.instagram.com/marcelo.fidel.fernandez/"
+    - name: github
+      url: "https://github.com/marcelofernandez"
+    - name: linkedin
+      url: "https://www.linkedin.com/in/marcelofidelfernandez"
+    - name: email
+      url: "mailto:marcelo.fidel.fernandez@gmail.com"
 markup:
   highlight:
     codeFences: true
@@ -31,61 +50,31 @@ outputs:
   home:
     - HTML
     - RSS
-    - JSON
+    - JSON # necessary for search
 outputFormats:
   RSS:
     mediaType: application/rss+xml
     baseName: feed
 menu:
   main:
-    - name: "Twitter"
-      url: "https://x.com/fidelfernandez"
-      params:
-        icon: "/Twitter_X.png"
-        social: true
-      weight: 1
-    - name: "Instagram"
-      url: "https://www.instagram.com/marcelo.fidel.fernandez/"
-      params:
-        icon: "/instagram.png"
-        social: true
-      weight: 2
-    - name: "GitHub"
-      url: "https://github.com/marcelofernandez"
-      params:
-        icon: "/github.png"
-        social: true
-      weight: 3
-    - name: "LinkedIn"
-      url: "https://www.linkedin.com/in/marcelofidelfernandez"
-      params:
-        icon: "/linkedin.png"
-        social: true
-      weight: 4
-    - name: "Email"
-      url: "mailto:marcelo.fidel.fernandez@gmail.com"
-      params:
-        icon: "/gmail.png"
-        social: true
-      weight: 5
     - name: "Inicio"
       url: "/"
-      weight: 6
+      weight: 1
     - name: "Charlas"
       url: "/charlas/"
-      weight: 7
+      weight: 2
     - name: "Proyectos"
       url: "/proyectos/"
-      weight: 8
+      weight: 3
     - name: "Publicaciones"
       url: "/publicaciones/"
-      weight: 9
+      weight: 4
     - name: "Sobre Mí"
       url: "/sobre-mi/"
-      weight: 10
+      weight: 5
     - name: "About Me"
       url: "/about-me/"
-      weight: 11
+      weight: 6
     - name: "\U0001F50D"
       url: "/search/"
-      weight: 12
+      weight: 7

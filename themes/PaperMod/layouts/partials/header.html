@@ -126,13 +126,11 @@
             <li>
                 <a href="{{ .URL | absLangURL }}" title="{{ .Title | default .Name }} {{- cond $is_search (" (Alt + /)"
                     | safeHTMLAttr) ("" | safeHTMLAttr ) }}" {{- cond $is_search (" accesskey=/" | safeHTMLAttr) ("" |
-                    safeHTMLAttr ) }} {{- if .Params.social }}target="_blank" rel="noopener noreferrer" {{- end }}>
+                    safeHTMLAttr ) }}>
                     <span {{- if eq $menu_item_url $page_url }} class="active" {{- end }}>
-                        {{- if .Params.icon }}
-                        <img src="{{ .Params.icon }}" alt="{{ .Name }}"
-                            style="height: 20px; width: 20px; vertical-align: middle; margin-right: 5px;">
-                        {{- end }}
+                        {{- .Pre }}
                         {{- .Name -}}
+                        {{ .Post -}}
                     </span>
                     {{- if (findRE "://" .URL) }}&nbsp;
                     <svg fill="none" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round"
