@@ -47,7 +47,7 @@ The content of this blog is licensed under [CC BY-NC 4.0](https://creativecommon
 ## Contact
 Feel free to reach out to me through:
 
-Twitter: @fidelfernandez
-GitHub: marcelofernandez
-LinkedIn: marcelofidelfernandez
-Email: marcelo.fidel.fernandez@gmail.com
+ - Twitter: [@fidelfernandez](https://x.com/fidelfernandez)
+ - GitHub: [marcelofernandez](https://github.com/marcelofernandez)
+ - LinkedIn: [marcelofidelfernandez](https://www.linkedin.com/in/marcelofidelfernandez)
+ - Email: marcelo.fidel.fernandez@gmail.com
