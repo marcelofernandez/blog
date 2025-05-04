@@ -12,7 +12,7 @@ title: Renderizando PDFs en Python con Poppler II
 url: /2010/04/renderizando-pdfs-en-python-con-poppler-ii/
 
 ---
-Hace unos días me llegó un mail de alguien preguntándome cómo, a partir de la [parte I de este artículo](/2009/05/renderizando-pdfs-en-python-con-poppler/), hacer un sencillo visor de PDFs con [wxPython](http://www.wxpython.org). Me encontré con algunas dificultades, principalmente que el [ScrolledWindow](www.wxpython.org/docs/api/wx.ScrolledWindow-class.html) de wxPython no permite actualizarse dinámicamente, o automáticamente según el contenido (esto [sí es bastante sencillo en GTK](http://www.pygtk.org/docs/pygtk/class-gtkadjustment.html)); con lo cual se complicaba hacer zoom, modificar el tamaño de la ventana y adaptar los scrollbars, etc.
+Hace unos días me llegó un mail de alguien preguntándome cómo, a partir de la [parte I de este artículo](/2009/05/renderizando-pdfs-en-python-con-poppler/), hacer un sencillo visor de PDFs con [wxPython](http://www.wxpython.org). Me encontré con algunas dificultades, principalmente que el [ScrolledWindow](https://docs.wxpython.org/wx.ScrolledWindow.html) de wxPython no permite actualizarse dinámicamente, o automáticamente según el contenido (esto [sí es bastante sencillo en GTK](http://www.pygtk.org/docs/pygtk/class-gtkadjustment.html)); con lo cual se complicaba hacer zoom, modificar el tamaño de la ventana y adaptar los scrollbars, etc.
 
 Sin embargo, con alguna vuelta de más pude armar un ejemplo, que paso a dejar [acá](http://code.activestate.com/recipes/577195-wxpython-pdf-viewer-using-poppler/):
 
