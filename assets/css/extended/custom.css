@@ -1,3 +1,7 @@
 .logo {
     visibility: hidden;
 }
+
+article.first-entry.home-info {
+    min-height: 0px;
+}
